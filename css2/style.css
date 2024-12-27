@@ -12,10 +12,17 @@
 /* Style for the top image */
 .top-image {
   
-  width: 7%;      /* Makes the image span the full width of the page */
+  width: 10%;      /* Makes the image span the full width of the page */
   height: auto;     /* Maintains the aspect ratio */
   display: block;   /* Ensures no extra space around the image */
 }
+
+@media (max-width: 600px) {
+    .top-image {
+        width: 22%; /* Adjust the image size for smaller screens */
+    }
+}
+
 
 /* Optional: Center the content below the image */
 .content {
