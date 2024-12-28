@@ -1,5 +1,5 @@
 /* General Styles */
-*{
+body{
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -9,9 +9,10 @@
     color: black;
 }
 
+
+
 /* Style for the top image */
 .top-image {
-  
   width: 10%;      /* Makes the image span the full width of the page */
   height: auto;     /* Maintains the aspect ratio */
   display: block;   /* Ensures no extra space around the image */
@@ -19,7 +20,15 @@
 
 @media (max-width: 600px) {
     .top-image {
-        width: 22%; /* Adjust the image size for smaller screens */
+        width: 24%; /* Adjust the image size for smaller screens */
+    }
+
+    .modal-content .h222 {
+        font-size: 19px;
+    }
+
+    .content .h11 {
+        font-size: 27px;
     }
 }
 
@@ -28,6 +37,7 @@
 .content {
   text-align: center;
   padding: 20px;
+  font-size: 33px;
 }
 
 
@@ -54,14 +64,14 @@ header {
     font-size: 1em;
     border: none;
     border-radius: 5px;
-    width: 200px;
+    width: 180px;
 }
 
 .search-bar button {
     padding: 5px 10px;
     font-size: 1em;
     border: none;
-    border-radius: 5px;
+    border-radius: 1px;
     background-color: #ff6600;
     color: #fff;
     cursor: pointer;
@@ -93,8 +103,7 @@ main {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 15px;
     text-align: center;
-
-    transition: transform 0.2s;
+    transition: transform 0.3s;
 }
 
 .product-card img {
@@ -152,10 +161,6 @@ main {
 }
 
 
-
-
-
-
 /* Card Modal styling */
 .modal {
     display: none; /* Hidden by default */
@@ -173,11 +178,13 @@ main {
 .modal-content {
     background-color: #fff;
     padding: 20px;
-    border-radius: 10px;
+    border-radius: 30px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     width: 90%;
     max-width: 400px;
 }
+
+
 
 .close-button {
     float: right;
@@ -219,8 +226,17 @@ form button:hover {
 
 /* Footer */
 footer {
-    background:black;
+    background-color: black;
     color: white;
     padding: 10px;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+footer .a11 {
+    color: white;
+    text-decoration-style:none;
 }

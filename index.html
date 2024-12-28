@@ -5,6 +5,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="css2/style.css">
 	<script src="script.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css">
+
 	<title>Bleart 7 - Website</title>
 </head>
 <body>
@@ -20,7 +22,9 @@
     </header>
 
   <div class="content">
-    <h1 style="text-decoration: underline; color: black; font-family: Noto Sans; text-decoration-style: wavy">Welcome to Bleart 7 Website</h1>
+
+    <a href="#" class="h11" style="text-decoration: underline; color: black; font-family: Noto Sans; text-decoration-style: wavy">Welcome to Bleart 7 Website</a>
+
       </div>
 
 
@@ -127,6 +131,13 @@
                 <button onclick="showMessage()">BLEJ TANI</button>
             </div>
 
+            <div class="product-card" data-name="Shitet Bleroni Bashk me Dele">
+                <img src="foto/mylogo.jpg" alt="Product 15">
+                <h3>Shitet Bleroni Bashk me Dele</h3>
+                <p>Cmimi - I arsyetshem</p>
+                <button onclick="showMessage()">BLEJ TANI</button>
+            </div> 
+
     </div>
 </main>
 </section>
@@ -137,7 +148,7 @@
 <div id="cardModal" class="modal">
     <div class="modal-content">
         <span class="close-button" onclick="closeModal()">&times;</span>
-        <h2>Futni të dhënat e kartës suaj:</h2>
+        <h2 class="h222">Futni të dhënat e kartës suaj:</h2>
         <form id="paymentForm" >
 
             <label for="cardName"><i class="fas fa-user"></i>Emri i mbajtësit të kartës:</label>
@@ -160,9 +171,11 @@
 
 
 <!-- Footer -->
-<footer>
-    <p>&copy; 2024 Bleart7. All rights reserved.</p>
+<footer class="f1">
+    <p>&copy; 2024 Bleart 7. All rights reserved.</p>
+    <a class="a11" href="https://programmer-7stack.github.io/Bleart7Web/">GitHub</a>
 </footer>
+
 
 
 </body>
