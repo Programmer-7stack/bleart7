@@ -1,182 +1,123 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="css2/style.css">
-	<script src="script.js"></script>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css">
 
-	<title>Bleart 7 - Website</title>
+
 </head>
 <body>
 
- <!-- Pjesa e siperme e faqes -->
+<!-- Header -->
+<header id="aboutme">
+    <a href="#" class="link3" style="color: whitesmoke;text-decoration: underline; font-family: Noto Sans;">Welcome to My Portfolio</a></header>
 
-<header>
-    <img src="foto/mylogo.jpg" alt="Top Image" class="top-image">
-        <div class="search-bar">
-            <input type="text" id="searchInput" placeholder="Kërko produktet..." >
-            <button onclick="searchProducts()">Search</button>
+
+
+<!-- About Me Section -->
+<section class="about">
+    <img src="foto/44.jpg" alt="Your photo" class="profile-pic">
+    <h2 style="; color: black; font-family: Noto Sans;" >About Me</h2>
+    <p style="; color: black; font-family: Noto Sans;">My name is Bleart, and i am currently studying programming. I enjoy learning about web development, creating websites, and solving programming challenges. My goal is to become a skilled web developer and create innovative projects in the future.</p>
+</section>
+
+<!-- Skills Section -->
+<section id="skills">
+    <h2 style=" color: black; font-family: Noto Sans;">My Skills</h2>
+    <div class="skills-grid">
+        <div class="skill">
+            <h3 style="font-family: Noto Sans; color: black;">HTML</h3>
+            <p style="font-family: Noto Sans; color: black;">Skilled in HTML,Including header,section,div,p,h1-h6</p>
         </div>
-    </header>
+        <div class="skill">
+            <h3 style="font-family: Noto Sans; color: black;">CSS</h3>
+            <p style="font-family: Noto Sans; color: black;">Skilled in CSS,Including margins,paddings,colors,borders</p>
+        </div>
 
-  <div class="content">
+        <div class="skill">
+            <h3 style="font-family: Noto Sans; color: black;">Javascript</h3>
+            <p style="font-family: Noto Sans; color: black;">--- </p>
+        </div>
 
-    <a href="#" class="h11" style="text-decoration: underline; color: black; font-family: Noto Sans; text-decoration-style: wavy">Welcome to Bleart 7 Website</a>
-
-      </div>
-
-
-<!-- Produktet -->
-    <main>
-
-        <section class="products">
-            <div class="product-card" data-name="Apple iPhone 16 Pro Max, 512GB, Black Titanium">
-                <img src="foto/1.webp" alt="Product 1">
-                <h3>Apple iPhone 16 Pro Max, 512GB, Black Titanium</h3>
-                <p>1,959.50 €</p>
-                <button onclick="showMessage() ">BLEJ TANI</button>
-            </div>
-
-            <div class="product-card" data-name="Celular Samsung Galaxy S24+, 12GB/ 256GB, Onyx Black">
-                <img src="foto/2.webp" alt="Product 2">
-                <h3>Celular Samsung Galaxy S24+, 12GB/ 256GB, Onyx Black</h3>
-                <p>879.50 €</p>
-                <button onclick="showMessage()">BLEJ TANI</button>
-            </div>
-
-            <div class="product-card" data-name="Monitor Dell Alienware AW2524HF 500Hz, 24.5, FullHD, i zi">
-                <img src="foto/3.webp" alt="Product 3">
-                <h3>Monitor Dell Alienware AW2524HF 500Hz, 24.5", FullHD, i zi</h3>
-                <p>539.50 €</p>
-                <button onclick="showMessage()">BLEJ TANI</button>
-            </div>
-
-            <div class="product-card" data-name="RTX 4090, AMD Ryzen 9 7950X3D, 32GB RAM, 1TB SSD - Gaming PC Gjirafa50 Black Series 42">
-                <img src="foto/4.webp" alt="Product 4">
-                <h3>RTX 4090, AMD Ryzen 9 7950X3D, 32GB RAM, 1TB SSD - Gaming PC Gjirafa50 Black Series 42</h3>
-                <p>4,199.50 €</p>
-                <button onclick="showMessage()">BLEJ TANI</button>
-
-            </div>
-
-           <div class="product-card" data-name="Kartelë grafike MSI GeForce RTX 4090 VENTUS 3X 24G OC, 24GB GDDR6X">
-                <img src="foto/5.webp" alt="Product 5">
-                <h3>Kartelë grafike MSI GeForce RTX 4090 VENTUS 3X 24G OC, 24GB GDDR6X</h3>
-                <p>2,892.50 €</p>
-                <button onclick="showMessage()">BLEJ TANI</button>
-            </div>
-
-			<div class="product-card" data-name="Procesor AMD Ryzen 9 7950X3D">
-                <img src="foto/6.webp" alt="Product 6" width="200px" height="200px">
-                <h3>Procesor AMD Ryzen 9 7950X3D</h3>
-                <p>841.50 €</p>
-                <button onclick="showMessage()">BLEJ TANI</button>
-            </div>
-
-			<div class="product-card" data-name="Tastierë SteelSeries Apex PRO OmniPoint (64626), e zezë">
-                <img src="foto/7.webp" alt="Product 7">
-                <h3>Tastierë SteelSeries Apex PRO OmniPoint (64626), e zezë</h3>
-                <p>316.50 €</p>
-                <button onclick="showMessage()">BLEJ TANI</button>
-            </div>
-
-            <div class="product-card" data-name="Maus Logitech G Pro X Superlight 2 Wireless, i bardhë">
-                <img src="foto/8.webp" alt="Product 8">
-                <h3>Mouse Logitech G Pro X Superlight 2 Wireless, i bardhë </h3>
-                <p>237.50 €</p>
-                <button onclick="showMessage()">BLEJ TANI</button>
-            </div>
-
-			<div class="product-card" data-name="Kufje HyperX Cloud Alpha Wireless Headphones (4P5D4AA), të zeza">
-                <img src="foto/9.webp" alt="Product 9">
-                <h3>Kufje HyperX Cloud Alpha Wireless Headphones (4P5D4AA), të zeza</h3>
-                <p>196.50 €</p>
-                <button onclick="showMessage()">BLEJ TANI</button>
-            </div>
-
-			<div class="product-card" data-name="Burim energjie Asus ROG Thor Titanium 90YE00K0-B0NA00 , 1600W">
-                <img src="foto/10.webp" alt="Product 10">
-                <h3>Burim energjie Asus ROG Thor Titanium 90YE00K0-B0NA00 , 1600W</h3>
-                <p>931.50 €</p>
-                <button onclick="showMessage()">BLEJ TANI</button>
-            </div>
-
-            <div class="product-card"data-name="Tavolinë COUGAR E-MARS RGB, 1531x770x745-1195mm, 2xUSB 3.0 & USB-C, e zezë" >
-                <img src="foto/11.webp" alt="Product 11" width="150px" height="150px">
-                <h3>Tavolinë COUGAR E-MARS RGB, 1531x770x745-1195mm, 2xUSB 3.0 & USB-C, e zezë</h3>
-                <p>1,139.50 €</p>
-                <button onclick="showMessage()">BLEJ TANI</button>
-            </div>      
-
-            <div class="product-card" data-name="Karrige Noblechairs HERO Black Edition, zezë">
-                <img src="foto/12.webp" alt="Product 12">
-                <h3>Karrige Noblechairs HERO Black Edition, zezë</h3>
-                <p>721.50 €</p>
-                <button onclick="showMessage()">BLEJ TANI</button>
-            </div>
-
- 			<div class="product-card" data-name="Laptop MSI Katana 15 B13VGK-1493XPL, 15.6, Intel Core i7, 16GB RAM, 1TB SSD, NVIDIA GeForce RTX 4070, i zi">
-                <img src="foto/13.webp" alt="Product 13">
-                <h3>Laptop MSI Katana 15 B13VGK-1493XPL, 15.6", Intel Core i7, 16GB RAM, 1TB SSD, NVIDIA GeForce RTX 4070, i zi</h3>
-                <p>1,593.50 €</p>
-                <button onclick="showMessage()">BLEJ TANI</button>
-            </div>
-
-			<div class="product-card" data-name="Konzolë Sony PlayStation 5 Digital Slim Edition 1TB SSD Wi-Fi, e zezë/ bardhë">
-                <img src="foto/14.webp" alt="Product 14">
-                <h3>Konzolë Sony PlayStation 5 Digital Slim Edition 1TB SSD Wi-Fi, e zezë/ bardhë</h3>
-                <p>611.50 €</p>
-                <button onclick="showMessage()">BLEJ TANI</button>
-            </div>
-
-            <div class="product-card" data-name="Shitet Delja me Bleronin">
-                <img src="foto/bleron.jpg" alt="Product 15">
-                <h3>Shitet Delja me Bleronin</h3>
-                <p>Bleni delen Bleroni e han mishin €</p>
-                <button onclick="showMessage()">BLEJ TANI</button>
-            </div>
-
-    </div>
-</main>
 </section>
 
 
 
-<!-- Modal for Card Information -->
-<div id="cardModal" class="modal">
-    <div class="modal-content">
-        <span class="close-button" onclick="closeModal()">&times;</span>
-        <h2 class="h222">Futni të dhënat e kartës suaj:</h2>
-        <form id="paymentForm" >
+  <!-- Projects Section -->
+<section id="projects" class="projects-section">
+    <a href="#" class="link">Go watch about me ⬆</a>
+    <h2 style="font-family: Noto Sans; color: black;">My Projects</h2>
+                                                        <pre style="font-size: 25px;">↓ </pre>
+    <div class="project-container">
+        <!-- Project 1 -->
+        <div class="project">
+            <a href="https://programmer-7stack.github.io/Bleart7Web/" target="_blank">
+                <img src="foto/1.PNG" alt="Project 1" class="project-image" width="700px" height="700px">
+            </a>
+            <h3 style="font-family: Noto Sans;">Bleart 7 - Website</h3>
+        </div>
+        
+        <!-- Project 2 -->
+        <div class="project">
+            <a href="#" >
+                <img src="foto/2.PNG" alt="Project 2" class="project-image">
+            </a>
+            <h3 style="font-family: Noto Sans;">Project 2</h3>
+            </div>
 
-            <label for="cardName"><i class="fas fa-user"></i>Emri i mbajtësit të kartës:</label>
-            <input type="text" id="cardName" placeholder="Emri në kartë" required>
+         <!-- Project 3 -->
+        <div class="project">
+            <a href="#" >
+                <img src="foto/2.PNG" alt="Project 3" class="project-image">
+            </a>
+            <h3 style="font-family: Noto Sans;">Project 3</h3>
+        </div>
 
-            <label for="cardNumber"><i class="far fa-credit-card"></i>Numri i kartës:</label>
-            <input type="number" id="cardNumber" data-mask="0000 0000 0000 0000" placeholder="Futni numrin e kartës" required>
+         <!-- Project 4 -->
+        <div class="project">
+            <a href="#" >
+                <img src="foto/2.PNG" alt="Project 4" class="project-image">
+            </a>
+            <h3 style="font-family: Noto Sans;">Project 4</h3>
+        </div>
 
-            <label for="cardExpiry"><i class="far fa-calendar-alt"></i>Data e skadimit:</label>
-            <input type="number" id="cardExpiry" data-mask="00 / 00" placeholder="MM/YY" required>
-
-            <label for="cardCVV"><i class="fas fa-lock"></i>CVV:</label>
-            <input type="number" id="cardCVV" data-mask="000" placeholder="CVV" required>
 
 
-            <button type="submit" onclick="processPayment(event)">BLEJ TANI</button>
-        </form>
     </div>
-</div>
+</section>
 
+<!-- section contact -->
+    <section id="contact">
+        <div class="title-container">
+            <h2>Contact Me</h2>
+        </div>
+        
+        <div class="form-container">
+            <form>
+                <div class="two-input">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                </div>
+
+                <textarea col="5" placeholder="Your Message" ></textarea>
+
+                <input type="submit" name="submitBtn">
+
+            </form>
+        </div>
+
+    </section>
 
 <!-- Footer -->
-<footer class="f1">
-    <p>&copy; 2024 Bleart 7. All rights reserved.</p>
-    <a class="a11" href="https://programmer-7stack.github.io/Portfolio/">GitHub</a>
+<footer>
+    <p>&copy; 2024 Bleart. All rights reserved.</p>
+    <a class="a2" href="https://programmer-7stack.github.io/Bleart7Web/">GitHub</a>
+    <a class="a2" href="#">Instagram</a>
+    <a class="a2" href="#">Facebook</a>
 </footer>
-
-
 
 </body>
 </html>
