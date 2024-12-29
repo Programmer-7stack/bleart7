@@ -9,7 +9,23 @@ body{
     color: black;
 }
 
+/* Header Styling */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 10px;
+    background-color: black;
+    color: #fff;
+}
 
+
+/* Optional: Center the content below the image */
+.content {
+  text-align: center;
+  padding: 20px;
+  font-size: 33px;
+}
 
 /* Style for the top image */
 .top-image {
@@ -32,24 +48,6 @@ body{
     }
 }
 
-
-/* Optional: Center the content below the image */
-.content {
-  text-align: center;
-  padding: 20px;
-  font-size: 33px;
-}
-
-
-/* Header Styling */
-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px 10px;
-    background-color: black;
-    color: #fff;
-}
 
 
 /* Search Bar Styling */
@@ -150,14 +148,6 @@ main {
     to {
         opacity: 1;
     }
-}
-
-
-
-#left {
-    position: absolute;
-    left: 700px;
-    bottom: -400px;
 }
 
 
