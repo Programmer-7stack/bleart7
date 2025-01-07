@@ -29,9 +29,14 @@ header {
   font-size: 33px;
 }
 
+.logo-link {
+    text-decoration: none;
+    display: inline-block;
+}
+
 /* Stil për imazhin e sipërm */
 .top-image {
-  width: 7%;      /* Bën që imazhi të shtrihet në të gjithë gjerësinë e faqes */
+  width: 19%;      /* Bën që imazhi të shtrihet në të gjithë gjerësinë e faqes */
   height: auto;     /* Ruan raportin e pamjes */
   display: block;   /*Nuk siguron hapësirë shtesë rreth imazhit */
 }
@@ -40,7 +45,7 @@ header {
 /* Për ekranet më të vogla (telefon) */
 @media (max-width: 600px) {
     .top-image {
-        width: 24%; /* Rregulloni madhësinë e imazhit për ekranet më të vogla */
+        width: 88%; /* Rregulloni madhësinë e imazhit për ekranet më të vogla */
     }
 
     .modal-content .h222 {
