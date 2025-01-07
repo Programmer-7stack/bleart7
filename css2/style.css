@@ -11,6 +11,8 @@ body{
 
 /* Header Styling */
 header {
+    position: sticky;
+    top: 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -136,7 +138,6 @@ main {
 }
 
 .product-card:hover {
-    transform: scale(1.05);
 }
 
 
@@ -231,3 +232,5 @@ footer .a11 {
     text-decoration-style:none;
     font-size: 25px;
 }
+
+
