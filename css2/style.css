@@ -37,13 +37,15 @@ header {
     animation: backgroundChange 6s linear infinite;
 }
 
+
+
 /* Efekti i ndryshimit të ngjyrave të sfondit */
    @keyframes backgroundChange {
-    0% { background-color: #ff5733; } /* Portokalli */
-    25% { background-color: #33ff57; } /* Gjelbert */
-    50% { background-color: #3357ff; } /* Kaltert */
-    75% { background-color: #ff33a1; } /* Rozë */
-    100% { background-color: #f22; } /* --- */
+    0% { background-color: #f5b7b1; } /* Portokalli */
+    25% { background-color: #a2d5ab; } /* Gjelbert */
+    50% { background-color: #a2c2e2; } /* Kaltert */
+    75% { background-color: #f7a6c4; } /* Rozë */
+    100% { background-color: #f4cccc; } /* --- */
 }
 
 .logo-link {
