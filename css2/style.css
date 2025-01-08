@@ -29,6 +29,23 @@ header {
   font-size: 33px;
 }
 
+ marquee {
+    text-decoration: underline;
+    color: white;
+    font-family: Noto Sans; 
+    text-align: center;
+    animation: backgroundChange 6s linear infinite;
+}
+
+/* Efekti i ndryshimit të ngjyrave të sfondit */
+   @keyframes backgroundChange {
+    0% { background-color: #ff5733; } /* Portokalli */
+    25% { background-color: #33ff57; } /* Gjelbert */
+    50% { background-color: #3357ff; } /* Kaltert */
+    75% { background-color: #ff33a1; } /* Rozë */
+    100% { background-color: #f22; } /* --- */
+}
+
 .logo-link {
     text-decoration: none;
     display: inline-block;
