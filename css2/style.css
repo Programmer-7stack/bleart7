@@ -200,6 +200,10 @@ main {
     color: #ff4500;
 }
 
+ .container-Cards {
+    display: flex;
+    justify-content: space-evenly;
+}
 
 form {
     display: flex;
@@ -243,5 +247,6 @@ footer .a11 {
     text-decoration-style:none;
     font-size: 25px;
 }
+
 
 

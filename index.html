@@ -26,8 +26,8 @@
 </header>
 
   <div class="content">
-
-    <a href="#" class="h11" style="text-decoration: underline; color: black; font-family: Noto Sans; text-decoration-style: wavy">Welcome to Bleart 7 Website</a>
+    <marquee>
+    <a href="#" class="h11" style="text-decoration: underline;background-color: red; color: black; font-family: Noto Sans; text-decoration-style: ">Welcome to Bleart 7 Website</a></marquee>
   </div>
 
 
@@ -135,12 +135,7 @@
                 <button onclick="showMessage()">BLEJ TANI</button>
             </div>
 
-            <div class="product-card" data-name="Shitet Delja me Bleronin">
-                <img src="foto/bleron.jpg" alt="Product 15">
-                <h3>Shiten delet me Bleronin</h3>
-                <p>Bleni delet Bleroni e han mishin €</p>
-                <button onclick="showMessage()">BLEJ TANI</button>
-            </div>
+           
 
     </div>
 </main>
@@ -155,20 +150,27 @@
         <h2 class="h222">Futni të dhënat e kartës suaj:</h2>
         <form id="paymentForm" >
 
-            <label for="cardName"><i class="fas fa-user"></i>Emri i mbajtësit të kartës:</label>
+            <label for="cardName"><img src="foto/user.png" alt="Mastercard Icon" style="width: 20px; "></i>Emri i mbajtësit të kartës:</label>
             <input type="text" id="cardName" placeholder="Emri në kartë" required>
 
-            <label for="cardNumber"><i class="far fa-credit-card"></i>Numri i kartës:</label>
+            <label for="cardNumber"><img src="foto/card.png" alt="Mastercard Icon" style="width: 24px; "></i>Numri i kartës:</label>
             <input type="number" id="cardNumber" data-mask="0000 0000 0000 0000" placeholder="Futni numrin e kartës" required>
 
-            <label for="cardExpiry"><i class="far fa-calendar-alt"></i>Data e skadimit:</label>
+            <label for="cardExpiry"><img src="foto/calendar.png" alt="Mastercard Icon" style="width: 16px; "></i>Data e skadimit:</label>
             <input type="number" id="cardExpiry" data-mask="00 / 00" placeholder="MM/YY" required>
 
-            <label for="cardCVV"><i class="fas fa-lock"></i>CVV:</label>
+            <label for="cardCVV"><img src="foto/padlock.png" alt="Mastercard Icon" style="width: 16px; "></i>CVV:</label>
             <input type="number" id="cardCVV" data-mask="000" placeholder="CVV" required>
 
 
             <button type="submit" onclick="processPayment(event)">BLEJ TANI</button>
+            <div class="container-Cards">
+            <img src="foto/TebCard.png" width="80px">
+            <img src="foto/raiffeisenCard.jpg" width="80px">
+            <img src="foto/bktCard.png" width="80px">
+            <img src="foto/nlbCard.png" width="80px">
+            </div>
+
         </form>
     </div>
 </div>
@@ -198,6 +200,9 @@
     </a>
 
 </footer>
+
+
+
 
 </body>
 </html>
