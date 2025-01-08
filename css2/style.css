@@ -41,11 +41,11 @@ header {
 
 /* Efekti i ndryshimit të ngjyrave të sfondit */
    @keyframes backgroundChange {
-    0% { background-color: #f5b7b1; } /* Portokalli */
-    25% { background-color: #a2d5ab; } /* Gjelbert */
-    50% { background-color: #a2c2e2; } /* Kaltert */
-    75% { background-color: #f7a6c4; } /* Rozë */
-    100% { background-color: #f4cccc; } /* --- */
+    0% { background-color: #f5b7b1; } 
+    25% { background-color: #a2d5ab; } 
+    50% { background-color: #a2c2e2; } 
+    75% { background-color: #f7a6c4; } 
+    100% { background-color: #f4cccc; } 
 }
 
 .logo-link {
