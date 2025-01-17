@@ -50,7 +50,7 @@ header {
 
 
 
-.logo-link {
+.logo {
     display: flex;
 
     justify-content: center;  /* Siguron që logo është në qendër */
@@ -78,7 +78,7 @@ header {
         font-size: 27px;
     }
 
-    .logo-link {
+    .logo {
         display: flex;
         text-align: center;
         
@@ -90,7 +90,7 @@ header {
         align-items: center; 
     }
 
-    .logo-link {
+    .logo {
         margin-bottom: 10px; 
         display: flex;
         justify-content: center;
