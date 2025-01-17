@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css2/style.css">
+	<script src="script.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+	<title>Bleart 7 - Website</title>
+</head>
+<body>
+
+
+
+ <!-- Pjesa e siperme e faqes -->
+
+<header>
+   <a href="#" class="logo" >
+        <svg height="54.91272151156268" width="50" class="logo" style="cursor: pointer; overflow:visible; width: 340px;">
+            <defs id="SvgjsDefs1001">
+                <linearGradient id="SvgjsLinearGradient1009">
+                    <stop id="SvgjsStop1010" stop-color="#7d141d" offset="0"></stop>
+                    <stop id="SvgjsStop1011" stop-color="#ff1e27" offset="1"></stop>
+                </linearGradient>
+            </defs>
+            <g id="SvgjsG1007" featurekey="K5GtsI-0" transform="matrix(3.916741244509969,0,0,3.916741244509969,-3.525071228884054,-23.422110849227764)" fill="url(#SvgjsLinearGradient1009)">
+                <path d="M3.5 13.940000000000001 l0 3.6 l4.04 0 c1.08 0 2.62 -0.36 2.62 -1.68 c0 -1.26 -1.54 -1.92 -2.62 -1.92 l-4.04 0 z M3.5 8.4 l0 3.22 l4.04 0 c1.66 0 2.2 -0.7 2.2 -1.5 c0 -0.64 -0.52 -1.72 -2.2 -1.72 l-4.04 0 z M7.54 6 c2.76 0 4.82 1.24 4.82 4.06 c0 1.08 -0.52 2.12 -1.82 2.7 c1.64 0.5 2.24 2.24 2.24 3.12 c0 3.12 -2.34 4.12 -5.24 4.12 l-6.64 0 l0 -14 l6.64 0 z M14.64 6 l2.64 0 l0 11.56 l7.2 0 l0 2.44 l-9.84 0 l0 -14 z M36.78 17.4 l0 2.6 l-10.48 0 l0 -14 l10.48 0 l0 2.56 l-7.86 0 l0 3.22 l7.58 0 l0 2.46 l-7.58 0 l0 3.16 l7.86 0 z M49.940000000000005 20 l-1.18 -2.64 l-7.32 0 l-1.2 2.64 l-2.86 0 l6.28 -14 l2.88 0 l6.28 14 l-2.88 0 z M47.7 14.9 l-2.6 -5.96 l-2.6 5.96 l5.2 0 z M66.42000000000002 19.82 l0 0.18 l-3.14 0 l-4.08 -4.68 l-2.54 0 l0 4.68 l-2.64 0 l0 -14.02 c2.22 0 4.44 0.02 6.66 0.02 c3.3 0.02 5.04 2.22 5.04 4.64 c0 1.92 -0.88 3.86 -3.54 4.4 z M60.68000000000001 8.46 l-4.02 0 l0 4.48 l4.02 0 c1.68 0 2.4 -1.12 2.4 -2.24 s-0.74 -2.24 -2.4 -2.24 z M71.74000000000001 20 l0 -11.6 l-4.44 0 l0 -2.4 l11.52 0 l0 2.4 l-4.44 0 l0 11.6 l-2.64 0 z M83.98000000000002 20 l-3.04 0 l5.72 -11.48 l-6.82 0 l0 -2.52 l10.28 0 l0.14 1.4 z"></path>
+            </g>
+        </svg>
+    </a>
+
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Kërko produktet..." >
+            <button onclick="searchProducts()">Search</button>
+        </div>
+
+</header>
+
+  <div class="content">
+    <marquee>
+    <a href="#" class="h11" style="color: white;" >Welcome to Bleart 7 Website</a></marquee>
+  </div>
+
+
+
+<!-- Produktet -->
+    <main>
+
+        <section class="products">
+            <div class="product-card" data-name="Apple iPhone 16 Pro Max, 512GB, Black Titanium">
+                <img src="foto/1.webp" alt="Product 1">
+                <h3>Apple iPhone 16 Pro Max, 512GB, Black Titanium</h3>
+                <p>1,945.50 €</p>
+                <button onclick="showMessage() ">BLEJ TANI</button>
+            </div>
+
+            <div class="product-card" data-name="Celular Samsung Galaxy S24+, 12GB/ 256GB, Onyx Black">
+                <img src="foto/2.webp" alt="Product 2">
+                <h3>Celular Samsung Galaxy S24+, 12GB/ 256GB, Onyx Black</h3>
+                <p>873.50 €</p>
+                <button onclick="showMessage()">BLEJ TANI</button>
+            </div>
+
+            <div class="product-card" data-name="Monitor Dell Alienware AW2524HF 500Hz, 24.5, FullHD, i zi">
+                <img src="foto/3.webp" alt="Product 3">
+                <h3>Monitor Dell Alienware AW2524HF 500Hz, 24.5", FullHD, i zi</h3>
+                <p>536.50 €</p>
+                <button onclick="showMessage()">BLEJ TANI</button>
+            </div>
+
+            <div class="product-card" data-name="RTX 4090, AMD Ryzen 9 7950X3D, 32GB RAM, 1TB SSD - Gaming PC Black Series 42">
+                <img src="foto/4.webp" alt="Product 4">
+                <h3>RTX 4090, AMD Ryzen 9 7950X3D, 32GB RAM, 1TB SSD - Gaming PC  Black Series 42</h3>
+                <p>4,299.50 €</p>
+                <button onclick="showMessage()">BLEJ TANI</button>
+
+            </div>
+
+           <div class="product-card" data-name="Kartelë grafike MSI GeForce RTX 4090 VENTUS 3X 24G OC, 24GB GDDR6X">
+                <img src="foto/5.webp" alt="Product 5">
+                <h3>Kartelë grafike MSI GeForce RTX 4090 VENTUS 3X 24G OC, 24GB GDDR6X</h3>
+                <p>2,894.50 €</p>
+                <button onclick="showMessage()">BLEJ TANI</button>
+            </div>
+
+			<div class="product-card" data-name="Procesor AMD Ryzen 9 7950X3D">
+                <img src="foto/6.webp" alt="Product 6" width="200px" height="200px">
+                <h3>Procesor AMD Ryzen 9 7950X3D</h3>
+                <p>842.50 €</p>
+                <button onclick="showMessage()">BLEJ TANI</button>
+            </div>
+
+			<div class="product-card" data-name="Tastierë SteelSeries Apex PRO OmniPoint (64626), e zezë">
+                <img src="foto/7.webp" alt="Product 7">
+                <h3>Tastierë SteelSeries Apex PRO OmniPoint (64626), e zezë</h3>
+                <p>317.50 €</p>
+                <button onclick="showMessage()">BLEJ TANI</button>
+            </div>
+
+            <div class="product-card" data-name="Maus Logitech G Pro X Superlight 2 Wireless, i bardhë">
+                <img src="foto/8.webp" alt="Product 8">
+                <h3>Mouse Logitech G Pro X Superlight 2 Wireless, i bardhë </h3>
+                <p>234.50 €</p>
+                <button onclick="showMessage()">BLEJ TANI</button>
+            </div>
+
+			<div class="product-card" data-name="Kufje HyperX Cloud Alpha Wireless Headphones (4P5D4AA), të zeza">
+                <img src="foto/9.webp" alt="Product 9">
+                <h3>Kufje HyperX Cloud Alpha Wireless Headphones (4P5D4AA), të zeza</h3>
+                <p>186.50 €</p>
+                <button onclick="showMessage()">BLEJ TANI</button>
+            </div>
+
+			<div class="product-card" data-name="Burim energjie Asus ROG Thor Titanium 90YE00K0-B0NA00 , 1600W">
+                <img src="foto/10.webp" alt="Product 10">
+                <h3>Burim energjie Asus ROG Thor Titanium 90YE00K0-B0NA00 , 1600W</h3>
+                <p>921.50 €</p>
+                <button onclick="showMessage()">BLEJ TANI</button>
+            </div>
+
+            <div class="product-card"data-name="Tavolinë COUGAR E-MARS RGB, 1531x770x745-1195mm, 2xUSB 3.0 & USB-C, e zezë" >
+                <img src="foto/11.webp" alt="Product 11" width="150px" height="150px">
+                <h3>Tavolinë COUGAR E-MARS RGB, 1531x770x745-1195mm, 2xUSB 3.0 & USB-C, e zezë</h3>
+                <p>1,129.50 €</p>
+                <button onclick="showMessage()">BLEJ TANI</button>
+            </div>      
+
+            <div class="product-card" data-name="Karrige Noblechairs HERO Black Edition, zezë">
+                <img src="foto/12.webp" alt="Product 12">
+                <h3>Karrige Noblechairs HERO Black Edition, zezë</h3>
+                <p>711.50 €</p>
+                <button onclick="showMessage()">BLEJ TANI</button>
+            </div>
+
+ 			<div class="product-card" data-name="Laptop MSI Katana 15 B13VGK-1493XPL, 15.6, Intel Core i7, 16GB RAM, 1TB SSD, NVIDIA GeForce RTX 4070, i zi">
+                <img src="foto/13.webp" alt="Product 13">
+                <h3>Laptop MSI Katana 15 B13VGK-1493XPL, 15.6", Intel Core i7, 16GB RAM, 1TB SSD, NVIDIA GeForce RTX 4070, i zi</h3>
+                <p>1,533.50 €</p>
+                <button onclick="showMessage()">BLEJ TANI</button>
+            </div>
+
+			<div class="product-card" data-name="Konzolë Sony PlayStation 5 Digital Slim Edition 1TB SSD Wi-Fi, e zezë/ bardhë">
+                <img src="foto/14.webp" alt="Product 14">
+                <h3>Konzolë Sony PlayStation 5 Digital Slim Edition 1TB SSD Wi-Fi, e zezë/ bardhë</h3>
+                <p>618.50 €</p>
+                <button onclick="showMessage()">BLEJ TANI</button>
+            </div>
+
+           
+
+    </div>
+</main>
+</section>
+
+
+
+<!-- Modal për informacionin e kartës -->
+<div id="cardModal" class="modal">
+    <div class="modal-content">
+        <span class="close-button" onclick="closeModal()">&times;</span>
+        <h2 class="h222">Futni të dhënat e kartës suaj:</h2>
+        <form id="paymentForm" >
+
+            <label for="cardName"><img src="foto/user.png" alt="Mastercard Icon" style="width: 20px; "></i>Emri i mbajtësit të kartës:</label>
+            <input type="text" id="cardName" placeholder="Emri në kartë" required>
+
+            <label for="cardNumber"><img src="foto/card.png" alt="Mastercard Icon" style="width: 24px; "></i>Numri i kartës:</label>
+            <input type="number" id="cardNumber" data-mask="0000 0000 0000 0000" placeholder="Futni numrin e kartës" required>
+
+            <label for="cardExpiry"><img src="foto/calendar.png" alt="Mastercard Icon" style="width: 16px; "></i>Data e skadimit:</label>
+            <input type="number" id="cardExpiry" data-mask="00 / 00" placeholder="MM/YY" required>
+
+            <label for="cardCVV"><img src="foto/padlock.png" alt="Mastercard Icon" style="width: 16px; "></i>CVV:</label>
+            <input type="number" id="cardCVV" data-mask="000" placeholder="CVV" required>
+
+
+            <button type="submit" onclick="processPayment(event)">BLEJ TANI</button>
+            <div class="container-Cards">
+            <img src="foto/TebCard.png" >
+            <img src="foto/raiffeisenCard.png" >
+            <img src="foto/bktCard.png" >
+            <img src="foto/nlbCard1.png " >
+            </div>
+
+        </form>
+    </div>
+</div>
+
+
+
+
+
+<!-- Footer -->
+<footer class="f1">
+    <p>&copy; 2025 Bleart. All rights reserved.</p>
+
+    <a class="a11" href="https://programmer-7stack.github.io/Portfolio/">
+        <i class="fa-brands fa-github"></i>
+    </a>
+
+    <a class="a11" href="https://programmer-7stack.github.io/Portfolio/">
+        <i class="fa-brands fa-instagram"></i>
+    </a>
+
+    <a class="a11" href="https://programmer-7stack.github.io/Portfolio/">
+        <i class="fa-brands fa-facebook"></i>
+    </a>
+
+    <a class="a11" href="https://programmer-7stack.github.io/Portfolio/">
+        <i class="fa-solid fa-x"></i>
+    </a>
+
+</footer>
+
+
+    <script src="script.js"></script>
+
+
+</body>
+</html>
