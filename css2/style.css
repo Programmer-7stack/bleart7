@@ -44,8 +44,8 @@ header {
     0% { background-color: #f5b7b1; } 
     25% { background-color: #a2d5ab; } 
     50% { background-color: #a2c2e2; } 
-    75% { background-color: #f7a6c4; } 
-    100% { background-color: #f4cccc; } 
+    75% { background-color: #D32F2F } 
+    100% { background-color: #D32F2F; } 
 }
 
 
@@ -123,14 +123,14 @@ header {
     font-size: 1em;
     border: none;
     border-radius: 1px;
-    background-color: #EF5350;
+    background-color: #D32F2F;
     color: #fff;
     cursor: pointer;
     transition: background-color 0.3s;
 }
 
 .search-bar button:hover {
-    background-color: #ff4500;
+    background-color: black;
 }
 
 /* Stilizimi per Main Content */
@@ -177,7 +177,7 @@ main {
     padding: 10px 20px;
     font-size: 1em;
     color: #fff;
-    background-color: #ff6600;
+    background-color: #D32F2F;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -185,11 +185,10 @@ main {
 }
 
 .product-card button:hover {
-    background-color: #ff4500;
+    background-color: black;
 }
 
-.product-card:hover {
-}
+
 
 
 /* Animaticionet */
@@ -262,7 +261,7 @@ form input, form button {
 }
 
 form button {
-    background-color: #ff6600;
+    background-color: #D32F2F;
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -271,7 +270,7 @@ form button {
 }
 
 form button:hover {
-    background-color: #ff4500;
+    background-color: black;
 }
 
 
