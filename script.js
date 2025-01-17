@@ -29,3 +29,7 @@ function processPayment(event) {
     alert("Blerja e produktit është kryer me sukses!");
     closeModal(); // Close the modal after payment
 }
+
+
+    
+

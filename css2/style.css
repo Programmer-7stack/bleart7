@@ -13,10 +13,10 @@ body{
 header {
     position: sticky;
     top: 0;
-    display: flex;
     align-items: center;
+    display: flex;
     justify-content: space-between;
-    padding: 10px 10px;
+    padding: 7px 10px;
     background-color: black;
     color: #fff;
 }
@@ -48,9 +48,12 @@ header {
     100% { background-color: #f4cccc; } 
 }
 
+
+
 .logo-link {
-    text-decoration: none;
-    display: inline-block;
+    display: flex;
+
+    justify-content: center;  /* Siguron që logo është në qendër */
 }
 
 /* Stil për imazhin e sipërm */
@@ -62,11 +65,11 @@ header {
 
 
 /* Për ekranet më të vogla (telefon) */
-@media (max-width: 600px) {
+@media (max-width: 768px) {
     .top-image {
-        width: 88%; /* Rregulloni madhësinë e imazhit për ekranet më të vogla */
+        width: 78%; /* Rregulloni madhësinë e imazhit për ekranet më të vogla */
     }
-
+    
     .modal-content .h222 {
         font-size: 19px;
     }
@@ -75,9 +78,35 @@ header {
         font-size: 27px;
     }
 
-    header {
-        padding: 5px; /* Zvogëlo hapësirën për sfondin në telefon */
+    .logo-link {
+        display: flex;
+        text-align: center;
+        
     }
+
+    header {
+        padding: 5px;
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .logo-link {
+        margin-bottom: 10px; 
+        display: flex;
+        justify-content: center;
+    }
+
+    .search-bar {
+        margin-top: 10px; 
+        width: 80%;
+        display: flex;
+        justify-content: center; 
+    }
+
+    .search-bar input[type="text"] {
+        width: 100%; 
+    }
+
 }
 
 
@@ -221,7 +250,12 @@ main {
 
  .container-Cards {
     display: flex;
+    align-items: center;
     justify-content: space-evenly;
+}
+
+.container-Cards img {
+    width: 80px;
 }
 
 form {
