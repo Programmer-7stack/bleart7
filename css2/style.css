@@ -41,7 +41,7 @@ header {
 
 /* Efekti i ndryshimit të ngjyrave të sfondit */
    @keyframes backgroundChange {
-    0% { background-color: #f5b7b1; } 
+    0% { background-color: #D32F2F; } 
     50% { background-color: #a2c2e2; } 
     75% { background-color: #D32F2F; } 
     100% { background-color: #D32F2F; } 
@@ -247,6 +247,7 @@ main {
 .container-Cards img {
     width: 80px;
 }
+
 
 form {
     display: flex;
