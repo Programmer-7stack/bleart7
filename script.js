@@ -30,8 +30,5 @@ function processPayment(event) {
     closeModal(); // Close the modal after payment
 }
 
-var arrowFunction = () => alert("Welcome to Bleart7 Website");
-  
-  arrowFunction(); 
 
   
