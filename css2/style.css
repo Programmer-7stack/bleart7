@@ -125,6 +125,7 @@ header {
     background-color: #D32F2F;
     color: #fff;
     cursor: pointer;
+    text-align: right;
     transition: background-color 0.3s;
 }
 
@@ -174,7 +175,7 @@ main {
 
 .product-card button {
     padding: 10px 20px;
-    font-size: 1em;
+    font-size: 14px;
     color: #fff;
     background-color: #D32F2F;
     border: none;
