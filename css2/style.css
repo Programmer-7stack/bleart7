@@ -249,13 +249,10 @@ main {
     width: 80px;
 }
 
-.container-2 {
-   display: flex;
-   justify-content: space-evenly;
-   padding: 0px 0px 0px 0px;
-   margin: 0px 0px 0px 0px;
-   
-}
+
+
+
+
 
 form {
     display: flex;
