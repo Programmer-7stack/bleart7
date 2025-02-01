@@ -22,7 +22,6 @@ header {
 }
 
 
-/* Opsionale: Përqendroni përmbajtjen poshtë imazhit */
 .content {
   text-align: center;
   padding: 20px;
@@ -39,7 +38,6 @@ header {
 
 
 
-/* Efekti i ndryshimit të ngjyrave të sfondit */
    @keyframes backgroundChange {
     0% { background-color: #D32F2F; } 
     50% { background-color: #a2c2e2; } 
@@ -97,8 +95,15 @@ header {
     .search-bar input[type="text"] {
         width: 100%; 
     }
-
 }
+
+@media (max-width:1536px) {}
+@media (max-width:1280px) {}
+@media (max-width:1024px) {}
+@media (max-width:768px) {}
+@media (max-width:640px) {}
+@media (max-width:475px) {}
+
 
 
 
@@ -146,6 +151,15 @@ main {
     gap: 20px;
     padding: 10px;
 }
+
+@media (max-width: 768px) {
+  .products {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 produkte për rresht */
+    gap: 10px; /* Hapësira mes produkteve */
+  }
+}
+
 
 /* Stilizimi per Product Card */
 .product-card {
@@ -224,7 +238,6 @@ main {
     width: 90%;
     max-width: 400px;
 }
-
 
 
 .close-button {
