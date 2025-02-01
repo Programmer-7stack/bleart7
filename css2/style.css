@@ -155,10 +155,17 @@ main {
 @media (max-width: 768px) {
   .products {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 2 produkte për rresht */
-    gap: 10px; /* Hapësira mes produkteve */
+    grid-template-columns: repeat(2, 1fr);
+    gap:10px; 
   }
+
+  .product-card p {
+    font-size: 14px;
+    color: #888;
 }
+
+}
+
 
 
 /* Stilizimi per Product Card */
