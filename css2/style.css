@@ -33,16 +33,16 @@ header {
     color: white;
     font-family: Noto Sans; 
     text-align: center;
-    animation: backgroundChange 6s linear infinite;
+    animation: backgroundChange 5s linear infinite;
 }
 
 
 
    @keyframes backgroundChange {
-    0% { background-color: #D32F2F; } 
-    50% { background-color: #a2c2e2; } 
+    0% { background-color: black; } 
+    50% { background-color: #D32F2F; } 
     75% { background-color: #D32F2F; } 
-    100% { background-color: #D32F2F; } 
+    100% { background-color: black; } 
 }
 
 
