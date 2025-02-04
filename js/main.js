@@ -1,3 +1,10 @@
+document.addEventListener("DOMContentLoaded", function () {
+    setTimeout(() => {
+        document.getElementById("preloader").style.display = "none"; 
+    }, 1000); 
+});
+
+
 // Funksioni për kërkimin e produkteve
 function searchProducts() {
     var searchInput = document.getElementById("searchInput").value.toLowerCase();
