@@ -72,3 +72,21 @@ document.addEventListener('DOMContentLoaded', function() {
     const cartIcon = document.querySelector(".fa-cart-arrow-down");
     cartIcon.addEventListener('click', showModal);
 });
+
+console.log("Welcome to Bleart7 Website");
+
+
+  const music = document.getElementById("music");
+        const musicBtn = document.getElementById("music-btn");
+        let isPlaying = false;
+
+        musicBtn.addEventListener("click", () => {
+            if (isPlaying) {
+                music.pause();
+                musicBtn.innerHTML = '<i class="fas fa-play"></i>'; // Change to Play icon
+            } else {
+                music.play();
+                musicBtn.innerHTML = '<i class="fas fa-pause"></i>'; // Change to Pause icon
+            }
+            isPlaying = !isPlaying;
+        });

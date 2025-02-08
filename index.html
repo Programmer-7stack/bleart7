@@ -24,8 +24,7 @@
 
  <!-- Pjesa e siperme e faqes -->
 
-<header>
-    
+<header>    
    <a href="" class="logo" >
         <svg height="54.91272151156268" width="50" class="logo" style="cursor: pointer; overflow:visible; width: 340px;">
             <defs id="SvgjsDefs1001">
@@ -41,9 +40,15 @@
     </a>
 
         <div class="search-bar">
+              <button id="music-btn">
+        <i class="fas fa-play"></i>
+    </button>
+    <audio id="music" src="foto/bb.mp3" ></audio>
+
             <input type="text" id="searchInput" placeholder="Kërko produktet..." >
             <button onclick="searchProducts()">Search</button>
             <i class="fa-solid fa-cart-arrow-down" style="color: #f4f8fa; font-size: 23px;"></i>
+
         </div>
 
 </header>
