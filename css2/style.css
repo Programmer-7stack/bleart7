@@ -21,69 +21,31 @@ header {
     color: #fff;
 }
 
-#just-black {
-    display: none;
-    position: absolute;
-    background: black;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 80;
-  }
-  
-  .desktop-only {
-    display: block;
-  }
 
-  .mobile-only {
-    display: none;
-  }
-
-  .intro-window {
-    visibility: visible;
-    opacity: 1;
+#preloader {
     position: fixed;
     width: 100%;
     height: 100%;
-    top: 0;
-    left: 0;
-    z-index: 555;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
 
-  }
+.loader {
+    width: 100px;
+    height: 100px;
+    border: 5px solid black;
+    border-top: 5px solid transparent;
+    border-radius: 500%;
+    animation: spin 1s linear infinite;
+}
 
-  .intro-window.fade-out {
-    visibility: hidden;
-    opacity: 0;
-    transition: visibility 0s .5s, opacity .5s linear;
-  }
-
-  .animation-container {
-    width: 100%;
-    height: 100%;
-    z-index: 80;
-  }
-
-  .animation-container video {
-    width: 101%;
-    height: 106%;
-    object-fit: cover;
-  }
-
-
-
-  @media (max-width: 768px) {
-      .desktop-only {
-        display: none !important;
-      }
-    
-      .mobile-only {
-        display: block;
-      }
-  }
-
-
- 
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
 
 
 .content {
