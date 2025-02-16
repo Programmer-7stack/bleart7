@@ -1,10 +1,3 @@
-document.addEventListener("DOMContentLoaded", function () {
-    setTimeout(() => {
-        document.getElementById("preloader").style.display = "none"; 
-    }, 1000); 
-});
-
-
 // Funksioni për kërkimin e produkteve
 function searchProducts() {
     var searchInput = document.getElementById("searchInput").value.toLowerCase();
@@ -90,3 +83,76 @@ console.log("Welcome to Bleart7 Website");
             }
             isPlaying = !isPlaying;
         });
+
+
+        
+window.wpbingo = window.wpbingo || {};
+wpbingo.strings = {};
+
+wpbingo.settings = {
+    enableReview: true,
+    enablePreLoading: true,
+    sidebarMultiChoise: true,
+    enableQuickView: false,
+    quickViewVariantType: "radio",
+};
+
+wpbingo.loading = `
+  <div class="wpbingo-loading">
+    <div class="wpbingo-loading__icon">
+      <span></span><span></span><span></span><span></span>
+    </div>
+  </div>
+`;
+
+
+// Selektimi i elementeve me verifikim
+const justBlack = document.querySelector("#just-black");
+const enterSound = document.querySelector("#enter-sound");
+const introWindow = document.querySelector(".intro-window");
+const enterImage = document.querySelector(".enter-image");
+const animationVideoContainer = document.querySelector(".animation");
+const animationVideo = document.querySelectorAll(".animation video");
+const volumeIntro = 20;
+
+if (sessionStorage.getItem("videoPlayed") && introWindow) {
+    introWindow.style.display = "none";
+}
+
+if (animationVideoContainer) {
+    animationVideoContainer.addEventListener("click", () => {
+        animationVideo.forEach((vid) => vid.play());
+        if (justBlack) justBlack.style.display = "none";
+        if (enterSound) {
+            enterSound.volume = volumeIntro / 100;
+            enterSound.play();
+        }
+        if (mainContentEl) mainContentEl.style.transition = "opacity 0.5s ease-in";
+        if (headerEl) headerEl.style.transition = "opacity 0.5s ease-in";
+        if (mainContentEl) mainContentEl.style.opacity = "0";
+        if (headerEl) headerEl.style.opacity = "0";
+    });
+}
+
+function removeIntroWindow() {
+    if (introWindow) {
+        introWindow.classList.add("fade-out");
+        sessionStorage.setItem("videoPlayed", true);
+    }
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+
+    const initialSection = window.location.hash ? window.location.hash.substring(1) : "home";
+
+    
+
+    // Handle window resize
+    window.addEventListener("resize", () => {
+        if (window.innerWidth > 768) {
+            if (mobileMenu) mobileMenu.classList.remove("active");
+            if (mobileMenuBtn) mobileMenuBtn.classList.remove("active");
+            document.body.style.overflow = "auto";
+        }
+    });
+});
