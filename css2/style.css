@@ -80,59 +80,6 @@ header {
 
 
 
-/* Për ekranet më të vogla (telefon) */
-@media (max-width: 768px) {
-    
-    .modal-content .h222 {
-        font-size: 19px;
-    }
-
-    .content .h11 {
-        font-size: 27px;
-    }
-
-    .logo {
-        display: flex;
-        text-align: center;
-        
-    }
-
-    .logo {
-        margin-bottom: 10px; 
-        display: flex;
-        justify-content: center;
-    }
-
-    header {
-        padding: 5px;
-        flex-direction: column; 
-        align-items: center; 
-    }
-
-    
-
-    .search-bar {
-        margin-top: 10px; 
-        width: 80%;
-        display: flex;
-        justify-content: center; 
-    }
-
-    .search-bar input[type="text"] {
-        width: 100%; 
-    }
-}
-
-@media (max-width:1536px) {}
-@media (max-width:1280px) {}
-@media (max-width:1024px) {}
-@media (max-width:768px) {}
-@media (max-width:640px) {}
-@media (max-width:475px) {}
-
-
-
-
 /* Stilizimi per Search Bar  */
 .search-bar {
     display: flex;
@@ -346,3 +293,257 @@ footer .a11 {
 
 
 
+/* Për ekranet më të vogla (telefon) */
+@media (max-width: 768px) {
+    
+    .modal-content .h222 {
+        font-size: 19px;
+    }
+
+    .content .h11 {
+        font-size: 27px;
+    }
+
+    .logo {
+        display: flex;
+        text-align: center;
+        
+    }
+
+    .logo {
+        margin-bottom: 10px; 
+        display: flex;
+        justify-content: center;
+    }
+
+    header {
+        padding: 5px;
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    
+
+    .search-bar {
+        margin-top: 10px; 
+        width: 80%;
+        display: flex;
+        justify-content: center; 
+    }
+
+    .search-bar input[type="text"] {
+        width: 100%; 
+    }
+}
+
+
+
+/* Për ekranet 1200px - 1300px */
+@media (min-width: 1200px) and (max-width: 1300px) {
+    .content {
+        font-size: 38px;
+        padding: 35px;
+    }
+
+    .products {
+        grid-template-columns: repeat(3, minmax(260px, 1fr)); 
+        gap: 25px;
+    }
+
+    .product-card {
+        padding: 20px;
+    }
+
+    .product-card h3 {
+        font-size: 1.5em;
+    }
+
+    .product-card button {
+        font-size: 15px;
+        padding: 12px 25px;
+    }
+}
+
+/* Për ekranet 1024px - 1199px */
+@media (min-width: 1024px) and (max-width: 1199px) {
+    .content {
+        font-size: 36px;
+        padding: 30px;
+    }
+
+    .products {
+        grid-template-columns: repeat(3, minmax(240px, 1fr)); 
+        gap: 20px;
+    }
+
+    .product-card {
+        padding: 18px;
+    }
+
+    .product-card h3 {
+        font-size: 1.4em;
+    }
+
+    .product-card button {
+        font-size: 14px;
+        padding: 10px 22px;
+    }
+}
+
+/* Për ekranet 900px - 1023px */
+@media (min-width: 900px) and (max-width: 1023px) {
+    .content {
+        font-size: 32px;
+        padding: 25px;
+    }
+
+    .products {
+        grid-template-columns: repeat(2, minmax(280px, 1fr)); 
+        gap: 20px;
+    }
+
+    .product-card {
+        padding: 16px;
+    }
+
+    .product-card h3 {
+        font-size: 1.3em;
+    }
+
+    .product-card button {
+        font-size: 13px;
+        padding: 9px 18px;
+    }
+}
+
+/* Për ekranet 770px - 899px */
+@media (min-width: 770px) and (max-width: 899px) {
+    .content {
+        font-size: 30px;
+        padding: 20px;
+    }
+
+    .products {
+        grid-template-columns: repeat(2, minmax(250px, 1fr)); 
+        gap: 15px;
+    }
+
+    .product-card {
+        padding: 14px;
+    }
+
+    .product-card h3 {
+        font-size: 1.2em;
+    }
+
+    .product-card button {
+        font-size: 12px;
+        padding: 8px 16px;
+    }
+}
+
+
+
+/* Për ekranet 1309px - 1599px */
+@media (min-width: 1309px) and (max-width: 1599px) {
+    .content {
+        font-size: 40px;
+        padding: 40px;
+    }
+
+    .products {
+        grid-template-columns: repeat(3, minmax(280px, 1fr)); 
+        gap: 30px;
+    }
+
+    .product-card {
+        padding: 22px;
+    }
+
+    .product-card h3 {
+        font-size: 1.6em;
+    }
+
+    .product-card button {
+        font-size: 16px;
+        padding: 12px 28px;
+    }
+}
+
+/* Për ekranet 1600px - 1919px */
+@media (min-width: 1600px) and (max-width: 1919px) {
+    .content {
+        font-size: 42px;
+        padding: 45px;
+    }
+
+    .products {
+        grid-template-columns: repeat(7, minmax(100px, 1fr)); 
+        gap: 15px;
+    }
+
+    .product-card {
+        padding: 15px;
+    }
+
+    .product-card h3 {
+        font-size: 1.2em;
+    }
+
+    .product-card button {
+        font-size: 12px;
+        padding: 14px 30px;
+    }
+}
+
+/* Për ekranet 1920px - 2559px */
+@media (min-width: 1920px) and (max-width: 2559px) {
+    .content {
+        font-size: 48px;
+        padding: 50px;
+    }
+
+    .products {
+        grid-template-columns: repeat(7, minmax(150px, 1fr)); 
+        gap: 20px;
+    }
+
+    .product-card {
+        padding: 15px;
+    }
+
+    .product-card h3 {
+        font-size: 1.8em;
+    }
+
+    .product-card button {
+        font-size: 18px;
+        padding: 16px 35px;
+    }
+}
+
+/* Për ekranet 2560px+*/
+@media (min-width: 2560px) {
+    .content {
+        font-size: 52px;
+        padding: 60px;
+    }
+
+    .products {
+        grid-template-columns: repeat(7, minmax(150px, 1fr)); 
+        gap: 25px;
+    }
+
+    .product-card {
+        padding: 15px;
+    }
+
+    .product-card h3 {
+        font-size: 2em;
+    }
+
+    .product-card button {
+        font-size: 20px;
+        padding: 18px 40px;
+    }
+}
