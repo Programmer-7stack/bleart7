@@ -93,3 +93,36 @@ console.log("Welcome to Bleart7 Website");
 
 
         
+// Show payment options modal
+function showPaymentOptions() {
+    const modal = document.getElementById("paymentOptionsModal");
+    modal.style.display = "flex";
+}
+
+// Show card payment modal
+function showCardForm() {
+    document.getElementById("paymentOptionsModal").style.display = "none";
+    document.getElementById("cardPaymentModal").style.display = "flex";
+}
+
+// Show cash payment modal
+function showCashForm() {
+    document.getElementById("paymentOptionsModal").style.display = "none";
+    document.getElementById("cashPaymentModal").style.display = "flex";
+}
+
+// Close any visible modal
+function closeModal() {
+    document.querySelectorAll(".modal").forEach(modal => {
+        modal.style.display = "none";
+    });
+}
+
+// Add event listener for the cart icon
+document.addEventListener('DOMContentLoaded', function() {
+    const cartIcon = document.querySelector(".fa-cart-arrow-down");
+    cartIcon.addEventListener('click', showPaymentOptions);
+
+    document.getElementById("cardPaymentBtn").addEventListener('click', showCardForm);
+    document.getElementById("cashPaymentBtn").addEventListener('click', showCashForm);
+});

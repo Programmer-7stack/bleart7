@@ -173,35 +173,62 @@
 
 
 
-<!-- Modal për informacionin e kartës -->
-<div id="cardModal" class="modal">
+<!-- Modal for payment options -->
+<div id="paymentOptionsModal" class="modal">
+    <div class="modal-content">
+        <span class="close-button" onclick="closeModal()">&times;</span>
+        <h2 class="h222">Zgjidh metodën e pagesës</h2>
+        <button id="cardPaymentBtn" class="payment-option-btn">Paguaj me Kartë</button>
+        <button id="cashPaymentBtn" class="payment-option-btn">Paguaj me Cash</button>
+    </div>
+</div>
+
+<!-- Modal for card payment form -->
+<div id="cardPaymentModal" class="modal">
     <div class="modal-content">
         <span class="close-button" onclick="closeModal()">&times;</span>
         <h2 class="h222">Futni të dhënat e kartës suaj:</h2>
-        <form id="paymentForm" >
-
+        <form id="paymentForm">
             <label for="cardName"><img src="foto/user.png" alt="Mastercard Icon" style="width: 20px; "></i>Emri i mbajtësit të kartës:</label>
             <input type="text" id="cardName" placeholder="Emri në kartë" required>
-
             <label for="cardNumber"><img src="foto/card.png" alt="Mastercard Icon" style="width: 24px; "></i>Numri i kartës:</label>
             <input type="number" id="cardNumber" data-mask="0000 0000 0000 0000" placeholder="Futni numrin e kartës" required>
-
             <label for="cardExpiry"><img src="foto/calendar.png" alt="Mastercard Icon" style="width: 16px; "></i>Data e skadimit:</label>
             <input type="number" id="cardExpiry" data-mask="00 / 00" placeholder="MM/YY" required>
-
             <label for="cardCVV"><img src="foto/padlock.png" alt="Mastercard Icon" style="width: 16px; "></i>CVV:</label>
             <input type="number" id="cardCVV" data-mask="000" maxlength="3" placeholder="CVV" required>
-
             <button type="submit" onclick="processPayment(event)">BLEJ TANI</button>
             <div class="container-Cards">
-            <img src="foto/TebCard.png" >
-            <img src="foto/raiffeisenCard.png" >
-            <img src="foto/bktCard.png" >
-            <img src="foto/nlbCard.png " >
+                <img src="foto/TebCard.png">
+                <img src="foto/raiffeisenCard.png">
+                <img src="foto/bktCard.png">
+                <img src="foto/nlbCard.png">
             </div>
         </form>
     </div>
 </div>
+
+<!-- Modal for cash payment form -->
+<div id="cashPaymentModal" class="modal">
+    <div class="modal-content">
+        <span class="close-button" onclick="closeModal()">&times;</span>
+        <h2 class="h222">Paguaj me Cash</h2>
+        <form id="cashPaymentForm">
+            <label for="fullName">Emri dhe Mbiemri:</label>
+            <input type="text" id="fullName" placeholder="Emri dhe Mbiemri" required>
+            <label for="address">Adresa:</label>
+            <input type="text" id="address" placeholder="Adresa" required>
+            <label for="city">Qyteti:</label>
+            <input type="text" id="city" placeholder="Qyteti" required>
+            <label for="country">Shteti:</label>
+            <input type="text" id="country" placeholder="Shteti" required>
+            <label for="cashAmount">Shuma e pagesës:</label>
+            <input type="number" id="cashAmount" placeholder="Shuma" required>
+            <button type="submit" onclick="processCashPayment(event)">Paguaj Tani</button>
+        </form>
+    </div>
+</div>
+
 
 
 

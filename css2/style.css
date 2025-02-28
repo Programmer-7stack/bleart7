@@ -197,6 +197,27 @@ main {
 }
 
 
+
+/* Style for the payment option buttons */
+.payment-option-btn {
+    padding: 15px 25px;
+    font-size: 1.2em;
+    color: #fff;
+    background-color: #D32F2F;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px;
+    transition: background-color 0.3s;
+}
+
+.payment-option-btn:hover {
+    background-color: black;
+}
+
+
+
+
 /* Stilizimi per Card Modal */
 .modal {
     display: none; /* Hidden by default */
@@ -231,6 +252,22 @@ main {
 
 .close-button:hover {
     color: #ff4500;
+}
+
+/* Style for the payment option buttons */
+.payment-option-btn {
+    padding: 16px ;
+    font-size: 1.2em;
+    color: #fff;
+    background-color: #D32F2F;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.payment-option-btn:hover {
+    background-color: black;
 }
 
  .container-Cards {
@@ -298,7 +335,23 @@ footer .a11 {
     
     .modal-content .h222 {
         font-size: 19px;
+        text-align: center;
     }
+
+    #paymentOptionsModal .modal-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #paymentOptionsModal .payment-option-btn {
+        width: 70%;
+        margin: 8px 0; 
+        padding: 8px; 
+        font-size: 1em; 
+    }
+
+
 
     .content .h11 {
         font-size: 27px;
@@ -414,6 +467,14 @@ footer .a11 {
         font-size: 13px;
         padding: 9px 18px;
     }
+
+    footer {
+        padding: 12px 25px;
+    }
+
+    footer .a11 {
+        font-size: 19px;
+    }
 }
 
 /* Për ekranet 770px - 899px */
@@ -439,6 +500,14 @@ footer .a11 {
     .product-card button {
         font-size: 12px;
         padding: 8px 16px;
+    }
+
+    footer {
+        padding: 14px 30px;
+    }
+
+    footer .a11 {
+        font-size: 20px;
     }
 }
 
@@ -468,6 +537,15 @@ footer .a11 {
         font-size: 16px;
         padding: 12px 28px;
     }
+
+    footer {
+        padding: 15px 35px;
+        gap: 12px;
+    }
+
+    footer .a11 {
+        font-size: 22px;
+    }
 }
 
 /* Për ekranet 1600px - 1919px */
@@ -493,6 +571,15 @@ footer .a11 {
     .product-card button {
         font-size: 12px;
         padding: 14px 30px;
+    }
+
+    footer {
+        padding: 20px 40px;
+        gap: 15px;
+    }
+
+    footer .a11 {
+        font-size: 23px;
     }
 }
 
@@ -520,6 +607,15 @@ footer .a11 {
         font-size: 18px;
         padding: 16px 35px;
     }
+
+     footer {
+        padding: 25px 50px;
+        gap: 20px;
+    }
+
+    footer .a11 {
+        font-size: 24px;
+    }
 }
 
 /* Për ekranet 2560px+*/
@@ -545,5 +641,14 @@ footer .a11 {
     .product-card button {
         font-size: 20px;
         padding: 18px 40px;
+    }
+
+    footer {
+        padding: 30px 60px;
+        gap: 25px;
+    }
+
+    footer .a11 {
+        font-size: 26px;
     }
 }
