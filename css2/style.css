@@ -138,6 +138,11 @@ main {
     color: #333;
 }
 
+ .h222 {
+    font-size: 12px;
+    
+ }
+
 }
 
 
@@ -281,9 +286,15 @@ main {
 }
 
 
+.h222 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.close-button1 {
 
-
+}
 
 form {
     display: flex;

@@ -126,3 +126,5 @@ document.addEventListener('DOMContentLoaded', function() {
     document.getElementById("cardPaymentBtn").addEventListener('click', showCardForm);
     document.getElementById("cashPaymentBtn").addEventListener('click', showCashForm);
 });
+
+
