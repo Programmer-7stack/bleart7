@@ -1,5 +1,5 @@
 /* Stilet e Përgjithshme */
-body{
+body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -20,7 +20,6 @@ header {
     background-color: black;
     color: #fff;
 }
-
 
 #preloader {
     position: fixed;
@@ -47,40 +46,28 @@ header {
     100% { transform: rotate(360deg); }
 }
 
-
 .content {
-  text-align: center;
-  padding: 20px;
-  font-size: 33px;
+    text-align: center;
+    padding: 20px;
+    font-size: 33px;
 }
 
- marquee {
+marquee {
     text-decoration: underline;
     color: white;
-    font-family: Noto Sans; 
+    font-family: Noto Sans;
     text-align: center;
     animation: backgroundChange 5s linear infinite;
 }
 
-
-
-   @keyframes backgroundChange {
-    0% { background-color: black; } 
-    50% { background-color: #D32F2F; } 
-    75% { background-color: #D32F2F; } 
-    100% { background-color: black; } 
+@keyframes backgroundChange {
+    0% { background-color: black; }
+    50% { background-color: #D32F2F; }
+    75% { background-color: #D32F2F; }
+    100% { background-color: black; }
 }
 
-
-
-.logo {
-    display: flex;
-    justify-content: center;
-}
-
-
-
-/* Stilizimi per Search Bar  */
+/* Stilizimi per Search Bar */
 .search-bar {
     display: flex;
     align-items: center;
@@ -126,26 +113,22 @@ main {
 }
 
 @media (max-width: 768px) {
-  .products {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap:10px; 
-  }
+    .products {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
 
- .products .product-card h3 {
-    font-size: 15px;
-     margin: 10px 0;
-    color: #333;
+    .products .product-card h3 {
+        font-size: 15px;
+        margin: 10px 0;
+        color: #333;
+    }
+
+    .h222 {
+        font-size: 12px;
+    }
 }
-
- .h222 {
-    font-size: 12px;
-    
- }
-
-}
-
-
 
 /* Stilizimi per Product Card */
 .product-card {
@@ -188,9 +171,6 @@ main {
     background-color: black;
 }
 
-
-
-
 /* Animaticionet */
 @keyframes fadeIn {
     from {
@@ -201,12 +181,10 @@ main {
     }
 }
 
-
-
 /* Style for the payment option buttons */
 .payment-option-btn {
     padding: 15px 25px;
-    font-size: 1.2em;
+    font-size: 17px;
     color: #fff;
     background-color: #D32F2F;
     border: none;
@@ -220,12 +198,9 @@ main {
     background-color: black;
 }
 
-
-
-
 /* Stilizimi per Card Modal */
 .modal {
-    display: none; /* Hidden by default */
+    display: none;
     position: fixed;
     z-index: 1000;
     left: 0;
@@ -246,7 +221,6 @@ main {
     max-width: 400px;
 }
 
-
 .close-button {
     float: right;
     font-size: 1.5em;
@@ -254,46 +228,8 @@ main {
     color: #333;
 }
 
-
 .close-button:hover {
     color: #ff4500;
-}
-
-/* Style for the payment option buttons */
-.payment-option-btn {
-    padding: 16px ;
-    font-size: 1.2em;
-    color: #fff;
-    background-color: #D32F2F;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.payment-option-btn:hover {
-    background-color: black;
-}
-
- .container-Cards {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-}
-
-.container-Cards img {
-    width: 80px;
-}
-
-
-.h222 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.close-button1 {
-
 }
 
 form {
@@ -320,6 +256,21 @@ form button:hover {
     background-color: black;
 }
 
+.container-Cards {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.container-Cards img {
+    width: 80px;
+}
+
+.h222 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 /* Footer */
 footer {
@@ -335,15 +286,12 @@ footer {
 
 footer .a11 {
     color: white;
-    text-decoration-style:none;
+    text-decoration-style: none;
     font-size: 25px;
 }
 
-
-
 /* Për ekranet më të vogla (telefon) */
 @media (max-width: 768px) {
-    
     .modal-content .h222 {
         font-size: 19px;
         text-align: center;
@@ -357,12 +305,10 @@ footer .a11 {
 
     #paymentOptionsModal .payment-option-btn {
         width: 70%;
-        margin: 8px 0; 
-        padding: 8px; 
-        font-size: 1em; 
+        margin: 8px 0;
+        padding: 8px;
+        font-size: 1em;
     }
-
-
 
     .content .h11 {
         font-size: 27px;
@@ -371,36 +317,31 @@ footer .a11 {
     .logo {
         display: flex;
         text-align: center;
-        
     }
 
     .logo {
-        margin-bottom: 10px; 
+        margin-bottom: 10px;
         display: flex;
         justify-content: center;
     }
 
     header {
         padding: 5px;
-        flex-direction: column; 
-        align-items: center; 
+        flex-direction: column;
+        align-items: center;
     }
 
-    
-
     .search-bar {
-        margin-top: 10px; 
+        margin-top: 10px;
         width: 80%;
         display: flex;
-        justify-content: center; 
+        justify-content: center;
     }
 
     .search-bar input[type="text"] {
-        width: 100%; 
+        width: 100%;
     }
 }
-
-
 
 /* Për ekranet 1200px - 1300px */
 @media (min-width: 1200px) and (max-width: 1300px) {
@@ -410,7 +351,7 @@ footer .a11 {
     }
 
     .products {
-        grid-template-columns: repeat(3, minmax(260px, 1fr)); 
+        grid-template-columns: repeat(3, minmax(260px, 1fr));
         gap: 25px;
     }
 
@@ -436,7 +377,7 @@ footer .a11 {
     }
 
     .products {
-        grid-template-columns: repeat(3, minmax(240px, 1fr)); 
+        grid-template-columns: repeat(3, minmax(240px, 1fr));
         gap: 20px;
     }
 
@@ -462,7 +403,7 @@ footer .a11 {
     }
 
     .products {
-        grid-template-columns: repeat(2, minmax(280px, 1fr)); 
+        grid-template-columns: repeat(2, minmax(280px, 1fr));
         gap: 20px;
     }
 
@@ -496,7 +437,7 @@ footer .a11 {
     }
 
     .products {
-        grid-template-columns: repeat(2, minmax(250px, 1fr)); 
+        grid-template-columns: repeat(2, minmax(250px, 1fr));
         gap: 15px;
     }
 
@@ -522,8 +463,6 @@ footer .a11 {
     }
 }
 
-
-
 /* Për ekranet 1309px - 1599px */
 @media (min-width: 1309px) and (max-width: 1599px) {
     .content {
@@ -532,7 +471,7 @@ footer .a11 {
     }
 
     .products {
-        grid-template-columns: repeat(3, minmax(280px, 1fr)); 
+        grid-template-columns: repeat(3, minmax(280px, 1fr));
         gap: 30px;
     }
 
@@ -567,7 +506,7 @@ footer .a11 {
     }
 
     .products {
-        grid-template-columns: repeat(7, minmax(100px, 1fr)); 
+        grid-template-columns: repeat(7, minmax(100px, 1fr));
         gap: 15px;
     }
 
@@ -602,7 +541,7 @@ footer .a11 {
     }
 
     .products {
-        grid-template-columns: repeat(7, minmax(150px, 1fr)); 
+        grid-template-columns: repeat(7, minmax(150px, 1fr));
         gap: 20px;
     }
 
@@ -619,7 +558,7 @@ footer .a11 {
         padding: 16px 35px;
     }
 
-     footer {
+    footer {
         padding: 25px 50px;
         gap: 20px;
     }
@@ -629,7 +568,7 @@ footer .a11 {
     }
 }
 
-/* Për ekranet 2560px+*/
+/* Për ekranet 2560px+ */
 @media (min-width: 2560px) {
     .content {
         font-size: 52px;
@@ -637,7 +576,7 @@ footer .a11 {
     }
 
     .products {
-        grid-template-columns: repeat(7, minmax(150px, 1fr)); 
+        grid-template-columns: repeat(7, minmax(150px, 1fr));
         gap: 25px;
     }
 

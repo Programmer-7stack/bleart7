@@ -47,8 +47,7 @@
 
             <input type="text" id="searchInput" placeholder="Kërko produktet..." >
             <button onclick="searchProducts()">Search</button>
-            <i class="fa-solid fa-cart-arrow-down" style="color: #f4f8fa; font-size: 23px;" ></i>
-
+            <i class="fa-solid fa-cart-arrow-down" style="color: #f4f8fa; font-size: 23px; position: relative;" ></i>
         </div>
 
 </header>
@@ -184,16 +183,16 @@
 <div id="cardPaymentModal" class="modal">
     <div class="modal-content">
         <span class="close-button" onclick="closeModal()">&times;</span>
-        <h2 class="h222" style="font-size: 14px;"><img src="foto/bank.jpg" alt="Bank Icon" style="width: 50px; " loading="lazy">Paguaj online (Blerje direkte ose me këste):</h2>
+        <h2 class="h222" style="font-size: 14px;"><img src="foto/bank.jpg" alt="Bank Icon" style="width: 50px;" loading="lazy">Paguaj online (Blerje direkte ose me këste):</h2>
         <form id="paymentForm">
-            <label for="cardName"><img src="foto/user.png" alt="User Icon" style="width: 20px;" loading="lazy"></i>Emri i mbajtësit të kartës:</label>
+            <label for="cardName"><img src="foto/user.png" alt="User Icon" style="width: 20px;" loading="lazy">Emri i mbajtësit të kartës:</label>
             <input type="text" id="cardName" placeholder="Emri në kartë" required>
-            <label for="cardNumber"><img src="foto/card.png" alt="Mastercard Icon" style="width: 24px;" loading="lazy"></i>Numri i kartës:</label>
-            <input type="number" id="cardNumber" data-mask="0000 0000 0000 0000" placeholder="Futni numrin e kartës" required>
-            <label for="cardExpiry"><img src="foto/calendar.png" alt="Calendar Icon" style="width: 16px;" loading="lazy"></i>Data e skadimit:</label>
-            <input type="number" id="cardExpiry" data-mask="00 / 00" placeholder="MM/YY" required>
-            <label for="cardCVV"><img src="foto/padlock.png" alt="Padlock Icon" style="width: 16px;" loading="lazy"></i>CVV:</label>
-            <input type="number" id="cardCVV" data-mask="000" maxlength="3" placeholder="CVV" required>
+            <label for="cardNumber"><img src="foto/card.png" alt="Mastercard Icon" style="width: 24px;" loading="lazy">Numri i kartës:</label>
+            <input type="text" id="cardNumber" placeholder="0000 0000 0000 0000" maxlength="16" required>
+            <label for="cardExpiry"><img src="foto/calendar.png" alt="Calendar Icon" style="width: 16px;" loading="lazy">Data e skadimit:</label>
+            <input type="text" id="cardExpiry" placeholder="MM/YY" maxlength="4" required>
+            <label for="cardCVV"><img src="foto/padlock.png" alt="Padlock Icon" style="width: 16px;" loading="lazy">CVV:</label>
+            <input type="text" id="cardCVV" placeholder="CVV" maxlength="3" required>
             <button type="submit" onclick="processPayment(event)">BLEJ TANI</button>
             <div class="container-Cards">
                 <img src="foto/TebCard.png">

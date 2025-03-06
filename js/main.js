@@ -127,4 +127,44 @@ document.addEventListener('DOMContentLoaded', function() {
     document.getElementById("cashPaymentBtn").addEventListener('click', showCashForm);
 });
 
+// Proceso pagesën
+function processPayment(event) {
+    event.preventDefault();
 
+    const cardName = document.getElementById("cardName").value.trim();
+    const cardNumber = document.getElementById("cardNumber").value.trim();
+    const cardExpiry = document.getElementById("cardExpiry").value.trim();
+    const cardCVV = document.getElementById("cardCVV").value.trim();
+
+    // Validate card name
+    if (!cardName) {
+        alert("Ju lutem shtypni emrin e mbajtësit të kartës.");
+        return;
+    }
+
+    // Validate card number (16 digits)
+    const cardNumberPattern = /^\d{16}$/;
+    if (!cardNumberPattern.test(cardNumber)) {
+        alert("Numri i kartës duhet të jetë 16 shifra.");
+        return;
+    }
+
+    // Validate card expiry date (MM/YY)
+    const cardExpiryPattern = /^(0[1-9]|1[0-2])\/?([0-9]{2})$/;
+    if (!cardExpiryPattern.test(cardExpiry)) {
+        alert("Data e skadimit duhet të jetë në 4 shifra.");
+        return;
+    }
+
+    // Validate CVV (3 digits)
+    const cardCVVPattern = /^\d{3}$/;
+    if (!cardCVVPattern.test(cardCVV)) {
+        alert("CVV duhet të jetë 3 shifra.");
+        return;
+    }
+
+    alert("Blerja e produktit është kryer me sukses!");
+    cartItems = []; // Zbraz shportën pas blerjes
+    updateCartIcon();
+    closeModal();
+}
