@@ -183,6 +183,7 @@ main {
   align-items: center;
   gap: 10px;
   transition: all 0.3s ease;
+  position: static;
 }
 
 .pay-btn:hover {
@@ -205,6 +206,7 @@ main {
   color: #22c55e;
   opacity: 0;
   visibility: hidden;
+  overflow: hidden;
 }
 
 .default-icon {
@@ -742,7 +744,7 @@ footer .a11 {
 
 /* Slideshow Container */
 #slideWrapper {
-    position: relative;
+    position: static;
     width: 100%;
     overflow: hidden;
     margin: 20px auto;
