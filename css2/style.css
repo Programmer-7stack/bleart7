@@ -759,15 +759,6 @@ footer .a11 {
     margin: 0 auto; /* Center the image */
 }
 
-/* Ensure slides are hidden by default */
-.slide {
-    display: none;
-}
-
-/* Make the first slide visible initially */
-.slide:first-of-type {
-    display: block;
-}
 
 /* Responsive Adjustments */
 @media (max-width: 768px) {
