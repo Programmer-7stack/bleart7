@@ -738,3 +738,40 @@ footer .a11 {
         font-size: 26px;
     }
 }
+
+
+/* Slideshow Container */
+#slideWrapper {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    margin: 20px auto;
+    text-align: center; /* Center the content */
+}
+
+/* Slide Images */
+.slide img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto; /* Center the image */
+}
+
+/* Ensure slides are hidden by default */
+.slide {
+    display: none;
+}
+
+/* Make the first slide visible initially */
+.slide:first-of-type {
+    display: block;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .slide img {
+        width: 100%;
+        height: auto;
+    }
+}
+
