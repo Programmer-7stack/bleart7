@@ -198,4 +198,4 @@ function plusSlides(n){
     showSlides(slideIndex);
 }
 
-setInterval(plusSlides, 2000, 1)
+setInterval(plusSlides, 3000, 1)

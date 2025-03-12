@@ -751,6 +751,11 @@ footer .a11 {
     text-align: center; /* Center the content */
 }
 
+#slideWrapper1 {
+    background-color: lightgrey;
+    padding:4px 5px 5px 5px;
+}
+
 /* Slide Images */
 .slide img {
     max-width: 100%;
