@@ -22,8 +22,6 @@ function searchProducts() {
 
 
 
-
-
 // Array për ruajtjen e produkteve në shportë
 let cartItems = [];
 
@@ -199,3 +197,6 @@ function plusSlides(n){
 }
 
 setInterval(plusSlides, 3000, 1)
+
+
+

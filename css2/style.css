@@ -489,7 +489,7 @@ footer .a11 {
     }
 
     .products {
-        grid-template-columns: repeat(3, minmax(260px, 1fr));
+        grid-template-columns: repeat(4, minmax(260px, 1fr));
         gap: 25px;
     }
 
@@ -515,7 +515,7 @@ footer .a11 {
     }
 
     .products {
-        grid-template-columns: repeat(3, minmax(240px, 1fr));
+        grid-template-columns: repeat(4, minmax(240px, 1fr));
         gap: 20px;
     }
 
@@ -609,7 +609,7 @@ footer .a11 {
     }
 
     .products {
-        grid-template-columns: repeat(3, minmax(280px, 1fr));
+        grid-template-columns: repeat(5, minmax(280px, 1fr));
         gap: 30px;
     }
 
