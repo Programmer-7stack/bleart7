@@ -74,7 +74,7 @@
 
 
         <section class="products">
-    <a style="text-decoration:none;" href="product-detail.html?name=Apple iPhone 16 Pro Max, 512GB, Black Titanium">
+    <a style="text-decoration:none;" href="product-detail.html?product=iphone">
             <div class="product-card" data-name="Apple iPhone 16 Pro Max, 512GB, Black Titanium" >
     <img src="foto/1.png" alt="Product 1">
     <h3>Apple iPhone 16 Pro Max, 512GB, Black Titanium</h3>
@@ -103,6 +103,7 @@
 </div>
 </a>
 
+    <a style="text-decoration:none;" href="product-detail.html?product=samsung" >
 
             <div class="product-card" data-name="Samsung Galaxy S25 Ultra, 6.9, 12GB/ 1TB, Titanium Black">
                 <img src="foto/2.png" alt="Product 2" >
@@ -112,86 +113,91 @@
                 <button onclick="showMessage()" class="pay-btn">
   <span class="btn-text">SHTO NË SHPORT</span>
   <div class="icon-container">
-    <svg viewBox="0 0 24 24" class="icon card-icon">
-      <path
-        d="M20,8H4V6H20M20,18H4V12H20M20,4H4C2.89,4 2,4.89 2,6V18C2,19.11 2.89,20 4,20H20C21.11,20 22,19.11 22,18V6C22,4.89 21.11,4 20,4Z"
-        fill="currentColor"
-      ></path>
-    </svg>
-    <svg viewBox="0 0 24 24" class="icon payment-icon">
-      <path
-        d="M2,17H22V21H2V17M6.25,7H9V6H6V3H18V6H15V7H17.75L19,17H5L6.25,7M9,10H15V8H9V10M9,13H15V11H9V13Z"
-        fill="currentColor"
-      ></path>
-    </svg>
-    <svg viewBox="0 0 24 24" class="icon dollar-icon">
-      <path
-        d="M11.8 10.9c-2.27-.59-3-1.2-3-2.15 0-1.09 1.01-1.85 2.7-1.85 1.78 0 2.44.85 2.5 2.1h2.21c-.07-1.72-1.12-3.3-3.21-3.81V3h-3v2.16c-1.94.42-3.5 1.68-3.5 3.61 0 2.31 1.91 3.46 4.7 4.13 2.5.6 3 1.48 3 2.41 0 .69-.49 1.79-2.7 1.79-2.06 0-2.87-.92-2.98-2.1h-2.2c.12 2.19 1.76 3.42 3.68 3.83V21h3v-2.15c1.95-.37 3.5-1.5 3.5-3.55 0-2.84-2.43-3.81-4.7-4.4z"
-        fill="currentColor"
-      ></path>
-    </svg>
+        <svg viewBox="0 0 24 24" class="icon card-icon">
+          <path
+            d="M20,8H4V6H20M20,18H4V12H20M20,4H4C2.89,4 2,4.89 2,6V18C2,19.11 2.89,20 4,20H20C21.11,20 22,19.11 22,18V6C22,4.89 21.11,4 20,4Z"
+            fill="currentColor"
+          ></path>
+        </svg>
+        <svg viewBox="0 0 24 24" class="icon payment-icon">
+          <path
+            d="M2,17H22V21H2V17M6.25,7H9V6H6V3H18V6H15V7H17.75L19,17H5L6.25,7M9,10H15V8H9V10M9,13H15V11H9V13Z"
+            fill="currentColor"
+          ></path>
+        </svg>
+        <svg viewBox="0 0 24 24" class="icon dollar-icon">
+          <path
+            d="M11.8 10.9c-2.27-.59-3-1.2-3-2.15 0-1.09 1.01-1.85 2.7-1.85 1.78 0 2.44.85 2.5 2.1h2.21c-.07-1.72-1.12-3.3-3.21-3.81V3h-3v2.16c-1.94.42-3.5 1.68-3.5 3.61 0 2.31 1.91 3.46 4.7 4.13 2.5.6 3 1.48 3 2.41 0 .69-.49 1.79-2.7 1.79-2.06 0-2.87-.92-2.98-2.1h-2.2c.12 2.19 1.76 3.42 3.68 3.83V21h3v-2.15c1.95-.37 3.5-1.5 3.5-3.55 0-2.84-2.43-3.81-4.7-4.4z"
+            fill="currentColor"
+          ></path>
+        </svg>
 
-    <svg viewBox="0 0 24 24" class="icon wallet-icon default-icon">
-      <path
-        d="M21,18V19A2,2 0 0,1 19,21H5C3.89,21 3,20.1 3,19V5A2,2 0 0,1 5,3H19A2,2 0 0,1 21,5V6H12C10.89,6 10,6.9 10,8V16A2,2 0 0,0 12,18M12,16H22V8H12M16,13.5A1.5,1.5 0 0,1 14.5,12A1.5,1.5 0 0,1 16,10.5A1.5,1.5 0 0,1 17.5,12A1.5,1.5 0 0,1 16,13.5Z"
-        fill="currentColor"
-      ></path>
-    </svg>
+        <svg viewBox="0 0 24 24" class="icon wallet-icon default-icon">
+          <path
+            d="M21,18V19A2,2 0 0,1 19,21H5C3.89,21 3,20.1 3,19V5A2,2 0 0,1 5,3H19A2,2 0 0,1 21,5V6H12C10.89,6 10,6.9 10,8V16A2,2 0 0,0 12,18M12,16H22V8H12M16,13.5A1.5,1.5 0 0,1 14.5,12A1.5,1.5 0 0,1 16,10.5A1.5,1.5 0 0,1 17.5,12A1.5,1.5 0 0,1 16,13.5Z"
+            fill="currentColor"
+          ></path>
+        </svg>
 
-    <svg viewBox="0 0 24 24" class="icon check-icon">
-      <path
-        d="M9,16.17L4.83,12L3.41,13.41L9,19L21,7L19.59,5.59L9,16.17Z"
-        fill="currentColor"
-      ></path>
-    </svg>
-  </div>
-</button>
-</div>
+        <svg viewBox="0 0 24 24" class="icon check-icon">
+          <path
+            d="M9,16.17L4.83,12L3.41,13.41L9,19L21,7L19.59,5.59L9,16.17Z"
+            fill="currentColor"
+          ></path>
+        </svg>
+      </div>
+    </button>
+    </div>
+    </a>
 
-            <div class="product-card" data-name="Monitor Dell Alienware AW2524HF 500Hz, 24.5, FullHD, i zi">
-                <img src="foto/3.png" alt="Product 3" >
-                <h3>Monitor Dell Alienware AW2524HF 500Hz, 24.5", FullHD, i zi</h3>
-                <p style="text-decoration: line-through; font-size: 15px;">536.50 €</p>
-                <p style="font-weight:bold; color: #F88379;">485.50 €</p>
-                <button onclick="showMessage()" class="pay-btn">
-  <span class="btn-text">SHTO NË SHPORT</span>
-  <div class="icon-container">
-    <svg viewBox="0 0 24 24" class="icon card-icon">
-      <path
-        d="M20,8H4V6H20M20,18H4V12H20M20,4H4C2.89,4 2,4.89 2,6V18C2,19.11 2.89,20 4,20H20C21.11,20 22,19.11 22,18V6C22,4.89 21.11,4 20,4Z"
-        fill="currentColor"
-      ></path>
-    </svg>
-    <svg viewBox="0 0 24 24" class="icon payment-icon">
-      <path
-        d="M2,17H22V21H2V17M6.25,7H9V6H6V3H18V6H15V7H17.75L19,17H5L6.25,7M9,10H15V8H9V10M9,13H15V11H9V13Z"
-        fill="currentColor"
-      ></path>
-    </svg>
-    <svg viewBox="0 0 24 24" class="icon dollar-icon">
-      <path
-        d="M11.8 10.9c-2.27-.59-3-1.2-3-2.15 0-1.09 1.01-1.85 2.7-1.85 1.78 0 2.44.85 2.5 2.1h2.21c-.07-1.72-1.12-3.3-3.21-3.81V3h-3v2.16c-1.94.42-3.5 1.68-3.5 3.61 0 2.31 1.91 3.46 4.7 4.13 2.5.6 3 1.48 3 2.41 0 .69-.49 1.79-2.7 1.79-2.06 0-2.87-.92-2.98-2.1h-2.2c.12 2.19 1.76 3.42 3.68 3.83V21h3v-2.15c1.95-.37 3.5-1.5 3.5-3.55 0-2.84-2.43-3.81-4.7-4.4z"
-        fill="currentColor"
-      ></path>
-    </svg>
 
-    <svg viewBox="0 0 24 24" class="icon wallet-icon default-icon">
-      <path
-        d="M21,18V19A2,2 0 0,1 19,21H5C3.89,21 3,20.1 3,19V5A2,2 0 0,1 5,3H19A2,2 0 0,1 21,5V6H12C10.89,6 10,6.9 10,8V16A2,2 0 0,0 12,18M12,16H22V8H12M16,13.5A1.5,1.5 0 0,1 14.5,12A1.5,1.5 0 0,1 16,10.5A1.5,1.5 0 0,1 17.5,12A1.5,1.5 0 0,1 16,13.5Z"
-        fill="currentColor"
-      ></path>
-    </svg>
+                <a style="text-decoration:none;" href="product-detail.html?product=monitor">
+                  <div class="product-card" data-name="Monitor Dell Alienware AW2524HF 500Hz, 24.5, FullHD, i zi">
+                    <img src="foto/3.png" alt="Product 3" >
+                    <h3>Monitor Dell Alienware AW2524HF 500Hz, 24.5", FullHD, i zi</h3>
+                    <p style="text-decoration: line-through; font-size: 15px;">536.50 €</p>
+                    <p style="font-weight:bold; color: #F88379;">485.50 €</p>
+                    <button onclick="showMessage()" class="pay-btn">
+      <span class="btn-text">SHTO NË SHPORT</span>
+      <div class="icon-container">
+        <svg viewBox="0 0 24 24" class="icon card-icon">
+          <path
+            d="M20,8H4V6H20M20,18H4V12H20M20,4H4C2.89,4 2,4.89 2,6V18C2,19.11 2.89,20 4,20H20C21.11,20 22,19.11 22,18V6C22,4.89 21.11,4 20,4Z"
+            fill="currentColor"
+          ></path>
+        </svg>
+        <svg viewBox="0 0 24 24" class="icon payment-icon">
+          <path
+            d="M2,17H22V21H2V17M6.25,7H9V6H6V3H18V6H15V7H17.75L19,17H5L6.25,7M9,10H15V8H9V10M9,13H15V11H9V13Z"
+            fill="currentColor"
+          ></path>
+        </svg>
+        <svg viewBox="0 0 24 24" class="icon dollar-icon">
+          <path
+            d="M11.8 10.9c-2.27-.59-3-1.2-3-2.15 0-1.09 1.01-1.85 2.7-1.85 1.78 0 2.44.85 2.5 2.1h2.21c-.07-1.72-1.12-3.3-3.21-3.81V3h-3v2.16c-1.94.42-3.5 1.68-3.5 3.61 0 2.31 1.91 3.46 4.7 4.13 2.5.6 3 1.48 3 2.41 0 .69-.49 1.79-2.7 1.79-2.06 0-2.87-.92-2.98-2.1h-2.2c.12 2.19 1.76 3.42 3.68 3.83V21h3v-2.15c1.95-.37 3.5-1.5 3.5-3.55 0-2.84-2.43-3.81-4.7-4.4z"
+            fill="currentColor"
+          ></path>
+        </svg>
 
-    <svg viewBox="0 0 24 24" class="icon check-icon">
-      <path
-        d="M9,16.17L4.83,12L3.41,13.41L9,19L21,7L19.59,5.59L9,16.17Z"
-        fill="currentColor"
-      ></path>
-    </svg>
-  </div>
-</button>
-            </div>
+        <svg viewBox="0 0 24 24" class="icon wallet-icon default-icon">
+          <path
+            d="M21,18V19A2,2 0 0,1 19,21H5C3.89,21 3,20.1 3,19V5A2,2 0 0,1 5,3H19A2,2 0 0,1 21,5V6H12C10.89,6 10,6.9 10,8V16A2,2 0 0,0 12,18M12,16H22V8H12M16,13.5A1.5,1.5 0 0,1 14.5,12A1.5,1.5 0 0,1 16,10.5A1.5,1.5 0 0,1 17.5,12A1.5,1.5 0 0,1 16,13.5Z"
+            fill="currentColor"
+          ></path>
+        </svg>
 
+        <svg viewBox="0 0 24 24" class="icon check-icon">
+          <path
+            d="M9,16.17L4.83,12L3.41,13.41L9,19L21,7L19.59,5.59L9,16.17Z"
+            fill="currentColor"
+          ></path>
+        </svg>
+      </div>
+    </button>
+                </div>
+</a>
+
+            <a style="text-decoration:none;" href="product-detail.html?product=gamingpc" >
             <div class="product-card" data-name="RTX 4090, AMD Ryzen 9 7950X3D, 32GB RAM, 1TB SSD - Gaming PC Black Series 42">
                 <img src="foto/4.png" alt="Product 4" >
                 <h3>RTX 4090, AMD Ryzen 9 7950X3D, 32GB RAM, 1TB SSD - Gaming PC  Black Series 42</h3>
@@ -234,9 +240,10 @@
     </svg>
   </div>
 </button>
-
             </div>
+        </a>
 
+                    <a style="text-decoration:none;" href="product-detail.html?product=kartel" >
            <div class="product-card" data-name="Kartelë grafike Asus GeForce RTX 5090 32GB TUF Gaming">
                 <img src="foto/5.png" alt="Product 5" >
                 <h3>Kartelë grafike Asus GeForce RTX 5090 32GB TUF Gaming</h3>
@@ -280,7 +287,9 @@
   </div>
 </button>
             </div>
-
+</a>
+        
+                    <a style="text-decoration:none;" href="product-detail.html?product=procesor" >
 			<div class="product-card" data-name="Procesor AMD Ryzen 9 7950X3D">
                 <img src="foto/6.png" alt="Product 6" width="200px" height="200px" >
                 <h3>Procesor AMD Ryzen 9 7950X3D</h3>
@@ -323,9 +332,10 @@
     </svg>
   </div>
 </button>            
-
     </div>
-
+</a>
+            
+                        <a style="text-decoration:none;" href="product-detail.html?product=tastier" >
 			<div class="product-card" data-name="Tastierë SteelSeries Apex PRO OmniPoint, e zezë">
                 <img src="foto/7.png" alt="Product 7" >
                 <h3>Tastierë SteelSeries Apex PRO OmniPoint, e zezë</h3>
@@ -368,9 +378,10 @@
     </svg>
   </div> 
 </button>
+   </div>
+</a>
 
-            </div>
-
+                        <a style="text-decoration:none;" href="product-detail.html?product=maus" >
             <div class="product-card" data-name="Maus Logitech G Pro X Superlight 2 Wireless, i bardhë">
                 <img src="foto/8.png" alt="Product 8" >
                 <h3>Mouse Logitech G Pro X Superlight 2 Wireless, i bardhë </h3>
@@ -414,7 +425,10 @@
   </div>
 </button>
             </div>
+        </a>
 
+
+                    <a style="text-decoration:none;" href="product-detail.html?product=kufje" >
 			<div class="product-card" data-name="Kufje HyperX Cloud Alpha Wireless Headphones, të zeza">
                 <img src="foto/9.png" alt="Product 9" >
                 <h3>Kufje HyperX Cloud Alpha Wireless Headphones, të zeza</h3>
@@ -458,7 +472,9 @@
   </div>
 </button>
             </div>
+        </a>
 
+                    <a style="text-decoration:none;" href="product-detail.html?product=burim" >
 			<div class="product-card" data-name="Burim energjie Asus ROG Thor Titanium 90YE00K0-B0NA00 , 1600W">
                 <img src="foto/10.png" alt="Product 10" >
                 <h3>Burim energjie Asus ROG Thor Titanium 90YE00K0-B0NA00 , 1600W</h3>
@@ -502,8 +518,10 @@
   </div>
 </button>
             </div>
+        </a>
 
 
+                    <a style="text-decoration:none;" href="product-detail.html?product=tavolin" >
             <div class="product-card"data-name="Tavolinë COUGAR E-MARS RGB, 1531x770x745-1195mm, 2xUSB 3.0 & USB-C, e zezë" >
                 <img src="foto/11.png" alt="Product 11" width="150px" height="150px" >
                 <h3>Tavolinë COUGAR E-MARS RGB, 1531x770x745-1195mm, 2xUSB 3.0 & USB-C, e zezë</h3>
@@ -547,7 +565,10 @@
   </div>
 </button>
             </div>      
+</a>        
+    
 
+    <a style="text-decoration:none;" href="product-detail.html?product=karrige" >
             <div class="product-card" data-name="Karrige Noblechairs HERO Black Edition, zezë">
                 <img src="foto/12.png" alt="Product 12" >
                 <h3>Karrige Noblechairs HERO Black Edition, zezë</h3>
@@ -591,8 +612,10 @@
   </div>
 </button>
             </div>
+        </a>
 
- 			<div class="product-card" data-name="Laptop MSI Katana 15 B13VGK-1493XPL, 15.6, Intel Core i7, 16GB RAM, 1TB SSD, NVIDIA GeForce RTX 4070, i zi">
+ 			            <a style="text-decoration:none;" href="product-detail.html?product=laptop" >
+            <div class="product-card" data-name="Laptop MSI Katana 15 B13VGK-1493XPL, 15.6, Intel Core i7, 16GB RAM, 1TB SSD, NVIDIA GeForce RTX 4070, i zi">
                 <img src="foto/13.png" alt="Product 13" >
                 <h3>Laptop MSI Katana 15 B13VGK-1493XPL, 15.6", Intel Core i7, 16GB RAM, 1TB SSD, NVIDIA GeForce RTX 4070, i zi</h3>
                 <p style="text-decoration: line-through; font-size: 15px;">1,533.50 €</p>
@@ -635,7 +658,10 @@
   </div>
 </button>
             </div>
+        </a>
 
+
+            <a style="text-decoration:none;" href="product-detail.html?product=konzol" >
 			<div class="product-card" data-name="Konzolë Sony PlayStation 5 Digital Slim Edition 1TB SSD Wi-Fi, e zezë/ bardhë" >
                 <img src="foto/14.png" alt="Product 14">
                 <h3>Konzolë Sony PlayStation 5 Digital Slim Edition 1TB SSD Wi-Fi, e zezë/ bardhë</h3>
@@ -680,6 +706,7 @@
 </button>
             </div>
     </div>
+</a>
 </main>
 </section>
 
