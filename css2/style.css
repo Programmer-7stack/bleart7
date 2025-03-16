@@ -19,6 +19,7 @@ header {
     padding: 7px 10px;
     background-color: black;
     color: #fff;
+
 }
 
 #preloader {
@@ -30,6 +31,7 @@ header {
     justify-content: center;
     align-items: center;
     z-index: 9999;
+    
 }
 
 .loader {
@@ -771,5 +773,94 @@ footer .a11 {
         width: 100%;
         height: auto;
     }
+}
+
+.product-detail-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #f5f5f5;
+
+}
+
+.back-link {
+    text-decoration: none;
+    color: #D32F2F;
+    font-size: 1.2em;
+    padding-right: 650px;
+}
+
+@media(max-width:768px) {
+
+    .back-link {
+        padding-right: 120px;
+    }
+}
+
+
+.product-detail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 80%;
+    max-width: 800px;
+
+}
+
+.product-image img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.product-info {
+    text-align: center;
+}
+
+.product-info h2 {
+    font-size: 1.5em;
+    margin: 10px 0;
+    color: #333;
+}
+
+.product-price {
+    font-size: 1.3em;
+    color: #D32F2F;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.product-description {
+    margin-bottom: 20px;
+}
+
+.product-description h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.product-description p {
+    font-size: 1em;
+    color: #333;
+}
+
+.pay-btn {
+    padding: 10px 20px;
+    font-size: 14px;
+    color: #fff;
+    background-color: #D32F2F;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.pay-btn:hover {
+    background-color: black;
 }
 
