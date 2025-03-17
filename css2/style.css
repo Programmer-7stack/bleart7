@@ -864,3 +864,9 @@ footer .a11 {
     background-color: black;
 }
 
+@media (max-width:768px){
+    .pay-btn {
+        margin-left: 40px;
+    }
+}
+
