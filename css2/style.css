@@ -132,32 +132,50 @@ main {
     }
 }
 
-/* Stilizimi per Product Card */
+/* Ensure the container uses Flexbox */
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Adjust gap as needed */
+    justify-content: center;
+}
+
+/* Set fixed dimensions for product cards */
 .product-card {
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 15px;
+    padding: 20px;
     text-align: center;
+    width: 200px; /* Set a fixed width */
+    height: 500px; /* Set a fixed height */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     transition: transform 0.3s;
+
 }
 
+/* Ensure images fit within the card */
 .product-card img {
     max-width: 100%;
+    height: auto;
     border-radius: 8px;
+    margin-bottom: 10px;
 }
 
+/* Style the text within the card */
 .product-card h3 {
-    font-size: 1.2em;
-    margin: 10px 0;
+    font-size: 1px;
     color: #333;
 }
 
 .product-card p {
-    font-size: 1.1em;
+    font-size: 1em;
     color: #888;
 }
 
+/* Style the button to ensure it fits well */
 .product-card button {
     padding: 10px 20px;
     font-size: 14px;
@@ -167,11 +185,30 @@ main {
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s;
+    margin-top: auto; /* Push button to the bottom */
 }
 
 .product-card button:hover {
     background-color: black;
-}   
+}
+
+/* Style the button to ensure it fits well */
+.product-card button {
+    padding: 10px 20px;
+    font-size: 14px;
+    color: #fff;
+    background-color: #D32F2F;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: auto; /* Push button to the bottom */
+}
+
+.product-card button:hover {
+    background-color: black;
+}
+
 
 .pay-btn {
   padding: 12px 20px;
@@ -436,6 +473,7 @@ footer .a11 {
         font-size: 19px;
         text-align: center;
     }
+    
 
     #paymentOptionsModal .modal-content {
         display: flex;
@@ -671,6 +709,10 @@ footer .a11 {
     footer .a11 {
         font-size: 23px;
     }
+
+    .pay-btn {
+
+    }
 }
 
 /* Për ekranet 1920px - 2559px */
@@ -754,7 +796,6 @@ footer .a11 {
 }
 
 #slideWrapper1 {
-    background-color: lightgrey;
     padding:4px 5px 5px 5px;
 }
 
@@ -767,11 +808,17 @@ footer .a11 {
 }
 
 
+
+
 /* Responsive Adjustments */
 @media (max-width: 768px) {
     .slide img {
         width: 100%;
         height: auto;
+    }
+
+    .pay-btn {
+        margin-left: 304px;
     }
 }
 
@@ -865,3 +912,23 @@ footer .a11 {
 }
 
 
+.product-detail .pay-btn {
+    margin-left: auto; /* Remove fixed margin */
+    margin-right: auto; /* Remove fixed margin */
+    display: block; /* Ensure the button takes the full width of its container */
+}
+
+/* Ensure the button container is centered */
+.product-detail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Adjust the button size for mobile devices */
+@media (max-width: 768px) {
+    .product-detail .pay-btn {
+        width: 100%; /* Make the button full width on mobile */
+        box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    }
+}
