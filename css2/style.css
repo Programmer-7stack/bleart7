@@ -162,7 +162,7 @@ main {
     box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
-    line-clamp: 2; 
+    line-clamp: 4; 
 }
 
 .product-card p {
@@ -363,7 +363,7 @@ footer .a11 {
     }
 
     .products {
-        grid-template-columns: repeat(4, minmax(260px, 1fr));
+        grid-template-columns: repeat(4, minmax(100px, 1fr));
         gap: 25px;
     }
 
@@ -373,12 +373,16 @@ footer .a11 {
 
     .product-card h3 {
         font-size: 1.5em;
+            line-clamp: 4; 
+
     }
 
     .product-card button {
         font-size: 15px;
         padding: 12px 25px;
     }
+
+
 }
 
 /* Për ekranet 1024px - 1199px */
@@ -389,7 +393,7 @@ footer .a11 {
     }
 
     .products {
-        grid-template-columns: repeat(4, minmax(240px, 1fr));
+        grid-template-columns: repeat(4, minmax(100px, 1fr));
         gap: 20px;
     }
 
@@ -399,6 +403,8 @@ footer .a11 {
 
     .product-card h3 {
         font-size: 1.4em;
+            line-clamp: 4; 
+
     }
 
     .product-card button {
@@ -415,7 +421,7 @@ footer .a11 {
     }
 
     .products {
-        grid-template-columns: repeat(2, minmax(280px, 1fr));
+        grid-template-columns: repeat(2, minmax(100px, 1fr));
         gap: 20px;
     }
 
@@ -425,6 +431,8 @@ footer .a11 {
 
     .product-card h3 {
         font-size: 1.3em;
+            line-clamp: 4; 
+
     }
 
     .product-card button {
@@ -449,7 +457,7 @@ footer .a11 {
     }
 
     .products {
-        grid-template-columns: repeat(2, minmax(250px, 1fr));
+        grid-template-columns: repeat(2, minmax(100px, 1fr));
         gap: 15px;
     }
 
@@ -459,6 +467,8 @@ footer .a11 {
 
     .product-card h3 {
         font-size: 1.2em;
+            line-clamp: 4; 
+
     }
 
     .product-card button {
@@ -483,7 +493,7 @@ footer .a11 {
     }
 
     .products {
-        grid-template-columns: repeat(5, minmax(280px, 1fr));
+        grid-template-columns: repeat(5, minmax(100px, 1fr));
         gap: 30px;
     }
 
@@ -493,6 +503,8 @@ footer .a11 {
 
     .product-card h3 {
         font-size: 1.6em;
+            line-clamp: 4; 
+
     }
 
     .product-card button {
@@ -528,6 +540,8 @@ footer .a11 {
 
     .product-card h3 {
         font-size: 1.2em;
+            line-clamp: 4; 
+
     }
 
     .product-card button {
@@ -557,7 +571,7 @@ footer .a11 {
     }
 
     .products {
-        grid-template-columns: repeat(7, minmax(150px, 1fr));
+        grid-template-columns: repeat(5, minmax(100px, 1fr));
         gap: 20px;
     }
 
@@ -567,6 +581,8 @@ footer .a11 {
 
     .product-card h3 {
         font-size: 1.8em;
+            line-clamp: 4; 
+
     }
 
     .product-card button {
@@ -602,6 +618,8 @@ footer .a11 {
 
     .product-card h3 {
         font-size: 2em;
+            line-clamp: 4; 
+
     }
 
     .product-card button {
