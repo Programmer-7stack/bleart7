@@ -139,13 +139,16 @@ main {
 }
 
 .product-card h3 {
-      font-size: 19.2px;
+    font-size: 19.2px;
     margin: 16px 0;
     color: #333;
     overflow: hidden;
     text-overflow: ellipsis;
-    white-space: nowrap;
-    width: 100%;
+    display: block;
+    height: auto; 
+    max-height: 96px; 
+    line-height: 24.0px; 
+    white-space: normal; 
 }
 
 .product-card p {
@@ -215,7 +218,7 @@ main {
 
 .close-button {
     float: right;
-    font-size: 24px;
+    font-size: 24.0px;
     cursor: pointer;
     color: #333;
 }
@@ -352,7 +355,7 @@ footer .a11 {
     }
 
     .product-card h3 {
-        font-size: 24px;
+        font-size: 24.0px;
         line-clamp: 4;
     }
 
@@ -586,7 +589,7 @@ footer .a11 {
     }
 
     .product-card h3 {
-        font-size: 24px;
+        font-size: 24.0px;
         line-clamp: 4;
     }
 
@@ -677,7 +680,7 @@ footer .a11 {
 }
 
 .product-info h2 {
-    font-size: 19.2px;
+    font-size: 24.0px;
     margin: 10px 0;
     color: #333;
 }
