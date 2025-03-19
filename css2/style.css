@@ -19,7 +19,6 @@ header {
     padding: 7px 10px;
     background-color: black;
     color: #fff;
-
 }
 
 #preloader {
@@ -31,7 +30,6 @@ header {
     justify-content: center;
     align-items: center;
     z-index: 9999;
-    
 }
 
 .loader {
@@ -109,7 +107,7 @@ main {
 /* Product Section Grid */
 .products {
     display: grid;
-    grid-template-columns: repeat(7, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 20px;
     padding: 10px;
 }
@@ -132,50 +130,48 @@ main {
     }
 }
 
-/* Ensure the container uses Flexbox */
-.products {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px; /* Adjust gap as needed */
-    justify-content: center;
-}
-
-/* Set fixed dimensions for product cards */
+/* Stilizimi per Product Card */
 .product-card {
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 20px;
+    padding: 15px;
     text-align: center;
-    width: 200px; /* Set a fixed width */
-    height: 500px; /* Set a fixed height */
+    transition: transform 0.3s;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    height: 400px; 
     justify-content: space-between;
-    transition: transform 0.3s;
-
 }
 
-/* Ensure images fit within the card */
 .product-card img {
     max-width: 100%;
-    height: auto;
     border-radius: 8px;
     margin-bottom: 10px;
+    max-height: 150px; 
+    object-fit: contain; 
 }
 
-/* Style the text within the card */
 .product-card h3 {
-    font-size: 1px;
+    font-size: 1.2em;
+    margin: 10px 0;
     color: #333;
+    flex-grow: 1; 
+    display: box;
+    box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-clamp: 2; 
 }
 
 .product-card p {
-    font-size: 1em;
+    font-size: 1.1em;
     color: #888;
+    margin: 5px 0;
+    flex-grow: 1; 
 }
 
-/* Style the button to ensure it fits well */
 .product-card button {
     padding: 10px 20px;
     font-size: 14px;
@@ -185,24 +181,7 @@ main {
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s;
-    margin-top: auto; /* Push button to the bottom */
-}
-
-.product-card button:hover {
-    background-color: black;
-}
-
-/* Style the button to ensure it fits well */
-.product-card button {
-    padding: 10px 20px;
-    font-size: 14px;
-    color: #fff;
-    background-color: #D32F2F;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-    margin-top: auto; /* Push button to the bottom */
+    margin-top: 10px;
 }
 
 .product-card button:hover {
@@ -210,170 +189,26 @@ main {
 }
 
 
-.pay-btn {
-  padding: 12px 20px;
-  font-size: 13px;
-  background: #1a1a1a;
-  color: white; 
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  transition: all 0.3s ease;
-  position: static;
-}
+    #paymentOptionsModal .modal-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
 
-.pay-btn:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
-}
-
-.icon-container {
-  position: relative;
-  width: 24px;
-  height: 24px;
-}
-
-.icon {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 24px;
-  height: 24px;
-  color: #22c55e;
-  opacity: 0;
-  visibility: hidden;
-  overflow: hidden;
-}
-
-.default-icon {
-  opacity: 1;
-  visibility: visible;
-}
-
-/* Hover animations */
-.pay-btn:hover .icon {
-  animation: none;
-}
-
-.pay-btn:hover .wallet-icon {
-  opacity: 0;
-  visibility: hidden;
-}
-
-.pay-btn:hover .card-icon {
-  animation: iconRotate 2.5s infinite;
-  animation-delay: 0s;
-}
-
-.pay-btn:hover .payment-icon {
-  animation: iconRotate 2.5s infinite;
-  animation-delay: 0.5s;
-}
-
-.pay-btn:hover .dollar-icon {
-  animation: iconRotate 2.5s infinite;
-  animation-delay: 1s;
-}
-
-.pay-btn:hover .check-icon {
-  animation: iconRotate 2.5s infinite;
-  animation-delay: 1.5s;
-}
-
-/* Active state - show only checkmark */
-.pay-btn:active .icon {
-  animation: none;
-  opacity: 0;
-  visibility: hidden;
-  transition: all 0.3s ease;
-}
-
-.pay-btn:active .check-icon {
-  animation: checkmarkAppear 0.6s ease forwards;
-  visibility: visible;
-}
-
-.btn-text {
-  font-weight: 600;
-  font-family:
-    system-ui,
-    -apple-system,
-    sans-serif;
-}
-
-@keyframes iconRotate {
-  0% {
-    opacity: 0;
-    visibility: hidden;
-    transform: translateY(10px) scale(0.5);
-  }
-  5% {
-    opacity: 1;
-    visibility: visible;
-    transform: translateY(0) scale(1);
-  }
-  15% {
-    opacity: 1;
-    visibility: visible;
-    transform: translateY(0) scale(1);
-  }
-  20% {
-    opacity: 0;
-    visibility: hidden;
-    transform: translateY(-10px) scale(0.5);
-  }
-  100% {
-    opacity: 0;
-    visibility: hidden;
-    transform: translateY(-10px) scale(0.5);
-  }
-}
-
-@keyframes checkmarkAppear {
-  0% {
-    opacity: 0;
-    transform: scale(0.5) rotate(-45deg);
-  }
-  50% {
-    opacity: 0.5;
-    transform: scale(1.2) rotate(0deg);
-  }
-  100% {
-    opacity: 1;
-    transform: scale(1) rotate(0deg);
-  }
-}
-
-
-/* Animaticionet */
-@keyframes fadeIn {
-    from {
-        opacity: 0;
     }
-    to {
-        opacity: 1;
+
+    #paymentOptionsModal .payment-option-btn {
+        width: 70%;
+        margin: 8px 0;
+        padding: 8px;
+        font-size: 1em;
+        color: white;
+        background-color: #D32F2F;
     }
-}
 
-/* Style for the payment option buttons */
-.payment-option-btn {
-    padding: 15px 25px;
-    font-size: 17px;
-    color: #fff;
-    background-color: #D32F2F;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    margin: 10px;
-    transition: background-color 0.3s;
-}
+    #paymentOptionsModal .payment-option-btn:hover {
+        background-color: black;
+    }
 
-.payment-option-btn:hover {
-    background-color: black;
-}
 
 /* Stilizimi per Card Modal */
 .modal {
@@ -473,7 +308,6 @@ footer .a11 {
         font-size: 19px;
         text-align: center;
     }
-    
 
     #paymentOptionsModal .modal-content {
         display: flex;
@@ -684,7 +518,7 @@ footer .a11 {
     }
 
     .products {
-        grid-template-columns: repeat(7, minmax(100px, 1fr));
+        grid-template-columns: repeat(5, minmax(100px, 1fr));
         gap: 15px;
     }
 
@@ -785,7 +619,6 @@ footer .a11 {
     }
 }
 
-
 /* Slideshow Container */
 #slideWrapper {
     position: static;
@@ -796,7 +629,7 @@ footer .a11 {
 }
 
 #slideWrapper1 {
-    padding:4px 5px 5px 5px;
+    padding: 4px 5px 5px 5px;
 }
 
 /* Slide Images */
@@ -807,18 +640,11 @@ footer .a11 {
     margin: 0 auto; /* Center the image */
 }
 
-
-
-
 /* Responsive Adjustments */
 @media (max-width: 768px) {
     .slide img {
         width: 100%;
         height: auto;
-    }
-
-    .pay-btn {
-        margin-left: 304px;
     }
 }
 
@@ -828,7 +654,6 @@ footer .a11 {
     align-items: center;
     padding: 20px;
     background-color: #f5f5f5;
-
 }
 
 .back-link {
@@ -839,12 +664,10 @@ footer .a11 {
 }
 
 @media(max-width:768px) {
-
     .back-link {
         padding-right: 120px;
     }
 }
-
 
 .product-detail {
     display: flex;
@@ -856,7 +679,6 @@ footer .a11 {
     padding: 20px;
     width: 80%;
     max-width: 800px;
-
 }
 
 .product-image img {
@@ -909,26 +731,4 @@ footer .a11 {
 
 .pay-btn:hover {
     background-color: black;
-}
-
-
-.product-detail .pay-btn {
-    margin-left: auto; /* Remove fixed margin */
-    margin-right: auto; /* Remove fixed margin */
-    display: block; /* Ensure the button takes the full width of its container */
-}
-
-/* Ensure the button container is centered */
-.product-detail {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-/* Adjust the button size for mobile devices */
-@media (max-width: 768px) {
-    .product-detail .pay-btn {
-        width: 100%; /* Make the button full width on mobile */
-        box-sizing: border-box; /* Include padding and border in the element's total width and height */
-    }
 }
