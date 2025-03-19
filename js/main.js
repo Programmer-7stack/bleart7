@@ -81,10 +81,10 @@ console.log("Welcome to Bleart7 Website");
         musicBtn.addEventListener("click", () => {
             if (isPlaying) {
                 music.pause();
-                musicBtn.innerHTML = '<i class="fas fa-play"></i>'; // Change to Play icon
+                musicBtn.innerHTML = '<i class="fas fa-play"></i>'; 
             } else {
                 music.play();
-                musicBtn.innerHTML = '<i class="fas fa-pause"></i>'; // Change to Pause icon
+                musicBtn.innerHTML = '<i class="fas fa-pause"></i>'; 
             }
             isPlaying = !isPlaying;
         });

@@ -52,21 +52,6 @@ header {
     font-size: 33px;
 }
 
-marquee {
-    text-decoration: underline;
-    color: white;
-    font-family: Noto Sans;
-    text-align: center;
-    animation: backgroundChange 5s linear infinite;
-}
-
-@keyframes backgroundChange {
-    0% { background-color: black; }
-    50% { background-color: #D32F2F; }
-    75% { background-color: #D32F2F; }
-    100% { background-color: black; }
-}
-
 /* Stilizimi per Search Bar */
 .search-bar {
     display: flex;
@@ -76,7 +61,7 @@ marquee {
 
 .search-bar input[type="text"] {
     padding: 5px;
-    font-size: 1em;
+    font-size: 16px;
     border: none;
     border-radius: 5px;
     width: 180px;
@@ -84,7 +69,7 @@ marquee {
 
 .search-bar button {
     padding: 5px 10px;
-    font-size: 1em;
+    font-size: 16px;
     border: none;
     border-radius: 1px;
     background-color: #D32F2F;
@@ -154,20 +139,17 @@ main {
 }
 
 .product-card h3 {
-    font-size: 1.2em;
-    margin: 1em 0;
+      font-size: 19.2px;
+    margin: 16px 0;
     color: #333;
     overflow: hidden;
     text-overflow: ellipsis;
-    display: block;
-    height: auto; /* Allow height to adjust based on content */
-    max-height: 6em; /* Increase max-height to fit more text */
-    line-height: 1.5em; /* Adjust line height for better spacing */
-    white-space: normal; /* Allow text to wrap */
+    white-space: nowrap;
+    width: 100%;
 }
 
 .product-card p {
-    font-size: 1.1em;
+    font-size: 17.6px;
     color: #888;
     margin: 5px 0;
     flex-grow: 1;
@@ -199,7 +181,7 @@ main {
     width: 70%;
     margin: 8px 0;
     padding: 8px;
-    font-size: 1em;
+    font-size: 16px;
     color: white;
     background-color: #D32F2F;
 }
@@ -233,7 +215,7 @@ main {
 
 .close-button {
     float: right;
-    font-size: 1.5em;
+    font-size: 24px;
     cursor: pointer;
     color: #333;
 }
@@ -250,7 +232,7 @@ form {
 
 form input, form button {
     padding: 10px;
-    font-size: 1em;
+    font-size: 16px;
 }
 
 form button {
@@ -317,7 +299,7 @@ footer .a11 {
         width: 70%;
         margin: 8px 0;
         padding: 8px;
-        font-size: 1em;
+        font-size: 16px;
     }
 
     .content .h11 {
@@ -370,7 +352,7 @@ footer .a11 {
     }
 
     .product-card h3 {
-        font-size: 1.5em;
+        font-size: 24px;
         line-clamp: 4;
     }
 
@@ -397,7 +379,7 @@ footer .a11 {
     }
 
     .product-card h3 {
-        font-size: 1.4em;
+        font-size: 22.4px;
         line-clamp: 4;
     }
 
@@ -424,7 +406,7 @@ footer .a11 {
     }
 
     .product-card h3 {
-        font-size: 1.3em;
+        font-size: 20.8px;
         line-clamp: 4;
     }
 
@@ -459,7 +441,7 @@ footer .a11 {
     }
 
     .product-card h3 {
-        font-size: 1.2em;
+        font-size: 19.2px;
         line-clamp: 4;
     }
 
@@ -494,7 +476,7 @@ footer .a11 {
     }
 
     .product-card h3 {
-        font-size: 1.6em;
+        font-size: 25.6px;
         line-clamp: 4;
     }
 
@@ -530,7 +512,7 @@ footer .a11 {
     }
 
     .product-card h3 {
-        font-size: 1.2em;
+        font-size: 19.2px;
         line-clamp: 4;
     }
 
@@ -548,9 +530,7 @@ footer .a11 {
         font-size: 23px;
     }
 
-    .pay-btn {
-
-    }
+    
 }
 
 /* Për ekranet 1920px - 2559px */
@@ -570,7 +550,7 @@ footer .a11 {
     }
 
     .product-card h3 {
-        font-size: 1.8em;
+        font-size: 28.8px;
         line-clamp: 4;
     }
 
@@ -606,7 +586,7 @@ footer .a11 {
     }
 
     .product-card h3 {
-        font-size: 1.5em;
+        font-size: 24px;
         line-clamp: 4;
     }
 
@@ -631,7 +611,7 @@ footer .a11 {
     width: 100%;
     overflow: hidden;
     margin: 20px auto;
-    text-align: center; /* Center the content */
+    text-align: center; 
 }
 
 #slideWrapper1 {
@@ -643,7 +623,7 @@ footer .a11 {
     max-width: 100%;
     height: auto;
     display: block;
-    margin: 0 auto; /* Center the image */
+    margin: 0 auto; 
 }
 
 /* Responsive Adjustments */
@@ -665,7 +645,7 @@ footer .a11 {
 .back-link {
     text-decoration: none;
     color: #D32F2F;
-    font-size: 1.2em;
+    font-size: 19.2px;
     padding-right: 650px;
 }
 
@@ -697,13 +677,13 @@ footer .a11 {
 }
 
 .product-info h2 {
-    font-size: 1.5em;
+    font-size: 19.2px;
     margin: 10px 0;
     color: #333;
 }
 
 .product-price {
-    font-size: 1.3em;
+    font-size: 20.8px;
     color: #D32F2F;
     font-weight: bold;
     margin-bottom: 20px;
@@ -714,13 +694,13 @@ footer .a11 {
 }
 
 .product-description h3 {
-    font-size: 1.2em;
+    font-size: 19.2px;
     margin-bottom: 10px;
     color: #555;
 }
 
 .product-description p {
-    font-size: 1em;
+    font-size: 16px;
     color: #333;
 }
 
