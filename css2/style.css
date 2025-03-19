@@ -141,7 +141,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 400px; 
+    height: 400px;
     justify-content: space-between;
 }
 
@@ -149,27 +149,28 @@ main {
     max-width: 100%;
     border-radius: 8px;
     margin-bottom: 10px;
-    max-height: 150px; 
-    object-fit: contain; 
+    max-height: 150px;
+    object-fit: contain;
 }
 
 .product-card h3 {
     font-size: 1.2em;
-    margin: 10px 0;
+    margin: 1em 0;
     color: #333;
-    flex-grow: 1; 
-    display: box;
-    box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
-    line-clamp: 4; 
+    display: block;
+    height: auto; /* Allow height to adjust based on content */
+    max-height: 6em; /* Increase max-height to fit more text */
+    line-height: 1.5em; /* Adjust line height for better spacing */
+    white-space: normal; /* Allow text to wrap */
 }
 
 .product-card p {
     font-size: 1.1em;
     color: #888;
     margin: 5px 0;
-    flex-grow: 1; 
+    flex-grow: 1;
 }
 
 .product-card button {
@@ -188,27 +189,24 @@ main {
     background-color: black;
 }
 
+#paymentOptionsModal .modal-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
-    #paymentOptionsModal .modal-content {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+#paymentOptionsModal .payment-option-btn {
+    width: 70%;
+    margin: 8px 0;
+    padding: 8px;
+    font-size: 1em;
+    color: white;
+    background-color: #D32F2F;
+}
 
-    }
-
-    #paymentOptionsModal .payment-option-btn {
-        width: 70%;
-        margin: 8px 0;
-        padding: 8px;
-        font-size: 1em;
-        color: white;
-        background-color: #D32F2F;
-    }
-
-    #paymentOptionsModal .payment-option-btn:hover {
-        background-color: black;
-    }
-
+#paymentOptionsModal .payment-option-btn:hover {
+    background-color: black;
+}
 
 /* Stilizimi per Card Modal */
 .modal {
@@ -373,16 +371,13 @@ footer .a11 {
 
     .product-card h3 {
         font-size: 1.5em;
-            line-clamp: 4; 
-
+        line-clamp: 4;
     }
 
     .product-card button {
         font-size: 15px;
         padding: 12px 25px;
     }
-
-
 }
 
 /* Për ekranet 1024px - 1199px */
@@ -403,8 +398,7 @@ footer .a11 {
 
     .product-card h3 {
         font-size: 1.4em;
-            line-clamp: 4; 
-
+        line-clamp: 4;
     }
 
     .product-card button {
@@ -431,8 +425,7 @@ footer .a11 {
 
     .product-card h3 {
         font-size: 1.3em;
-            line-clamp: 4; 
-
+        line-clamp: 4;
     }
 
     .product-card button {
@@ -467,8 +460,7 @@ footer .a11 {
 
     .product-card h3 {
         font-size: 1.2em;
-            line-clamp: 4; 
-
+        line-clamp: 4;
     }
 
     .product-card button {
@@ -503,8 +495,7 @@ footer .a11 {
 
     .product-card h3 {
         font-size: 1.6em;
-            line-clamp: 4; 
-
+        line-clamp: 4;
     }
 
     .product-card button {
@@ -540,8 +531,7 @@ footer .a11 {
 
     .product-card h3 {
         font-size: 1.2em;
-            line-clamp: 4; 
-
+        line-clamp: 4;
     }
 
     .product-card button {
@@ -581,8 +571,7 @@ footer .a11 {
 
     .product-card h3 {
         font-size: 1.8em;
-            line-clamp: 4; 
-
+        line-clamp: 4;
     }
 
     .product-card button {
@@ -618,8 +607,7 @@ footer .a11 {
 
     .product-card h3 {
         font-size: 1.5em;
-            line-clamp: 4; 
-
+        line-clamp: 4;
     }
 
     .product-card button {
