@@ -320,6 +320,12 @@ footer .a11 {
         justify-content: center;
     }
 
+        .slide img {
+        width: 100%;
+        height: auto;
+    }
+
+
     header {
         padding: 5px;
         flex-direction: column;
@@ -629,13 +635,6 @@ footer .a11 {
     margin: 0 auto; 
 }
 
-/* Responsive Adjustments */
-@media (max-width: 768px) {
-    .slide img {
-        width: 100%;
-        height: auto;
-    }
-}
 
 .product-detail-container {
     display: flex;
@@ -671,8 +670,11 @@ footer .a11 {
 }
 
 .product-image img {
-    max-width: 100%;
+    width: 200px; 
+    height: 200px;
+    object-fit: contain; 
     border-radius: 8px;
+    margin-bottom: 10px;
 }
 
 .product-info {
