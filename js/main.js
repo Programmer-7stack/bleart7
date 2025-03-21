@@ -8,43 +8,43 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-
-// Funksioni për kërkimin e produkteve
-function searchProducts() {
-    var searchInput = document.getElementById("searchInput").value.toLowerCase();
-    var productCards = document.querySelectorAll(".product-card");
-
-    productCards.forEach(function(card) {
-        var productName = card.getAttribute("data-name").toLowerCase();
-        if (productName.includes(searchInput)) {
-            card.style.display = "block";
-        } else {
-            card.style.display = "none";
-        }
-    });
-}
-
-
-
-// Array për ruajtjen e produkteve në shportë
+// Array to store cart items
 let cartItems = [];
 
-// Funksioni për shtimin e produktit në shportë
+// Function to add a product to the cart
 function showMessage(productName, price) {
-    cartItems.push({ name: productName, price: price });
+    // Check if the product is already in the cart
+    const existingItem = cartItems.find(item => item.name === productName);
+    if (existingItem) {
+        // If the product exists, increase the quantity
+        existingItem.quantity += 1;
+    } else {
+        // If the product does not exist, add it to the cart
+        cartItems.push({ name: productName, price: price, quantity: 1 });
+    }
     updateCartIcon();
     alert("Produkti u shtua në shportë!");
 }
 
-// Përditëso ikonën e shportës
+// Function to update the cart icon with the number of items
 function updateCartIcon() {
     const cartIcon = document.querySelector(".fa-cart-arrow-down");
-    if (cartItems.length > 0) {
+    const totalItems = cartItems.reduce((total, item) => total + item.quantity, 0);
+    if (totalItems > 0) {
         cartIcon.style.color = "#D32F2F";
+        cartIcon.textContent = totalItems; // Display the number of items
+    } else {
+        cartIcon.style.color = "#f4f8fa";
+        cartIcon.textContent = ''; // Clear the number if the cart is empty
     }
 }
 
-// Shfaq modalin e pagesës
+// Function to calculate the total price of items in the cart
+function calculateTotalPrice() {
+    return cartItems.reduce((total, item) => total + (item.price * item.quantity), 0);
+}
+
+// Function to show the payment modal
 function showModal() {
     if (cartItems.length === 0) {
         alert("Shporta është e zbrazët!");
@@ -54,22 +54,22 @@ function showModal() {
     modal.style.display = "flex";
 }
 
-// Mbyll modalin
+// Function to close the modal
 function closeModal() {
     const modal = document.getElementById("cardModal");
     modal.style.display = "none";
 }
 
-// Proceso pagesën
+// Function to process the payment
 function processPayment(event) {
     event.preventDefault();
     alert("Blerja e produktit është kryer me sukses!");
-    cartItems = []; // Zbraz shportën pas blerjes
+    cartItems = []; // Empty the cart after purchase
     updateCartIcon();
     closeModal();
 }
 
-// Shto event listener për ikonën e shportës
+// Add event listener to the cart icon
 document.addEventListener('DOMContentLoaded', function() {
     const cartIcon = document.querySelector(".fa-cart-arrow-down");
     cartIcon.addEventListener('click', showModal);
@@ -77,24 +77,21 @@ document.addEventListener('DOMContentLoaded', function() {
 
 console.log("Welcome to Bleart7 Website");
 
+const music = document.getElementById("music");
+const musicBtn = document.getElementById("music-btn");
+let isPlaying = false;
 
-  const music = document.getElementById("music");
-        const musicBtn = document.getElementById("music-btn");
-        let isPlaying = false;
+musicBtn.addEventListener("click", () => {
+    if (isPlaying) {
+        music.pause();
+        musicBtn.innerHTML = '<i class="fas fa-play"></i>';
+    } else {
+        music.play();
+        musicBtn.innerHTML = '<i class="fas fa-pause"></i>';
+    }
+    isPlaying = !isPlaying;
+});
 
-        musicBtn.addEventListener("click", () => {
-            if (isPlaying) {
-                music.pause();
-                musicBtn.innerHTML = '<i class="fas fa-play"></i>'; 
-            } else {
-                music.play();
-                musicBtn.innerHTML = '<i class="fas fa-pause"></i>'; 
-            }
-            isPlaying = !isPlaying;
-        });
-
-
-        
 // Show payment options modal
 function showPaymentOptions() {
     const modal = document.getElementById("paymentOptionsModal");
@@ -129,7 +126,7 @@ document.addEventListener('DOMContentLoaded', function() {
     document.getElementById("cashPaymentBtn").addEventListener('click', showCashForm);
 });
 
-// Proceso pagesën
+// Function to process the payment
 function processPayment(event) {
     event.preventDefault();
 
@@ -166,13 +163,12 @@ function processPayment(event) {
     }
 
     alert("Blerja e produktit është kryer me sukses!");
-    cartItems = []; // Zbraz shportën pas blerjes
+    cartItems = []; // Empty the cart after purchase
     updateCartIcon();
     closeModal();
 }
 
-
-var slideIndex= 1;
+var slideIndex = 1;
 document.addEventListener("DOMContentLoaded", function () {
     const slideWrappers = document.querySelectorAll("#slideWrapper");
 
