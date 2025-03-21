@@ -169,13 +169,11 @@ function processPayment(event) {
 
 
 var slideIndex= 1;
-
 document.addEventListener("DOMContentLoaded", function () {
-    // Initialize slideshows for each section
     const slideWrappers = document.querySelectorAll("#slideWrapper");
 
     slideWrappers.forEach(wrapper => {
-        let slideIndex = 1;
+        let slideIndex = 0;
         showSlides(wrapper, slideIndex);
 
         // Automatically transition slides every 3 seconds
@@ -187,16 +185,16 @@ document.addEventListener("DOMContentLoaded", function () {
     // Function to show slides for a specific wrapper
     function showSlides(wrapper, n) {
         const slides = wrapper.getElementsByClassName("slide");
-        if (n > slides.length) {
-            slideIndex = 1;
+        if (n >= slides.length) {
+            slideIndex = 0;
         }
-        if (n < 1) {
-            slideIndex = slides.length;
+        if (n < 0) {
+            slideIndex = slides.length - 1;
         }
         for (let i = 0; i < slides.length; i++) {
             slides[i].style.display = "none";
         }
-        slides[slideIndex - 1].style.display = "block";
+        slides[slideIndex].style.display = "block";
     }
 
     // Function to move to the next or previous slide for a specific wrapper

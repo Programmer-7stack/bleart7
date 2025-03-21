@@ -277,6 +277,7 @@
         justify-content: space-evenly;
         align-items: center;
         gap: 4px;
+        
     }
 
     footer .a11 {
@@ -396,6 +397,11 @@
             font-size: 14px;
             padding: 10px 22px;
         }
+
+         footer {
+            display: flex;
+            align-items: flex-end;
+        }
     }
 
     /* Për ekranet 900px - 1023px */
@@ -426,6 +432,8 @@
 
         footer {
             padding: 12px 25px;
+            display: flex;
+            align-items: flex-end;
         }
 
         footer .a11 {
@@ -461,6 +469,8 @@
 
         footer {
             padding: 14px 30px;
+            display: flex;
+            align-items: flex-end;
         }
 
         footer .a11 {
@@ -497,6 +507,8 @@
         footer {
             padding: 15px 35px;
             gap: 12px;
+            display: flex;
+            align-items: flex-end;
         }
 
         footer .a11 {
@@ -533,6 +545,8 @@
         footer {
             padding: 20px 40px;
             gap: 15px;
+            display: flex;
+            align-items: flex-end;
         }
 
         footer .a11 {
@@ -571,6 +585,8 @@
         footer {
             padding: 25px 50px;
             gap: 20px;
+            display: flex;
+            align-items: flex-end;
         }
 
         footer .a11 {
@@ -607,6 +623,8 @@
         footer {
             padding: 30px 60px;
             gap: 25px;
+            display: flex;
+            align-items: flex-end;
         }
 
         footer .a11 {
