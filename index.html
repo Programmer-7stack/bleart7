@@ -260,11 +260,12 @@
             <label for="cardName"><img src="foto/user.png" alt="User Icon" style="width: 20px;" >Emri i mbajtësit të kartës:</label>
             <input type="text" id="cardName" placeholder="Emri në kartë" required>
             <label for="cardNumber"><img src="foto/card.png" alt="Mastercard Icon" style="width: 24px;" >Numri i kartës:</label>
-            <input type="text" id="cardNumber" placeholder="0000 0000 0000 0000" maxlength="16" required>
+            <input type="text" id="cardNumber" placeholder="0000 0000 0000 0000" maxlength="19" required>
             <label for="cardExpiry"><img src="foto/calendar.png" alt="Calendar Icon" style="width: 16px;" >Data e skadimit:</label>
-            <input type="text" id="cardExpiry" placeholder="MM/YY" maxlength="4" required>
+            <input type="text" id="cardExpiry" placeholder="MM/YY" maxlength="5" required>
             <label for="cardCVV"><img src="foto/padlock.png" alt="Padlock Icon" style="width: 16px;" >CVV:</label>
             <input type="text" id="cardCVV" placeholder="CVV" maxlength="3" required>
+            <button type="button" class="btn btn-secondary" onclick="showPaymentOptions()">Kthehu Mbrapa</button>
             <button type="submit" class="pay-btn" onclick="processPayment(event)">BLEJ TANI</button>
             <div class="container-Cards">
                 <img src="foto/TebCard.png">
@@ -322,7 +323,7 @@
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="emptyCartModalLabel">Kujdes</h5>
+        <h5 class="modal-title" id="emptyCartModalLabel">Vëretje!</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -356,7 +357,6 @@
     </div>
   </div>
 </div>
-
 
 
 
