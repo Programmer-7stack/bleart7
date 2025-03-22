@@ -39,12 +39,12 @@ document.addEventListener("DOMContentLoaded", function () {
     // Function to search products
     window.searchProducts = function() {
         const input = document.getElementById('searchInput').value.toLowerCase();
-        console.log("Search input:", input); // Log the search input
+        console.log("Search input:", input);
         const productCards = document.querySelectorAll('.product-card');
 
         productCards.forEach(card => {
             const productName = card.getAttribute('data-name').toLowerCase();
-            console.log("Product name:", productName); // Log the product name
+            console.log("Product name:", productName); 
             if (productName.includes(input)) {
                 card.style.display = '';
             } else {
@@ -55,7 +55,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Add event listener to the search button
     document.querySelector('button[onclick="searchProducts()"]').addEventListener('click', function(event) {
-        event.preventDefault(); // Prevent form submission if inside a form
+        event.preventDefault(); 
         searchProducts();
     });
 });
