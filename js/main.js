@@ -82,15 +82,14 @@ document.addEventListener("DOMContentLoaded", function () {
         modal.style.display = "none";
     };
 
-    // Function to process the payment
     document.addEventListener("DOMContentLoaded", function () {
     const cardNumberInput = document.getElementById("cardNumber");
     const cardExpiryInput = document.getElementById("cardExpiry");
     const cardCVVInput = document.getElementById("cardCVV");
 
-    // Format card number input
+    // Ensure only numbers can be entered in the card number input
     cardNumberInput.addEventListener("input", function (e) {
-        let value = e.target.value.replace(/\s+/g, '');
+        let value = e.target.value.replace(/\D/g, ''); // Remove all non-digit characters
         let formattedValue = '';
         for (let i = 0; i < value.length; i += 4) {
             formattedValue += value.substring(i, i + 4) + ' ';
@@ -100,7 +99,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Format card expiry input
     cardExpiryInput.addEventListener("input", function (e) {
-        let value = e.target.value.replace(/[^0-9]/g, '');
+        let value = e.target.value.replace(/[^0-9]/g, ''); // Remove all non-digit characters
         if (value.length > 2) {
             value = value.substring(0, 2) + '/' + value.substring(2);
         }
@@ -109,7 +108,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Ensure CVV input only allows numbers
     cardCVVInput.addEventListener("input", function (e) {
-        e.target.value = e.target.value.replace(/[^0-9]/g, '');
+        e.target.value = e.target.value.replace(/[^0-9]/g, ''); // Remove all non-digit characters
     });
 
     // Function to process the payment
@@ -148,6 +147,7 @@ document.addEventListener("DOMContentLoaded", function () {
         closeModal();
     };
 });
+
 
 
     // Function to process the cash payment
