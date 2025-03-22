@@ -67,7 +67,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     // Function to show the payment modal
-    function showModal() {
+        function showModal() {
         if (cartItems.length === 0) {
             $('#emptyCartModal').modal('show'); 
             return;
@@ -83,11 +83,41 @@ document.addEventListener("DOMContentLoaded", function () {
     };
 
     // Function to process the payment
+    document.addEventListener("DOMContentLoaded", function () {
+    const cardNumberInput = document.getElementById("cardNumber");
+    const cardExpiryInput = document.getElementById("cardExpiry");
+    const cardCVVInput = document.getElementById("cardCVV");
+
+    // Format card number input
+    cardNumberInput.addEventListener("input", function (e) {
+        let value = e.target.value.replace(/\s+/g, '');
+        let formattedValue = '';
+        for (let i = 0; i < value.length; i += 4) {
+            formattedValue += value.substring(i, i + 4) + ' ';
+        }
+        e.target.value = formattedValue.trim();
+    });
+
+    // Format card expiry input
+    cardExpiryInput.addEventListener("input", function (e) {
+        let value = e.target.value.replace(/[^0-9]/g, '');
+        if (value.length > 2) {
+            value = value.substring(0, 2) + '/' + value.substring(2);
+        }
+        e.target.value = value;
+    });
+
+    // Ensure CVV input only allows numbers
+    cardCVVInput.addEventListener("input", function (e) {
+        e.target.value = e.target.value.replace(/[^0-9]/g, '');
+    });
+
+    // Function to process the payment
     window.processPayment = function(event) {
         event.preventDefault();
 
         const cardName = document.getElementById("cardName").value.trim();
-        const cardNumber = document.getElementById("cardNumber").value.trim();
+        const cardNumber = document.getElementById("cardNumber").value.trim().replace(/\s+/g, '');
         const cardExpiry = document.getElementById("cardExpiry").value.trim();
         const cardCVV = document.getElementById("cardCVV").value.trim();
 
@@ -104,7 +134,7 @@ document.addEventListener("DOMContentLoaded", function () {
             return;
         }
         if (!cardExpiryPattern.test(cardExpiry)) {
-            alert("Data e skadimit duhet të jetë në 4 shifra.");
+            alert("Data e skadimit duhet të jetë në formatin MM/YY.");
             return;
         }
         if (!cardCVVPattern.test(cardCVV)) {
@@ -112,11 +142,13 @@ document.addEventListener("DOMContentLoaded", function () {
             return;
         }
 
-        $('#paymentSuccessModal').modal('show'); 
+        $('#paymentSuccessModal').modal('show');
         cartItems = [];
         updateCartIcon();
         closeModal();
     };
+});
+
 
     // Function to process the cash payment
     window.processCashPayment = function(event) {
