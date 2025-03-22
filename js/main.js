@@ -7,166 +7,199 @@ document.addEventListener("DOMContentLoaded", function () {
     }, 1000);
 });
 
-
 // Array to store cart items
-let cartItems = [];
+    let cartItems = [];
 
-// Function to add a product to the cart
-function showMessage(productName, price) {
-    // Check if the product is already in the cart
-    const existingItem = cartItems.find(item => item.name === productName);
-    if (existingItem) {
-        // If the product exists, increase the quantity
-        existingItem.quantity += 1;
-    } else {
-        // If the product does not exist, add it to the cart
-        cartItems.push({ name: productName, price: price, quantity: 1 });
+    // Function to add a product to the cart
+    window.showMessage = function(productName, price) {
+        const existingItem = cartItems.find(item => item.name === productName);
+        if (existingItem) {
+            existingItem.quantity += 1;
+        } else {
+            cartItems.push({ name: productName, price: price, quantity: 1 });
+        }
+        updateCartIcon();
+        $('#addToCartModal').modal('show'); 
+    };
+
+    // Function to update the cart icon with the number of items
+    function updateCartIcon() {
+        const cartIcon = document.querySelector(".fa-cart-arrow-down");
+        const totalItems = cartItems.reduce((total, item) => total + item.quantity, 0);
+        if (totalItems > 0) {
+            cartIcon.style.color = "#D32F2F";
+            cartIcon.textContent = totalItems; 
+        } else {
+            cartIcon.style.color = "#f4f8fa";
+            cartIcon.textContent = ''; 
+        }
     }
-    updateCartIcon();
-    alert("Produkti u shtua në shportë!");
-}
 
-// Function to update the cart icon with the number of items
-function updateCartIcon() {
-    const cartIcon = document.querySelector(".fa-cart-arrow-down");
-    const totalItems = cartItems.reduce((total, item) => total + item.quantity, 0);
-    if (totalItems > 0) {
-        cartIcon.style.color = "#D32F2F";
-        cartIcon.textContent = totalItems; // Display the number of items
-    } else {
-        cartIcon.style.color = "#f4f8fa";
-        cartIcon.textContent = ''; // Clear the number if the cart is empty
-    }
-}
+    document.addEventListener("DOMContentLoaded", function () {
+    // Function to search products
+    window.searchProducts = function() {
+        const input = document.getElementById('searchInput').value.toLowerCase();
+        console.log("Search input:", input); // Log the search input
+        const productCards = document.querySelectorAll('.product-card');
 
-// Function to calculate the total price of items in the cart
-function calculateTotalPrice() {
-    return cartItems.reduce((total, item) => total + (item.price * item.quantity), 0);
-}
+        productCards.forEach(card => {
+            const productName = card.getAttribute('data-name').toLowerCase();
+            console.log("Product name:", productName); // Log the product name
+            if (productName.includes(input)) {
+                card.style.display = '';
+            } else {
+                card.style.display = 'none';
+            }
+        });
+    };
 
-// Function to show the payment modal
-function showModal() {
-    if (cartItems.length === 0) {
-        alert("Shporta është e zbrazët!");
-        return;
-    }
-    const modal = document.getElementById("cardModal");
-    modal.style.display = "flex";
-}
-
-// Function to close the modal
-function closeModal() {
-    const modal = document.getElementById("cardModal");
-    modal.style.display = "none";
-}
-
-// Function to process the payment
-function processPayment(event) {
-    event.preventDefault();
-    alert("Blerja e produktit është kryer me sukses!");
-    cartItems = []; // Empty the cart after purchase
-    updateCartIcon();
-    closeModal();
-}
-
-// Add event listener to the cart icon
-document.addEventListener('DOMContentLoaded', function() {
-    const cartIcon = document.querySelector(".fa-cart-arrow-down");
-    cartIcon.addEventListener('click', showModal);
-});
-
-console.log("Welcome to Bleart7 Website");
-
-const music = document.getElementById("music");
-const musicBtn = document.getElementById("music-btn");
-let isPlaying = false;
-
-musicBtn.addEventListener("click", () => {
-    if (isPlaying) {
-        music.pause();
-        musicBtn.innerHTML = '<i class="fas fa-play"></i>';
-    } else {
-        music.play();
-        musicBtn.innerHTML = '<i class="fas fa-pause"></i>';
-    }
-    isPlaying = !isPlaying;
-});
-
-// Show payment options modal
-function showPaymentOptions() {
-    const modal = document.getElementById("paymentOptionsModal");
-    modal.style.display = "flex";
-}
-
-// Show card payment modal
-function showCardForm() {
-    document.getElementById("paymentOptionsModal").style.display = "none";
-    document.getElementById("cardPaymentModal").style.display = "flex";
-}
-
-// Show cash payment modal
-function showCashForm() {
-    document.getElementById("paymentOptionsModal").style.display = "none";
-    document.getElementById("cashPaymentModal").style.display = "flex";
-}
-
-// Close any visible modal
-function closeModal() {
-    document.querySelectorAll(".modal").forEach(modal => {
-        modal.style.display = "none";
+    // Add event listener to the search button
+    document.querySelector('button[onclick="searchProducts()"]').addEventListener('click', function(event) {
+        event.preventDefault(); // Prevent form submission if inside a form
+        searchProducts();
     });
-}
-
-// Add event listener for the cart icon
-document.addEventListener('DOMContentLoaded', function() {
-    const cartIcon = document.querySelector(".fa-cart-arrow-down");
-    cartIcon.addEventListener('click', showPaymentOptions);
-
-    document.getElementById("cardPaymentBtn").addEventListener('click', showCardForm);
-    document.getElementById("cashPaymentBtn").addEventListener('click', showCashForm);
 });
 
-// Function to process the payment
-function processPayment(event) {
-    event.preventDefault();
 
-    const cardName = document.getElementById("cardName").value.trim();
-    const cardNumber = document.getElementById("cardNumber").value.trim();
-    const cardExpiry = document.getElementById("cardExpiry").value.trim();
-    const cardCVV = document.getElementById("cardCVV").value.trim();
-
-    // Validate card name
-    if (!cardName) {
-        alert("Ju lutem shtypni emrin e mbajtësit të kartës.");
-        return;
+    // Function to calculate the total price of items in the cart
+    function calculateTotalPrice() {
+        return cartItems.reduce((total, item) => total + (item.price * item.quantity), 0);
     }
 
-    // Validate card number (16 digits)
-    const cardNumberPattern = /^\d{16}$/;
-    if (!cardNumberPattern.test(cardNumber)) {
-        alert("Numri i kartës duhet të jetë 16 shifra.");
-        return;
+    // Function to show the payment modal
+    function showModal() {
+        if (cartItems.length === 0) {
+            $('#emptyCartModal').modal('show'); 
+            return;
+        }
+        const modal = document.getElementById("cardModal");
+        modal.style.display = "flex";
     }
 
-    // Validate card expiry date (MM/YY)
-    const cardExpiryPattern = /^(0[1-9]|1[0-2])\/?([0-9]{2})$/;
-    if (!cardExpiryPattern.test(cardExpiry)) {
-        alert("Data e skadimit duhet të jetë në 4 shifra.");
-        return;
-    }
+    // Function to close the modal
+    window.closeModal = function() {
+        const modal = document.getElementById("cardModal");
+        modal.style.display = "none";
+    };
 
-    // Validate CVV (3 digits)
-    const cardCVVPattern = /^\d{3}$/;
-    if (!cardCVVPattern.test(cardCVV)) {
-        alert("CVV duhet të jetë 3 shifra.");
-        return;
-    }
+    // Function to process the payment
+    window.processPayment = function(event) {
+        event.preventDefault();
 
-    alert("Blerja e produktit është kryer me sukses!");
-    cartItems = []; // Empty the cart after purchase
-    updateCartIcon();
-    closeModal();
-}
+        const cardName = document.getElementById("cardName").value.trim();
+        const cardNumber = document.getElementById("cardNumber").value.trim();
+        const cardExpiry = document.getElementById("cardExpiry").value.trim();
+        const cardCVV = document.getElementById("cardCVV").value.trim();
+
+        const cardNumberPattern = /^\d{16}$/;
+        const cardExpiryPattern = /^(0[1-9]|1[0-2])\/?([0-9]{2})$/;
+        const cardCVVPattern = /^\d{3}$/;
+
+        if (!cardName) {
+            alert("Ju lutem shtypni emrin e mbajtësit të kartës.");
+            return;
+        }
+        if (!cardNumberPattern.test(cardNumber)) {
+            alert("Numri i kartës duhet të jetë 16 shifra.");
+            return;
+        }
+        if (!cardExpiryPattern.test(cardExpiry)) {
+            alert("Data e skadimit duhet të jetë në 4 shifra.");
+            return;
+        }
+        if (!cardCVVPattern.test(cardCVV)) {
+            alert("CVV duhet të jetë 3 shifra.");
+            return;
+        }
+
+        $('#paymentSuccessModal').modal('show'); 
+        cartItems = [];
+        updateCartIcon();
+        closeModal();
+    };
+
+    // Function to process the cash payment
+    window.processCashPayment = function(event) {
+        event.preventDefault();
+
+        const fullName = document.getElementById("fullName").value.trim();
+        const address = document.getElementById("address").value.trim();
+        const city = document.getElementById("city").value.trim();
+        const country = document.getElementById("country").value.trim();
+        const cashAmount = document.getElementById("cashAmount").value.trim();
+
+        if (!fullName || !address || !city || !country || !cashAmount) {
+            alert("Ju lutem plotësoni të gjitha fushat.");
+            return;
+        }
+
+        // Simulate payment processing
+        setTimeout(() => {
+            $('#paymentSuccessModal').modal('show'); 
+            cartItems = [];
+            updateCartIcon();
+            closeModal();
+        }, 1000); 
+    };
+
+    // Add event listener to the cart icon
+    document.addEventListener('DOMContentLoaded', function() {
+        const cartIcon = document.querySelector(".fa-cart-arrow-down");
+        cartIcon.addEventListener('click', showPaymentOptions);
+    });
+
+    console.log("Welcome to Bleart7 Website");
+
+    const music = document.getElementById("music");
+    const musicBtn = document.getElementById("music-btn");
+    let isPlaying = false;
+
+    musicBtn.addEventListener("click", () => {
+        if (isPlaying) {
+            music.pause();
+            musicBtn.innerHTML = '<i class="fas fa-play"></i>';
+        } else {
+            music.play();
+            musicBtn.innerHTML = '<i class="fas fa-pause"></i>';
+        }
+        isPlaying = !isPlaying;
+    });
+
+    // Show payment options modal
+    window.showPaymentOptions = function() {
+        if (cartItems.length === 0) {
+            $('#emptyCartModal').modal('show'); 
+            return;
+        }
+        const modal = document.getElementById("paymentOptionsModal");
+        modal.style.display = "flex";
+    };
+
+    // Show card payment modal
+    document.getElementById("cardPaymentBtn").addEventListener('click', function() {
+        document.getElementById("paymentOptionsModal").style.display = "none";
+        document.getElementById("cardPaymentModal").style.display = "flex";
+    });
+
+    // Show cash payment modal
+    document.getElementById("cashPaymentBtn").addEventListener('click', function() {
+        document.getElementById("paymentOptionsModal").style.display = "none";
+        document.getElementById("cashPaymentModal").style.display = "flex";
+    });
+
+    // Close any visible modal
+    window.closeModal = function() {
+        document.querySelectorAll(".modal").forEach(modal => {
+            modal.style.display = "none";
+        });
+    };
+
+    // Add event listener for the cart icon
+    document.addEventListener('DOMContentLoaded', function() {
+        const cartIcon = document.querySelector(".fa-cart-arrow-down");
+        cartIcon.addEventListener('click', showPaymentOptions);
+    });
+
 
 var slideIndex = 1;
 document.addEventListener("DOMContentLoaded", function () {
