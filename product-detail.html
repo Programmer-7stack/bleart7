@@ -8,7 +8,7 @@
     <link rel="Icon" type="webp" href="foto/100.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link rel="stylesheet" type="text/css" href="css2/bootstrap.min.css">
-
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 </head>
 <body>
     <header>
@@ -34,545 +34,603 @@
         </div>
     </header>
 
-<main>
-<!-- Product Detail Section -->
-    <div class="product-detail-container" id="product-iphone">
-        <a href="index.html" class="back-link">&#8592; Kthehu Mbrapa</a>
-        <div class="product-detail">
-            <section id="slideWrapper1">
-                <div id="slideWrapper">
-                    <div class="slide">
-                        <img src="foto/1.png" style="height:200px; width: 200px;">
-                    </div>
-                    <div class="slide">
-                        <img src="foto/22.png" style="height:200px; width: 200px;">
-                    </div>
-                    <div class="slide">
-                        <img src="foto/44.png" style="height:200px; width: 200px;">
-                    </div>
-                    <div class="slide">
-                        <img src="foto/55.png" style="height:200px; width: 200px;">
-                    </div>
+    <main>
+        <!-- Product Detail Container for iPhone -->
+<div class="product-detail-container" id="product-iphone">
+    <a href="index.html" class="back-link">&#8592; Kthehu Mbrapa</a>
+    <div class="product-detail">
+        <section id="slideWrapper1">
+            <div id="slideWrapper">
+                <div class="slide">
+                    <img src="foto/1.png" style="height:200px; width: 200px;">
                 </div>
-            </section>
-            <div class="product-info">
-                <h2>Apple iPhone 16 Pro Max, 512GB, Black Titanium</h2>
-                <p style="text-decoration: line-through;">1,645.50 €</p>
-                <p class="product-price">1,445.50 €</p>
-                <div class="product-description">
-                    <h3>Detajet e iPhone-it</h3>
-                    <p> iPhone 16 Pro Max përfaqëson kulmin e linjës kryesore të Apple, duke ofruar performancë të nivelit të lartë dhe një ekran të gjerë 6.9" Super Retina XDR OLED. Me një rezolucion prej 2868 × 1320 dhe mbështetje për HDR10+, ekrani është i përsosur për të shikuar përmbajtje me definicion të lartë, lojëra ose shumë detyra të përgjithshme. Ai gjithashtu përmban një ritëm rifreskimi adaptiv 120 Hz, duke ofruar pamje vizuale dhe reagim jashtëzakonisht të qetë.</p>
+                <div class="slide">
+                    <img src="foto/22.png" style="height:200px; width: 200px;">
                 </div>
-                <button class="pay-btn" onclick="showMessage('Apple iPhone 16 Pro Max, 512GB, Black Titanium', 1445.50)">
-                    <span class="btn-text">SHTO NË SHPORT</span>
-                </button>
+                <div class="slide">
+                    <img src="foto/44.png" style="height:200px; width: 200px;">
+                </div>
+                <div class="slide">
+                    <img src="foto/55.png" style="height:200px; width: 200px;">
+                </div>
             </div>
+        </section>
+        <div class="product-info">
+            <h2>Apple iPhone 16 Pro Max, 512GB, Black Titanium</h2>
+            <p style="text-decoration: line-through;">1,645.50 €</p>
+            <p class="product-price">1,445.50 €</p>
+            <div class="accordion" >
+                <h3>Detajet e iPhone-it</h3>
+                <div>
+                    <p>iPhone 16 Pro Max përfaqëson kulmin e linjës kryesore të Apple, duke ofruar performancë të nivelit të lartë dhe një ekran të gjerë 6.9" Super Retina XDR OLED. Me një rezolucion prej 2868 × 1320 dhe mbështetje për HDR10+, ekrani është i përsosur për të shikuar përmbajtje me definicion të lartë, lojëra ose shumë detyra të përgjithshme. Ai gjithashtu përmban një ritëm rifreskimi adaptiv 120 Hz, duke ofruar pamje vizuale dhe reagim jashtëzakonisht të qetë.</p>
+                </div>
+            </div>
+            <br>
+            <button class="pay-btn" onclick="showMessage('Apple iPhone 16 Pro Max, 512GB, Black Titanium', 1445.50)">
+                <span class="btn-text">SHTO NË SHPORT</span>
+            </button>
         </div>
-    </div>
-
-    <div class="product-detail-container" id="product-samsung">
-        <a href="index.html" class="back-link">&#8592; Kthehu Mbrapa</a>
-        <div class="product-detail">
-            <section id="slideWrapper1">
-                <div id="slideWrapper">
-                    <div class="slide">
-                        <img src="foto/samsung2.png" style="height:200px; width: 200px;">
-                    </div>
-                    <div class="slide">
-                        <img src="foto/2.png" style="height:200px; width: 200px;">
-                    </div>
-                    <div class="slide">
-                        <img src="foto/samsung4.png" style="height:200px; width: 200px;">
-                    </div>
-                    <div class="slide">
-                        <img src="foto/samsung3.png" style="height:200px; width: 200px;">
-                    </div>
-                </div>
-            </section>
-            <div class="product-info">
-                <h2>Samsung Galaxy S25 Ultra, 6.9", 12GB/ 1TB, Titanium Black</h2>
-                <p style="text-decoration: line-through;">1,643.50 €</p>
-                <p class="product-price">1,343.50 €</p>
-                <div class="product-description">
-                    <h3>Detajet e Samsung-it</h3>
-                    <p> Ky celular me performancë të lartë përmban një ekran AMOLED 6.9" me një rezolucion prej 3120 × 1440, një shpejtësi rifreskimi prej 120 Hz dhe mbrojtje Gorilla Glass Victus 2, duke siguruar qëndrueshmëri dhe pamje mahnitëse. Mundësuar nga procesori Snapdragon 8 Elite për Galaxy me 4.47 GHz me 4.47 GHz, vjen i pajisur me 12 GB RAM dhe 1 TB hapësirë ​​ruajtëse të brendshme Me Android 15 me Samsung One UI, ai mbështet funksionalitetin e dyfishtë SIM (Nano SIM ose eSIM) dhe përfshin një fole për kartën e memories për ruajtje të zgjerueshme.</p>
-                </div>
-                <button class="pay-btn" onclick="showMessage('Samsung Galaxy S25 Ultra, 6.9, 12GB/ 1TB, Titanium Black', 1343.50)">
-                    <span class="btn-text">SHTO NË SHPORT</span>
-                </button>
-            </div>
-        </div>
-    </div>
-
-    <div class="product-detail-container" id="product-monitor">
-        <a href="index.html" class="back-link">&#8592; Kthehu Mbrapa</a>
-        <div class="product-detail">
-            <section id="slideWrapper1">
-                <div id="slideWrapper">
-                    <div class="slide">
-                        <img src="foto/monitor2.png" style="height:200px; width: 200px;">
-                    </div>
-                    <div class="slide">
-                        <img src="foto/3.png" style="height:200px; width: 200px;">
-                    </div>
-                    <div class="slide">
-                        <img src="foto/monitor4.png" style="height:200px; width: 200px;">
-                    </div>
-                    <div class="slide">
-                        <img src="foto/monitor3.png" style="height:200px; width: 200px;">
-                    </div>
-                </div>
-            </section>
-            <div class="product-info">
-                <h2>Monitor Dell Alienware AW2524HF 500Hz, 24.5", FullHD, i zi</h2>
-                <p style="text-decoration: line-through; font-size: 15px;">536.50 €</p>
-                <p style="font-weight:bold; color: #F88379;">485.50 €</p>
-                <div class="product-description">
-                    <h3>Detajet e Monitor-it</h3>
-                    <p> Filloni lojërat me shpejtësinë e dritës me një ritëm rifreskimi 500 Hz që mund të vazhdojë edhe me lojën më intensive, në mënyrë që të mos humbisni kurrë asgjë. Koha e përgjigjes prej 0,5 ms dhe reduktimi i turbullimit dhe njollosjes sigurojnë lojë të qetë dhe grafikë të pastër kristal.
-       Me çertifikatat më të fundit AMD FreeSync™ Premium dhe VESA Adaptive Sync, do të përjetoni një lojë më të qetë pa belbëzim ose grisje. Teknologjia e shpejtë IPS siguron ngjyra të qëndrueshme dhe pa turbullira, pavarësisht nga pozicioni i monitorit.  </p>
-                </div>
-                <button class="pay-btn" onclick="showMessage('Monitor Dell Alienware AW2524HF 500Hz, 24.5, FullHD, i zi', 485.50)">
-                    <span class="btn-text">SHTO NË SHPORT</span>
-                </button>
-            </div>
-        </div>
-    </div>
-
-    <div class="product-detail-container" id="product-gamingpc">
-        <a href="index.html" class="back-link">&#8592; Kthehu Mbrapa</a>
-        <div class="product-detail">
-             <div class="product-image">
-                <img src="foto/4.png" alt="Product 14">
-            </div>
-            <div class="product-info">
-                <h2>RTX 4090, AMD Ryzen 9 7950X3D, 32GB RAM, 1TB SSD - Gaming PC Black Series 42</h2>
-                <p style="text-decoration: line-through;">4,299.50 €</p>
-                <p class="product-price">3,980.50 €</p>
-                <div class="product-description">
-                    <h3>Detajet e Pc's</h3>
-                    <p> Kasa NZXT H9 Elite në ngjyrë të bardhë është kombinimi ideal i estetikës dhe performancës për çdo ndërtues entuziast. Me panele xhami të temperuar që ofrojnë një pamje të plotë të brendësisë, kjo kasa është perfekte për ata që duan të shfaqin komponentët e tyre me stil dhe elegancë.
-            Dizajni i saj i gjerë dhe funksional siguron hapësirë të mjaftueshme për menaxhimin e kabllove dhe instalimin e sistemeve të ftohjes, qoftë për ftohje me ujë apo ajër, duke mbajtur gjithmonë temperaturat optimale. Me ndriçim RGB të integruar, NZXT H9 Elite sjell një atmosferë të personalizuar dhe moderne për kompjuterin tuaj.</p>
-                </div>
-                <button class="pay-btn" onclick="showMessage('RTX 4090, AMD Ryzen 9 7950X3D, 32GB RAM, 1TB SSD - Gaming PC Black Series 42', 3980.50)">
-                    <span class="btn-text">SHTO NË SHPORT</span>
-                </button>
-            </div>
-        </div>
-    </div>
-
-    <div class="product-detail-container" id="product-kartel">
-        <a href="index.html" class="back-link">&#8592; Kthehu Mbrapa</a>
-        <div class="product-detail">
-             <div class="product-image">
-                <img src="foto/5.png" alt="Product 14">
-            </div>
-            <div class="product-info">
-                <h2>Kartelë grafike Asus GeForce RTX 5090 32GB TUF Gaming</h2>
-                <p style="text-decoration: line-through;">2,594.50 €</p>
-                <p class="product-price">2.345.50 €</p>
-                <div class="product-description">
-                    <h3>Detajet e Kartelë's</h3>
-                    <p> NVIDIA GeForce RTX 5090 është një kartë grafike me performancë të lartë, qoftë për lojëra moderne, interpretim profesional ose aplikacione të avancuara të AI. Ky central elektrik përmban një memorie të madhe 32 GB GDDR7, e mbështetur nga një memorie 512-bit dhe një shpejtësi mahnitëse e transferimit të të dhënave 28 Gbit/s, duke siguruar trajtim të shpejtë të të dhënave dhe performancë të qetë në mjedise me definicion ultra të lartë. I pajisur me 21,760 bërthama CUDA, RTX 5090 ofron aftësi të jashtëzakonshme përpunimi paralel, duke e bërë atë një zgjedhje ideale për profesionistët që kërkojnë fuqi llogaritëse të nivelit të lartë.</p>
-                </div>
-                <button class="pay-btn" onclick="showMessage('Kartelë grafike Asus GeForce RTX 5090 32GB TUF Gaming', 2345.50)">
-                    <span class="btn-text">SHTO NË SHPORT</span>
-                </button>
-            </div>
-        </div>
-    </div>
-
-    <div class="product-detail-container" id="product-procesor">
-        <a href="index.html" class="back-link">&#8592; Kthehu Mbrapa</a>
-        <div class="product-detail">
-            <div class="product-image">
-                <img src="foto/6.png" alt="Product 6">
-            </div>
-            <div class="product-info">
-                <h2>Procesor AMD Ryzen 9 7950X3D</h2>
-                <p style="text-decoration: line-through;">842.50 €</p>
-                <p class="product-price">775.50 €</p>
-                <div class="product-description">
-                    <h3>Detajet e Procesor-it</h3>
-                    <p> AMD Ryzen 9 7950X3D processor 4.2 GHz 128 MB L3 Box.</p>
-                </div>
-                <button class="pay-btn" onclick="showMessage('Procesor AMD Ryzen 9 7950X3D', 775.50)">
-                    <span class="btn-text">SHTO NË SHPORT</span>
-                </button>
-            </div>
-        </div>
-    </div>
-
-    <div class="product-detail-container" id="product-tastier">
-        <a href="index.html" class="back-link">&#8592; Kthehu Mbrapa</a>
-        <div class="product-detail">
-            <div class="product-image">
-                <img src="foto/7.png" alt="Product 7">
-            </div>
-            <div class="product-info">
-                <h2>Tastierë SteelSeries Apex PRO OmniPoint, e zezë</h2>
-                <p style="text-decoration: line-through;">317.50 €</p>
-                <p class="product-price">250.50 €</p>
-                <div class="product-description">
-                    <h3>Detajet e Tastierë's</h3>
-                    <p>Tastiera te pjesa numerike ka disa simbole çeke. E pajisur me një monitor inteligjent OLED, tastiera Apex Pro jo vetëm që përshtatet për secilën lojë, por përshtatet mirë edhe me ju. Korniza metalike e serisë 5000 është prodhuar për qëndrueshmëri të pathyeshme, duke e bërë atë të përsosur për çdo konfigurim të niveleve të larta. Mbështetja magnetike premium ju siguron një fund të butë dhe të rehatshëm që ju të mund të shkruani dhe luani rehat për aq kohë sa dëshironi. Boshti metalik i klikueshëm dhe tasti multimedial ju lejojnë të përshtatni shpejt volumin si dhe ndryshimin e shkëlqimit, kthimin mbrapa, kalimin, pauzën vetëm me një prekje butoni. Produkti ju ofron miliona opsione me ngjyra dhe kanale të integruara për daljen e kabllove në mënyrë që të mbani tavolinën tuaj të pastër dhe posedonkabllo 1.8 m.   </p>
-                </div>
-                <button class="pay-btn" onclick="showMessage('Tastierë SteelSeries Apex PRO OmniPoint, e zezë', 250.50)">
-                    <span class="btn-text">SHTO NË SHPORT</span>
-                </button>
-            </div>
-        </div>
-    </div>
-
-    <div class="product-detail-container" id="product-maus">
-        <a href="index.html" class="back-link">&#8592; Kthehu Mbrapa</a>
-        <div class="product-detail">
-            <div class="product-image">
-                <img src="foto/8.png" alt="Product 8">
-            </div>
-            <div class="product-info">
-                <h2>Mouse Logitech G Pro X Superlight 2 Wireless, i bardhë</h2>
-                <p style="text-decoration: line-through;">234.50 €</p>
-                <p class="product-price">195.50 €</p>
-                <div class="product-description">
-                    <h3>Detajet e Maus-it</h3>
-                    <p>Logitech G Pro X 2 Superlight White është një maus optik wireless i krijuar për sportet elektronike. Ka një dizajn ergonomik të krijuar për njerëzit me dorën e djathtë. Ai përfshin 5 butona të programueshëm dhe një rrotë lëvizëse. Falë teknologjisë së përparuar wireless LIGHTSPEED, ai siguron liri të rehatshme lëvizjeje duke ruajtur latente të ulët. Produkti është neutral ndaj karbonit. Sensori HERO 2 në Logitech G Pro X 2 Superlight funksionon me një rezolucion maksimal prej 32000 dpi, duke ofruar një shpejtësi gjurmimi prej 500 IPS dhe një përshpejtim maksimal prej 40 G.</p>
-                </div>
-                <button class="pay-btn" onclick="showMessage('Mouse Logitech G Pro X Superlight 2 Wireless, i bardhë', 195.50)">
-                    <span class="btn-text">SHTO NË SHPORT</span>
-                </button>
-            </div>
-        </div>
-    </div>
-
-    <div class="product-detail-container" id="product-kufje">
-        <a href="index.html" class="back-link">&#8592; Kthehu Mbrapa</a>
-        <div class="product-detail">
-            <div class="product-image">
-                <img src="foto/9.png" alt="Product 9">
-            </div>
-            <div class="product-info">
-                <h2>Kufje HyperX Cloud Alpha Wireless Headphones, të zeza</h2>
-                <p style="text-decoration: line-through;">186.50 €</p>
-                <p class="product-price">155.50 €</p>
-                <div class="product-description">
-                    <h3>Detajet e Kufje-ve</h3>
-                    <p>Përfitoni nga 300 orë jetëgjatësi e baterisë për të luajtur për më shumë se një javë pa e zbrazur baterinë. Përfundoni fushata të shumta në lojë pa u rimbushur dhe shijoni çdo minutë komoditeti të ofruar nga kupat e veshit Cloud Alpha Wireless të bëra me shkumë memorie unike, të butë HyperX, të mbuluara me material që imiton lëkurën me frymëmarrje. Drejtuesit HyperX me dy dhoma prodhojnë tingull jashtëzakonisht të qartë duke ndarë meset dhe lartësitë nga basi. I kombinuar me teknologjinë DTS® Headphone:X® Spatial Audio, e cila ofron lokalizim të saktë të zërit dhe tingull realist rrethues, do t'ju lejojë të zhyteni në botën e lojërave tuaja të preferuara të fantazisë ose të përqendroheni në konkurrencë. Kontrolloni jetëgjatësinë e baterisë, rregulloni cilësimet e barazimit dhe aksesoni më shumë opsione me softuerin HyperX NGENUITY të lehtë për t'u përdorur.</p>
-                </div>
-                <button class="pay-btn" onclick="showMessage('Kufje HyperX Cloud Alpha Wireless Headphones, të zeza', 155.50)">
-                    <span class="btn-text">SHTO NË SHPORT</span>
-                </button>
-            </div>
-        </div>
-    </div>
-
-    <div class="product-detail-container" id="product-burim">
-        <a href="index.html" class="back-link">&#8592; Kthehu Mbrapa</a>
-        <div class="product-detail">
-            <div class="product-image">
-                <img src="foto/10.png" alt="Product 10">
-            </div>
-            <div class="product-info">
-                <h2>Burim energjie Asus ROG Thor Titanium 90YE00K0-B0NA00 , 1600W</h2>
-                <p style="text-decoration: line-through;">921.50 €</p>
-                <p class="product-price">890.50 €</p>
-                <div class="product-description">
-                    <h3>Detajet e Burim-it të Energji's</h3>
-                    <p>Zbuloni fuqinë e pakufizuar me burimin e energjisë Asus ROG Thor Titanium 1600W! Ky burim energjie premium është projektuar për t'i dhënë sistemit tuaj lojtar një performancë të jashtëzakonshme dhe qëndrueshmëri të lartë. Me një rendiment të shkëlqyer dhe teknologji të avancuar, ROG Thor siguron energji të pastër dhe të qëndrueshme për komponentët tuaj më të kërkuar. Dizajni i tij elegant dhe ndriçimi RGB e bën atë një shtesë të shkëlqyer për çdo build gaming. Mos e humbisni mundësinë për të përmirësuar përvojën tuaj të lojrave me këtë burim energjie të fuqishëm dhe të besueshëm!</p>
-                </div>
-                <button class="pay-btn" onclick="showMessage('Burim energjie Asus ROG Thor Titanium 90YE00K0-B0NA00 , 1600W', 890.50)">
-                    <span class="btn-text">SHTO NË SHPORT</span>
-                </button>
-            </div>
-        </div>
-    </div>
-
-    <div class="product-detail-container" id="product-tavolin">
-        <a href="index.html" class="back-link">&#8592; Kthehu Mbrapa</a>
-        <div class="product-detail">
-            <div class="product-image">
-                <img src="foto/11.png" alt="Product 11">
-            </div>
-            <div class="product-info">
-                <h2>Tavolinë COUGAR E-MARS RGB, 1531x770x745-1195mm, 2xUSB 3.0 & USB-C, e zezë</h2>
-                <p style="text-decoration: line-through;">1,129.50 €</p>
-                <p class="product-price">985.50 €</p>
-                <div class="product-description">
-                    <h3>Detajet e Tavolinë's</h3>
-                    <p> COUGAR E-MARS është tavolinë ergonomike dhe moderne, e pajisur me një sistem të dyfishtë motorik për rregullimin e lartësisë, që mundëson një ngarkesë maksimale prej 100kg. Kjo tavolinë ofron një rregullim të lartësisë nga 70cm deri në 115cm për një pozicion që relakson trupin dhe rrit qarkullimin e gjakut. Efektet e RGB mundësojnë një atmosferë më të mirë lojrash dhe mund të sinkronizohen me pajisje të tjera si Asus Aura Sync dhe MSI Mystic Light. Dizajni i saj i fortë dhe i qetë, motorët me nivel zhurme më të ulët se 50dB, sigurojnë një përdorim pa shqetësime. Me mundësi rregullimi të lartësisë dhe 4 pozita memorie, E-MARS është e pajisur gjithashtu me dritat RGB dhe mundësi lidhjeje të monitorit për një produktivitet të shtuar. Pjesët e tjera ergonomike si cepat e lakuara dhe rafti i thellë për menaxhimin e kabllove e bëjnë këtë tavolinë ideale për lojtarët dhe profesionistët.</p>
-                </div>
-                <button class="pay-btn" onclick="showMessage('Tavolinë COUGAR E-MARS RGB, 1531x770x745-1195mm, 2xUSB 3.0 & USB-C, e zezë', 985.50)">
-                    <span class="btn-text">SHTO NË SHPORT</span>
-                </button>
-            </div>
-        </div>
-    </div>
-
-    <div class="product-detail-container" id="product-karrige">
-        <a href="index.html" class="back-link">&#8592; Kthehu Mbrapa</a>
-        <div class="product-detail">
-            <div class="product-image">
-                <img src="foto/12.png" alt="Product 12">
-            </div>
-            <div class="product-info">
-                <h2>Karrige Noblechairs HERO Black Edition, zezë</h2>
-                <p style="text-decoration: line-through;">711.50 €</p>
-                <p class="product-price">675.50 €</p>
-                <div class="product-description">
-                    <h3>Detajet e Karrige's</h3>
-                    <p>   E dizajnuar për profesionistët dhe entuziastët e lojërave, karriga e lojërave Noblechairs HERO ofron rehati dhe personalizim të pakufizuar për këdo që ulet në ulësen e saj të mbushur me sfungjer. Karriga ka një piston gazi dhe pjesët e krahut mund të palosen poshtë. Përfshin jastëk tek mesi dhe në qafë për ulje të rehatshme dhe është e bërë nga lëkura PU. Mban 150 kg.</p>
-                </div>
-                <button class="pay-btn" onclick="showMessage('Karrige Noblechairs HERO Black Edition, zezë', 675.50)">
-                    <span class="btn-text">SHTO NË SHPORT</span>
-                </button>
-            </div>
-        </div>
-    </div>
-
-    <div class="product-detail-container" id="product-laptop">
-        <a href="index.html" class="back-link">&#8592; Kthehu Mbrapa</a>
-        <div class="product-detail">
-            <div class="product-image">
-                <img src="foto/13.png" alt="Product 13">
-            </div>
-            <div class="product-info">
-                <h2>Laptop MSI Katana 15 B13VGK-1493XPL, 15.6", Intel Core i7, 16GB RAM, 1TB SSD, NVIDIA GeForce RTX 4070, i zi</h2>
-                <p style="text-decoration: line-through;">1,533.50 €</p>
-                <p class="product-price">1,243.50 €</p>
-                <div class="product-description">
-                    <h3>Detajet e Laptop-it</h3>
-                    <p> MSI Katana 15 B13VGK-1493XPL është një laptop i fuqishëm gaming, i ndërtuar për të ofruar performancë të jashtëzakonshme për lojtarët dhe krijuesit e përmbajtjes. Me një kombinim të përbërësve më të fundit dhe një dizajn agresiv, ky model është zgjedhja ideale për ata që kërkojnë shpejtësi, fuqi dhe grafikë të nivelit të lartë.</p>
-                </div>
-                <button class="pay-btn" onclick="showMessage('Laptop MSI Katana 15 B13VGK-1493XPL, 15.6, Intel Core i7, 16GB RAM, 1TB SSD, NVIDIA GeForce RTX 4070, i zi', 1243.50)">
-                    <span class="btn-text">SHTO NË SHPORT</span>
-                </button>
-            </div>
-        </div>
-    </div>
-
-    <div class="product-detail-container" id="product-xbox">
-        <a href="index.html" class="back-link">&#8592; Kthehu Mbrapa</a>
-        <div class="product-detail">
-            <div class="product-image">
-                <img src="foto/15.png" alt="Product 15">
-            </div>
-            <div class="product-info">
-                <h2>Xbox Series S, 512GB, e bardhë</h2>
-                <p style="text-decoration: line-through;">445.50 €</p>
-                <p class="product-price">339.50 €</p>
-                <div class="product-description">
-                    <h3>Detajet e Xbox-it</h3>
-                    <p> Xbox Series S, është Xbox më i vogël ndonjëherë. Përjetoni shpejtësinë dhe performancën e një tastiere krejtësisht dixhitale të gjeneratës së ardhshme me një çmim të përballueshëm. Me abonimin Xbox Game Pass Ultimate (abonimi shitet veçmas) do të keni akses në një bibliotekë me mbi 100 lojëra me cilësi të lartë, duke përfshirë të gjithë titujt e rinj të Xbox Game Studios, si Halo Infinite, në ditën e premierës. </p>
-                </div>
-                <button class="pay-btn" onclick="showMessage('Xbox Series S, 512GB, e bardhë', 339.50)">
-                    <span class="btn-text">SHTO NË SHPORT</span>
-                </button>
-            </div>
-        </div>
-    </div>
-
-    <div class="product-detail-container" id="product-konzol">
-        <a href="index.html" class="back-link">&#8592; Kthehu Mbrapa</a>
-        <div class="product-detail">
-            <div class="product-image">
-                <img src="foto/14.png" alt="Product 14">
-            </div>
-            <div class="product-info">
-                <h2>Konzolë Sony PlayStation 5 Digital Slim Edition 1TB SSD Wi-Fi, e zezë/ bardhë</h2>
-                <p style="text-decoration: line-through;">618.50 €</p>
-                <p class="product-price">567.50 €</p>
-                <div class="product-description">
-                    <h3>Detajet e Playstation 5</h3>
-                    <p> Sony PlayStation 5 Digital Slim Edition është versioni më kompakt dhe më elegant i konsolës më të fuqishme të Sony deri më tani. Me të njëjtën performancë të jashtëzakonshme, por me një dizajn më të hollë dhe më të lehtë, kjo konsolë është perfekte për ata që preferojnë lojërat në formë dixhitale dhe duan një përvojë të pastër gaming pa disqe fizike.</p>
-                </div>
-                <button class="pay-btn" onclick="showMessage('Konzolë Sony PlayStation 5 Digital Slim Edition 1TB SSD Wi-Fi, e zezë/ bardhë', 567.50)">
-                    <span class="btn-text">SHTO NË SHPORT</span>
-                </button>
-            </div>
-        </div>
-    </div>
-
-</main>
-
-<!-- Modal for payment options -->
-<div id="paymentOptionsModal" class="modal">
-    <div class="modal-content">
-        <span class="close-button" onclick="closeModal()">&times;</span>
-        <h2 class="h222">Mënyra e pagesës</h2>
-        <button id="cashPaymentBtn" class="payment-option-btn">Paguaj me Cash </button>
-        <button id="cardPaymentBtn" class="payment-option-btn">Paguaj Online</button>
     </div>
 </div>
 
-<!-- Modal for card payment form -->
-<div id="cardPaymentModal" class="modal">
-    <div class="modal-content">
-        <span class="close-button" onclick="closeModal()">&times;</span>
-        <h2 class="h222" style="font-size: 14px;"><img src="foto/bank.jpg" alt="Bank Icon" style="width: 50px;" >Paguaj online (Blerje direkte ose me këste):</h2>
-        <form id="paymentForm">
-            <label for="cardName"><img src="foto/user.png" alt="User Icon" style="width: 20px;" >Emri i mbajtësit të kartës:</label>
-            <input type="text" id="cardName" placeholder="Emri në kartë" required>
-            <label for="cardNumber"><img src="foto/card.png" alt="Mastercard Icon" style="width: 24px;" >Numri i kartës:</label>
-            <input type="text" id="cardNumber" placeholder="0000 0000 0000 0000" maxlength="19" required>
-            <label for="cardExpiry"><img src="foto/calendar.png" alt="Calendar Icon" style="width: 16px;" >Data e skadimit:</label>
-            <input type="text" id="cardExpiry" placeholder="MM/YY" maxlength="5" required>
-            <label for="cardCVV"><img src="foto/padlock.png" alt="Padlock Icon" style="width: 16px;" >CVV:</label>
-            <input type="text" id="cardCVV" placeholder="CVV" maxlength="3" required>
-        </form>
+<!-- Product Detail Container for Samsung Galaxy S25 Ultra -->
+<div class="product-detail-container" id="product-samsung">
+    <a href="index.html" class="back-link">&#8592; Kthehu Mbrapa</a>
+    <div class="product-detail">
+        <section id="slideWrapper1">
+            <div id="slideWrapper">
+                <div class="slide">
+                    <img src="foto/samsung2.png" style="height:200px; width: 200px;">
+                </div>
+                <div class="slide">
+                    <img src="foto/2.png" style="height:200px; width: 200px;">
+                </div>
+                <div class="slide">
+                    <img src="foto/samsung4.png" style="height:200px; width: 200px;">
+                </div>
+                <div class="slide">
+                    <img src="foto/samsung3.png" style="height:200px; width: 200px;">
+                </div>
+            </div>
+        </section>
+        <div class="product-info">
+            <h2>Samsung Galaxy S25 Ultra, 6.9", 12GB/ 1TB, Titanium Black</h2>
+            <p style="text-decoration: line-through;">1,643.50 €</p>
+            <p class="product-price">1,343.50 €</p>
+            <div  class="accordion">
+                <h3>Detajet e Samsung-it</h3>
+                <div>
+                    <p>Ky celular me performancë të lartë përmban një ekran AMOLED 6.9" me një rezolucion prej 3120 × 1440, një shpejtësi rifreskimi prej 120 Hz dhe mbrojtje Gorilla Glass Victus 2, duke siguruar qëndrueshmëri dhe pamje mahnitëse. Mundësuar nga procesori Snapdragon 8 Elite për Galaxy me 4.47 GHz me 4.47 GHz, vjen i pajisur me 12 GB RAM dhe 1 TB hapësirë ruajtëse të brendshme Me Android 15 me Samsung One UI, ai mbështet funksionalitetin e dyfishtë SIM (Nano SIM ose eSIM) dhe përfshin një fole për kartën e memories për ruajtje të zgjerueshme.<p>
+                </div>
+            </div>
             <br>
-                 <button class="pay-btn" type="submit" onclick="processPayment(event)">Paguaj Tani</button>
-                <div class="container-Cards">
+            <button class="pay-btn" onclick="showMessage('Samsung Galaxy S25 Ultra, 6.9, 12GB/ 1TB, Titanium Black', 1343.50)">
+                <span class="btn-text">SHTO NË SHPORT</span>
+            </button>
+        </div>
+    </div>
+</div>
+
+<!-- Product Detail Container for Monitor Dell Alienware -->
+<div class="product-detail-container" id="product-monitor">
+    <a href="index.html" class="back-link">&#8592; Kthehu Mbrapa</a>
+    <div class="product-detail">
+        <section id="slideWrapper1">
+            <div id="slideWrapper">
+                <div class="slide">
+                    <img src="foto/monitor2.png" style="height:200px; width: 200px;">
+                </div>
+                <div class="slide">
+                    <img src="foto/3.png" style="height:200px; width: 200px;">
+                </div>
+                <div class="slide">
+                    <img src="foto/monitor4.png" style="height:200px; width: 200px;">
+                </div>
+                <div class="slide">
+                    <img src="foto/monitor3.png" style="height:200px; width: 200px;">
+                </div>
+            </div>
+        </section>
+        <div class="product-info">
+            <h2>Monitor Dell Alienware AW2524HF 500Hz, 24.5", FullHD, i zi</h2>
+            <p style="text-decoration: line-through; font-size: 15px;">536.50 €</p>
+            <p style="font-weight:bold; color: #F88379;">485.50 €</p>
+            <div class="accordion">
+                <h3>Detajet e Monitor-it</h3>
+                <div>
+                    <p>Filloni lojërat me shpejtësinë e dritës me një ritëm rifreskimi 500 Hz që mund të vazhdojë edhe me lojën më intensive, në mënyrë që të mos humbisni kurrë asgjë. Koha e përgjigjes prej 0,5 ms dhe reduktimi i turbullimit dhe njollosjes sigurojnë lojë të qetë dhe grafikë të pastër kristal.
+                        Me çertifikatat më të fundit AMD FreeSync™ Premium dhe VESA Adaptive Sync, do të përjetoni një lojë më të qetë pa belbëzim ose grisje. Teknologjia e shpejtë IPS siguron ngjyra të qëndrueshme dhe pa turbullira, pavarësisht nga pozicioni i monitorit.</p>
+                </div>
+            </div>
+            <br>
+            <button class="pay-btn" onclick="showMessage('Monitor Dell Alienware AW2524HF 500Hz, 24.5, FullHD, i zi', 485.50)">
+                <span class="btn-text">SHTO NË SHPORT</span>
+            </button>
+        </div>
+    </div>
+</div>
+
+<!-- Product Detail Container for Gaming PC -->
+<div class="product-detail-container" id="product-gamingpc">
+    <a href="index.html" class="back-link">&#8592; Kthehu Mbrapa</a>
+    <div class="product-detail">
+        <div class="product-image">
+            <img src="foto/4.png" alt="Product Image">
+        </div>
+        <div class="product-info">
+            <h2>RTX 4090, AMD Ryzen 9 7950X3D, 32GB RAM, 1TB SSD - Gaming PC Black Series 42</h2>
+            <p style="text-decoration: line-through;">4,299.50 €</p>
+            <p class="product-price">3,980.50 €</p>
+            <div class="accordion">
+                <h3>Detajet e Pc's</h3>
+                <div>
+                    <p>Kasa NZXT H9 Elite në ngjyrë të bardhë është kombinimi ideal i estetikës dhe performancës për çdo ndërtues entuziast. Me panele xhami të temperuar që ofrojnë një pamje të plotë të brendësisë, kjo kasa është perfekte për ata që duan të shfaqin komponentët e tyre me stil dhe elegancë.
+            Dizajni i saj i gjerë dhe funksional siguron hapësirë të mjaftueshme për menaxhimin e kabllove dhe instalimin e sistemeve të ftohjes, qoftë për ftohje me ujë apo ajër, duke mbajtur gjithmonë temperaturat optimale. Me ndriçim RGB të integruar, NZXT H9 Elite sjell një atmosferë të personalizuar dhe moderne për kompjuterin tuaj.</p>
+                </div>
+            </div>
+            <br>
+            <button class="pay-btn" onclick="showMessage('RTX 4090, AMD Ryzen 9 7950X3D, 32GB RAM, 1TB SSD - Gaming PC Black Series 42', 3980.50)">
+                <span class="btn-text">SHTO NË SHPORT</span>
+            </button>
+        </div>
+    </div>
+</div>
+
+<!-- Product Detail Container for Kartelë Grafike -->
+<div class="product-detail-container" id="product-kartel">
+    <a href="index.html" class="back-link">&#8592; Kthehu Mbrapa</a>
+    <div class="product-detail">
+        <div class="product-image">
+            <img src="foto/5.png" alt="Product Image">
+        </div>
+        <div class="product-info">
+            <h2>Kartelë grafike Asus GeForce RTX 5090 32GB TUF Gaming</h2>
+            <p style="text-decoration: line-through;">2,594.50 €</p>
+            <p class="product-price">2.345.50 €</p>
+            <div class="accordion">
+                <h3>Detajet e Kartelë's</h3>
+                <div>
+                    <p>NVIDIA GeForce RTX 5090 është një kartë grafike me performancë të lartë, qoftë për lojëra moderne, interpretim profesional ose aplikacione të avancuara të AI. Ky central elektrik përmban një memorie të madhe 32 GB GDDR7, e mbështetur nga një memorie 512-bit dhe një shpejtësi mahnitëse e transferimit të të dhënave 28 Gbit/s, duke siguruar trajtim të shpejtë të të dhënave dhe performancë të qetë në mjedise me definicion ultra të lartë. I pajisur me 21,760 bërthama CUDA, RTX 5090 ofron aftësi të jashtëzakonshme përpunimi paralel, duke e bërë atë një zgjedhje ideale për profesionistët që kërkojnë fuqi llogaritëse të nivelit të lartë.</p>
+                </div>
+            </div>
+            <br>
+            <button class="pay-btn" onclick="showMessage('Kartelë grafike Asus GeForce RTX 5090 32GB TUF Gaming', 2345.50)">
+                <span class="btn-text">SHTO NË SHPORT</span>
+            </button>
+        </div>
+    </div>
+</div>
+
+<!-- Product Detail Container for Procesor AMD Ryzen 9 -->
+<div class="product-detail-container" id="product-procesor">
+    <a href="index.html" class="back-link">&#8592; Kthehu Mbrapa</a>
+    <div class="product-detail">
+        <div class="product-image">
+            <img src="foto/6.png" alt="Product Image">
+        </div>
+        <div class="product-info">
+            <h2>Procesor AMD Ryzen 9 7950X3D</h2>
+            <p style="text-decoration: line-through;">842.50 €</p>
+            <p class="product-price">775.50 €</p>
+            <div class="accordion">
+                <h3>Detajet e Procesor-it</h3>
+                <div>
+                    <p>AMD Ryzen 9 7950X3D processor 4.2 GHz 128 MB L3 Box.</p>
+                </div>
+            </div>
+            <br>
+            <button class="pay-btn" onclick="showMessage('Procesor AMD Ryzen 9 7950X3D', 775.50)">
+                <span class="btn-text">SHTO NË SHPORT</span>
+            </button>
+        </div>
+    </div>
+</div>
+
+<!-- Product Detail Container for Tastierë SteelSeries -->
+<div class="product-detail-container" id="product-tastier">
+    <a href="index.html" class="back-link">&#8592; Kthehu Mbrapa</a>
+    <div class="product-detail">
+        <div class="product-image">
+            <img src="foto/7.png" alt="Product Image">
+        </div>
+        <div class="product-info">
+            <h2>Tastierë SteelSeries Apex PRO OmniPoint, e zezë</h2>
+            <p style="text-decoration: line-through;">317.50 €</p>
+            <p class="product-price">250.50 €</p>
+            <div class="accordion">
+                <h3>Detajet e Tastierë's</h3>
+                <div>
+                    <p>Tastiera te pjesa numerike ka disa simbole çeke. E pajisur me një monitor inteligjent OLED, tastiera Apex Pro jo vetëm që përshtatet për secilën lojë, por përshtatet mirë edhe me ju. Korniza metalike e serisë 5000 është prodhuar për qëndrueshmëri të pathyeshme, duke e bërë atë të përsosur për çdo konfigurim të niveleve të larta. Mbështetja magnetike premium ju siguron një fund të butë dhe të rehatshëm që ju të mund të shkruani dhe luani rehat për aq kohë sa dëshironi. Boshti metalik i klikueshëm dhe tasti multimedial ju lejojnë të përshtatni shpejt volumin si dhe ndryshimin e shkëlqimit, kthimin mbrapa, kalimin, pauzën vetëm me një prekje butoni. Produkti ju ofron miliona opsione me ngjyra dhe kanale të integruara për daljen e kabllove në mënyrë që të mbani tavolinën tuaj të pastër dhe posedonkabllo 1.8 m. </p>
+                </div>
+            </div>
+            <br>
+            <button class="pay-btn" onclick="showMessage('Tastierë SteelSeries Apex PRO OmniPoint, e zezë', 250.50)">
+                <span class="btn-text">SHTO NË SHPORT</span>
+            </button>
+        </div>
+    </div>
+</div>
+
+<!-- Product Detail Container for Mouse Logitech -->
+<div class="product-detail-container" id="product-maus">
+    <a href="index.html" class="back-link">&#8592; Kthehu Mbrapa</a>
+    <div class="product-detail">
+        <div class="product-image">
+            <img src="foto/8.png" alt="Product Image">
+        </div>
+        <div class="product-info">
+            <h2>Mouse Logitech G Pro X Superlight 2 Wireless, i bardhë</h2>
+            <p style="text-decoration: line-through;">234.50 €</p>
+            <p class="product-price">195.50 €</p>
+            <div class="accordion">
+                <h3>Detajet e Maus-it</h3>
+                <div>
+                    <p>Logitech G Pro X 2 Superlight White është një maus optik wireless i krijuar për sportet elektronike. Ka një dizajn ergonomik të krijuar për njerëzit me dorën e djathtë. Ai përfshin 5 butona të programueshëm dhe një rrotë lëvizëse. Falë teknologjisë së përparuar wireless LIGHTSPEED, ai siguron liri të rehatshme lëvizjeje duke ruajtur latente të ulët. Produkti është neutral ndaj karbonit. Sensori HERO 2 në Logitech G Pro X 2 Superlight funksionon me një rezolucion maksimal prej 32000 dpi, duke ofruar një shpejtësi gjurmimi prej 500 IPS dhe një përshpejtim maksimal prej 40 G.</p>
+                </div>
+            </div>
+            <br>
+            <button class="pay-btn" onclick="showMessage('Mouse Logitech G Pro X Superlight 2 Wireless, i bardhë', 195.50)">
+                <span class="btn-text">SHTO NË SHPORT</span>
+            </button>
+        </div>
+    </div>
+</div>
+
+<!-- Product Detail Container for Kufje HyperX -->
+<div class="product-detail-container" id="product-kufje">
+    <a href="index.html" class="back-link">&#8592; Kthehu Mbrapa</a>
+    <div class="product-detail">
+        <div class="product-image">
+            <img src="foto/9.png" alt="Product Image">
+        </div>
+        <div class="product-info">
+            <h2>Kufje HyperX Cloud Alpha Wireless Headphones, të zeza</h2>
+            <p style="text-decoration: line-through;">186.50 €</p>
+            <p class="product-price">155.50 €</p>
+            <div class="accordion">
+                <h3>Detajet e Kufjeve</h3>
+                <div>
+                    <p>Përfitoni nga 300 orë jetëgjatësi e baterisë për të luajtur për më shumë se një javë pa e zbrazur baterinë. Përfundoni fushata të shumta në lojë pa u rimbushur dhe shijoni çdo minutë komoditeti të ofruar nga kupat e veshit Cloud Alpha Wireless të bëra me shkumë memorie unike, të butë HyperX, të mbuluara me material që imiton lëkurën me frymëmarrje. Drejtuesit HyperX me dy dhoma prodhojnë tingull jashtëzakonisht të qartë duke ndarë meset dhe lartësitë nga basi. I kombinuar me teknologjinë DTS® Headphone:X® Spatial Audio, e cila ofron lokalizim të saktë të zërit dhe tingull realist rrethues, do t'ju lejojë të zhyteni në botën e lojërave tuaja të preferuara të fantazisë ose të përqendroheni në konkurrencë. Kontrolloni jetëgjatësinë e baterisë, rregulloni cilësimet e barazimit dhe aksesoni më shumë opsione me softuerin HyperX NGENUITY të lehtë për t'u përdorur.</p>
+                </div>
+            </div>
+            <br>
+            <button class="pay-btn" onclick="showMessage('Kufje HyperX Cloud Alpha Wireless Headphones, të zeza', 155.50)">
+                <span class="btn-text">SHTO NË SHPORT</span>
+            </button>
+        </div>
+    </div>
+</div>
+
+<!-- Product Detail Container for Burim Energjie Asus ROG Thor -->
+<div class="product-detail-container" id="product-burim">
+    <a href="index.html" class="back-link">&#8592; Kthehu Mbrapa</a>
+    <div class="product-detail">
+        <div class="product-image">
+            <img src="foto/10.png" alt="Product Image">
+        </div>
+        <div class="product-info">
+            <h2>Burim energjie Asus ROG Thor Titanium 90YE00K0-B0NA00 , 1600W</h2>
+            <p style="text-decoration: line-through;">921.50 €</p>
+            <p class="product-price">890.50 €</p>
+            <div class="accordion">
+                <h3>Detajet e Burim-it të Energji's</h3>
+                <div>
+                    <p>Zbuloni fuqinë e pakufizuar me burimin e energjisë Asus ROG Thor Titanium 1600W! Ky burim energjie premium është projektuar për t'i dhënë sistemit tuaj lojtar një performancë të jashtëzakonshme dhe qëndrueshmëri të lartë. Me një rendiment të shkëlqyer dhe teknologji të avancuar, ROG Thor siguron energji të pastër dhe të qëndrueshme për komponentët tuaj më të kërkuar. Dizajni i tij elegant dhe ndriçimi RGB e bën atë një shtesë të shkëlqyer për çdo build gaming. Mos e humbisni mundësinë për të përmirësuar përvojën tuaj të lojrave me këtë burim energjie të fuqishëm dhe të besueshëm!</p>
+                </div>
+            </div>
+            <br>
+            <button class="pay-btn" onclick="showMessage('Burim energjie Asus ROG Thor Titanium 90YE00K0-B0NA00 , 1600W', 890.50)">
+                <span class="btn-text">SHTO NË SHPORT</span>
+            </button>
+        </div>
+    </div>
+</div>
+
+<!-- Product Detail Container for Tavolinë COUGAR E-MARS -->
+<div class="product-detail-container" id="product-tavolin">
+    <a href="index.html" class="back-link">&#8592; Kthehu Mbrapa</a>
+    <div class="product-detail">
+        <div class="product-image">
+            <img src="foto/11.png" alt="Product Image">
+        </div>
+        <div class="product-info">
+            <h2>Tavolinë COUGAR E-MARS RGB, 1531x770x745-1195mm, 2xUSB 3.0 & USB-C, e zezë</h2>
+            <p style="text-decoration: line-through;">1,129.50 €</p>
+            <p class="product-price">985.50 €</p>
+            <div class="accordion">
+                <h3>Detajet e Tavolinë's</h3>
+                <div>
+                    <p>COUGAR E-MARS është tavolinë ergonomike dhe moderne, e pajisur me një sistem të dyfishtë motorik për rregullimin e lartësisë, që mundëson një ngarkesë maksimale prej 100kg. Kjo tavolinë ofron një rregullim të lartësisë nga 70cm deri në 115cm për një pozicion që relakson trupin dhe rrit qarkullimin e gjakut. Efektet e RGB mundësojnë një atmosferë më të mirë lojrash dhe mund të sinkronizohen me pajisje të tjera si Asus Aura Sync dhe MSI Mystic Light. Dizajni i saj i fortë dhe i qetë, motorët me nivel zhurme më të ulët se 50dB, sigurojnë një përdorim pa shqetësime. Me mundësi rregullimi të lartësisë dhe 4 pozita memorie, E-MARS është e pajisur gjithashtu me dritat RGB dhe mundësi lidhjeje të monitorit për një produktivitet të shtuar. Pjesët e tjera ergonomike si cepat e lakuara dhe rafti i thellë për menaxhimin e kabllove e bëjnë këtë tavolinë ideale për lojtarët dhe profesionistët.</p>
+                </div>
+            </div>
+            <br>
+            <button class="pay-btn" onclick="showMessage('Tavolinë COUGAR E-MARS RGB, 1531x770x745-1195mm, 2xUSB 3.0 & USB-C, e zezë', 985.50)">
+                <span class="btn-text">SHTO NË SHPORT</span>
+            </button>
+        </div>
+    </div>
+</div>
+
+<!-- Product Detail Container for Karrige Noblechairs HERO -->
+<div class="product-detail-container" id="product-karrige">
+    <a href="index.html" class="back-link">&#8592; Kthehu Mbrapa</a>
+    <div class="product-detail">
+        <div class="product-image">
+            <img src="foto/12.png" alt="Product Image">
+        </div>
+        <div class="product-info">
+            <h2>Karrige Noblechairs HERO Black Edition, zezë</h2>
+            <p style="text-decoration: line-through;">711.50 €</p>
+            <p class="product-price">675.50 €</p>
+            <div class="accordion">
+                <h3>Detajet e Karrige's</h3>
+                <div>
+                    <p> E dizajnuar për profesionistët dhe entuziastët e lojërave, karriga e lojërave Noblechairs HERO ofron rehati dhe personalizim të pakufizuar për këdo që ulet në ulësen e saj të mbushur me sfungjer. Karriga ka një piston gazi dhe pjesët e krahut mund të palosen poshtë. Përfshin jastëk tek mesi dhe në qafë për ulje të rehatshme dhe është e bërë nga lëkura PU. Mban 150 kg.</p>
+                </div>
+            </div>
+            <br>
+            <button class="pay-btn" onclick="showMessage('Karrige Noblechairs HERO Black Edition, zezë', 675.50)">
+                <span class="btn-text">SHTO NË SHPORT</span>
+            </button>
+        </div>
+    </div>
+</div>
+
+<!-- Product Detail Container for Laptop MSI Katana -->
+<div class="product-detail-container" id="product-laptop">
+    <a href="index.html" class="back-link">&#8592; Kthehu Mbrapa</a>
+    <div class="product-detail">
+        <div class="product-image">
+            <img src="foto/13.png" alt="Product Image">
+        </div>
+        <div class="product-info">
+            <h2>Laptop MSI Katana 15 B13VGK-1493XPL, 15.6", Intel Core i7, 16GB RAM, 1TB SSD, NVIDIA GeForce RTX 4070, i zi</h2>
+            <p style="text-decoration: line-through;">1,533.50 €</p>
+            <p class="product-price">1,243.50 €</p>
+            <div class="accordion">
+                <h3>Detajet e Laptop-it</h3>
+                <div>
+                    <p>MSI Katana 15 B13VGK-1493XPL është një laptop i fuqishëm gaming, i ndërtuar për të ofruar performancë të jashtëzakonshme për lojtarët dhe krijuesit e përmbajtjes. Me një kombinim të përbërësve më të fundit dhe një dizajn agresiv, ky model është zgjedhja ideale për ata që kërkojnë shpejtësi, fuqi dhe grafikë të nivelit të lartë.</p>
+                </div>
+            </div>
+            <br>
+            <button class="pay-btn" onclick="showMessage('Laptop MSI Katana 15 B13VGK-1493XPL, 15.6, Intel Core i7, 16GB RAM, 1TB SSD, NVIDIA GeForce RTX 4070, i zi', 1243.50)">
+                <span class="btn-text">SHTO NË SHPORT</span>
+            </button>
+        </div>
+    </div>
+</div>
+
+<!-- Product Detail Container for Xbox Series S -->
+<div class="product-detail-container" id="product-xbox">
+    <a href="index.html" class="back-link">&#8592; Kthehu Mbrapa</a>
+    <div class="product-detail">
+        <div class="product-image">
+            <img src="foto/15.png" alt="Product Image">
+        </div>
+        <div class="product-info">
+            <h2>Xbox Series S, 512GB, e bardhë</h2>
+            <p style="text-decoration: line-through;">445.50 €</p>
+            <p class="product-price">339.50 €</p>
+            <div class="accordion">
+                <h3>Detajet e Xbox-it</h3>
+                <div>
+                    <p>Xbox Series S, është Xbox më i vogël ndonjëherë. Përjetoni shpejtësinë dhe performancën e një tastiere krejtësisht dixhitale të gjeneratës së ardhshme me një çmim të përballueshëm. Me abonimin Xbox Game Pass Ultimate (abonimi shitet veçmas) do të keni akses në një bibliotekë me mbi 100 lojëra me cilësi të lartë, duke përfshirë të gjithë titujt e rinj të Xbox Game Studios, si Halo Infinite, në ditën e premierës. </p>
+                </div>
+            </div>
+            <br>
+            <button class="pay-btn" onclick="showMessage('Xbox Series S, 512GB, e bardhë', 339.50)">
+                <span class="btn-text">SHTO NË SHPORT</span>
+            </button>
+        </div>
+    </div>
+</div>
+
+<!-- Product Detail Container for Konzolë Sony PlayStation 5 -->
+<div class="product-detail-container" id="product-konzol">
+    <a href="index.html" class="back-link">&#8592; Kthehu Mbrapa</a>
+    <div class="product-detail">
+        <div class="product-image">
+            <img src="foto/14.png" alt="Product Image">
+        </div>
+        <div class="product-info">
+            <h2>Konzolë Sony PlayStation 5 Digital Slim Edition 1TB SSD Wi-Fi, e zezë/ bardhë</h2>
+            <p style="text-decoration: line-through;">618.50 €</p>
+            <p class="product-price">567.50 €</p>
+            <div class="accordion">
+                <h3>Detajet e Playstation 5</h3>
+                <div>
+                    <p>Sony PlayStation 5 Digital Slim Edition është versioni më kompakt dhe më elegant i konsolës më të fuqishme të Sony deri më tani. Me të njëjtën performancë të jashtëzakonshme, por me një dizajn më të hollë dhe më të lehtë, kjo konsolë është perfekte për ata që preferojnë lojërat në formë dixhitale dhe duan një përvojë të pastër gaming pa disqe fizike.</p>
+                </div>
+            </div>
+            <br>
+            <button class="pay-btn" onclick="showMessage('Konzolë Sony PlayStation 5 Digital Slim Edition 1TB SSD Wi-Fi, e zezë/ bardhë', 567.50)">
+                <span class="btn-text">SHTO NË SHPORT</span>
+            </button>
+        </div>
+    </div>
+</div>
+
+    </main>
+
+    <!-- Modal for payment options -->
+    <div id="paymentOptionsModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button" onclick="closeModal()">&times;</span>
+            <h2 class="h222">Mënyra e pagesës</h2>
+            <button id="cashPaymentBtn" class="payment-option-btn">Paguaj me Cash </button>
+            <button id="cardPaymentBtn" class="payment-option-btn">Paguaj Online</button>
+        </div>
+    </div>
+
+    <!-- Modal for card payment form -->
+    <div id="cardPaymentModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button" onclick="closeModal()">&times;</span>
+            <h2 class="h222" style="font-size: 14px;"><img src="foto/bank.jpg" alt="Bank Icon" style="width: 50px;" >Paguaj online (Blerje direkte ose me këste):</h2>
+            <form id="paymentForm">
+                <label for="cardName"><img src="foto/user.png" alt="User Icon" style="width: 20px;" >Emri i mbajtësit të kartës:</label>
+                <input type="text" id="cardName" placeholder="Emri në kartë" required>
+                <label for="cardNumber"><img src="foto/card.png" alt="Mastercard Icon" style="width: 24px;" >Numri i kartës:</label>
+                <input type="text" id="cardNumber" placeholder="0000 0000 0000 0000" maxlength="19" required>
+                <label for="cardExpiry"><img src="foto/calendar.png" alt="Calendar Icon" style="width: 16px;" >Data e skadimit:</label>
+                <input type="text" id="cardExpiry" placeholder="MM/YY" maxlength="5" required>
+                <label for="cardCVV"><img src="foto/padlock.png" alt="Padlock Icon" style="width: 16px;" >CVV:</label>
+                <input type="text" id="cardCVV" placeholder="CVV" maxlength="3" required>
+            </form>
+            <br>
+            <button class="pay-btn" type="submit" onclick="processPayment(event)">Paguaj Tani</button>
+            <div class="container-Cards">
                 <img src="foto/TebCard.png">
                 <img src="foto/raiffeisenCard.png">
                 <img src="foto/bktCard.png">
                 <img src="foto/nlbCard.png">
             </div>
+        </div>
     </div>
-</div>
 
-
-<!-- Modal for cash payment form -->
-<div id="cashPaymentModal" class="modal">
-    <div class="modal-content">
-        <span class="close-button" onclick="closeModal()">&times;</span>
-        <h2 class="h222"><img src="foto/cash.jpg" alt="Mastercard Icon" style="width: 50px;" >Paguaj me para në dorë:</h2>
-        <form id="cashPaymentForm">
-            <label for="fullName"><img src="foto/user.png" alt="User Icon" style="width: 20px;" >Emri dhe Mbiemri:</label>
-            <input type="text" id="fullName" placeholder="Emri dhe Mbiemri" required>
-            <label for="address"><img src="foto/home.avif" alt="Home Icon" style="width: 33px;" >Adresa:</label>
-            <input type="text" id="address" placeholder="Adresa" required>
-            <label for="city"><i class="fa-solid fa-building-user" style="color: #004dd1;"></i>Qyteti:</label>
-            <input type="text" id="city" placeholder="Qyteti" required>
-            <label for="country"><i class="fa-solid fa-earth-americas" style="color: #04d2fb;"></i>Shteti:</label>
-            <input type="text" id="country" placeholder="Shteti" required>
-            <label for="cashAmount"><img src="foto/euro1.png" alt="Euro Icon" style="width: 33px;" >Shuma e pagesës:</label>
-            <input type="number" id="cashAmount" placeholder="Shuma" required>
-        </form>
-        <br>
+    <!-- Modal for cash payment form -->
+    <div id="cashPaymentModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button" onclick="closeModal()">&times;</span>
+            <h2 class="h222"><img src="foto/cash.jpg" alt="Mastercard Icon" style="width: 50px;" >Paguaj me para në dorë:</h2>
+            <form id="cashPaymentForm">
+                <label for="fullName"><img src="foto/user.png" alt="User Icon" style="width: 20px;" >Emri dhe Mbiemri:</label>
+                <input type="text" id="fullName" placeholder="Emri dhe Mbiemri" required>
+                <label for="address"><img src="foto/home.avif" alt="Home Icon" style="width: 33px;" >Adresa:</label>
+                <input type="text" id="address" placeholder="Adresa" required>
+                <label for="city"><i class="fa-solid fa-building-user" style="color: #004dd1;"></i>Qyteti:</label>
+                <input type="text" id="city" placeholder="Qyteti" required>
+                <label for="country"><i class="fa-solid fa-earth-americas" style="color: #04d2fb;"></i>Shteti:</label>
+                <input type="text" id="country" placeholder="Shteti" required>
+                <label for="cashAmount"><img src="foto/euro1.png" alt="Euro Icon" style="width: 33px;" >Shuma e pagesës:</label>
+                <input type="number" id="cashAmount" placeholder="Shuma" required>
+            </form>
+            <br>
             <button class="pay-btn" type="submit" onclick="processCashPayment(event)">Paguaj Tani</button>
+        </div>
     </div>
-</div>
 
-<!-- Modal for adding to cart -->
-<div class="modal fade" id="addToCartModal" tabindex="-1" role="dialog" aria-labelledby="addToCartModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="addToCartModalLabel">Sukses</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        Produkti u shtua në shportë!
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-danger" data-dismiss="modal">Mbyll</button>
-      </div>
+    <!-- Modal for adding to cart -->
+    <div class="modal fade" id="addToCartModal" tabindex="-1" role="dialog" aria-labelledby="addToCartModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="addToCartModalLabel">Sukses</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    Produkti u shtua në shportë!
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Mbyll</button>
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
-</div>
 
-<!-- Modal for empty cart -->
-<div class="modal fade" id="emptyCartModal" tabindex="-1" role="dialog" aria-labelledby="emptyCartModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="emptyCartModalLabel">Kujdes</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        Shporta është e zbrazët!
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-danger" data-dismiss="modal">Mbyll</button>
-      </div>
+    <!-- Modal for empty cart -->
+    <div class="modal fade" id="emptyCartModal" tabindex="-1" role="dialog" aria-labelledby="emptyCartModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="emptyCartModalLabel">Kujdes</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    Shporta është e zbrazët!
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Mbyll</button>
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
-</div>
 
-<!-- Modal for successful payment -->
-<div class="modal fade" id="paymentSuccessModal" tabindex="-1" role="dialog" aria-labelledby="paymentSuccessModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="paymentSuccessModalLabel">Sukses</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        Blerja e produktit është kryer me sukses!
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-danger" data-dismiss="modal">Mbyll</button>
-      </div>
+    <!-- Modal for successful payment -->
+    <div class="modal fade" id="paymentSuccessModal" tabindex="-1" role="dialog" aria-labelledby="paymentSuccessModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="paymentSuccessModalLabel">Sukses</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    Blerja e produktit është kryer me sukses!
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Mbyll</button>
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
-</div>
 
+    <!-- Footer -->
+    <footer class="f1">
+        <p>&copy; 2025 Bleart. All rights reserved.</p>
+        <a class="a11" href="https://programmer-7stack.github.io/BleartPortfolio" target="_blank">
+            <i class="fa-brands fa-github"></i>
+        </a>
+        <a class="a11" href="https://programmer-7stack.github.io/BleartPortfolio/" target="_blank">
+            <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a class="a11" href="https://programmer-7stack.github.io/BleartPortfolio/" target="_blank">
+            <i class="fa-brands fa-facebook"></i>
+        </a>
+        <a class="a11" href="https://programmer-7stack.github.io/BleartPortfolio/" target="_blank">
+            <i class="fa-solid fa-x"></i>
+        </a>
+    </footer>
 
-
-
-
-
-<!-- Footer -->
-<footer class="f1">
-    <p>&copy; 2025 Bleart. All rights reserved.</p>
-    <a class="a11" href="https://programmer-7stack.github.io/BleartPortfolio" target="_blank">
-        <i class="fa-brands fa-github"></i>
-    </a>
-    <a class="a11" href="https://programmer-7stack.github.io/BleartPortfolio/" target="_blank">
-        <i class="fa-brands fa-instagram"></i>
-    </a>
-    <a class="a11" href="https://programmer-7stack.github.io/BleartPortfolio/" target="_blank">
-        <i class="fa-brands fa-facebook"></i>
-    </a>
-    <a class="a11" href="https://programmer-7stack.github.io/BleartPortfolio/" target="_blank">
-        <i class="fa-solid fa-x"></i>
-    </a>
-</footer>
-
-<script src="js/main.js"></script>
-<script type="text/javascript" src="js/jquery-3.7.1.min.js"></script>
-<script type="text/javascript" src="js/jquery-ui.js"></script>
-<script src="js/bootstrap.min.js"></script>
-
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="js/main.js"></script>
+    <script type="text/javascript" src="js/jquery-3.7.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 
     <script>
-$(document).ready(function() {
-    // Function to get query parameters from the URL
-    function getQueryParams(qs) {
-        qs = qs.split('+').join(' ');
-        var params = {}, tokens, re = /[?&]?([^=]+)=([^&]*)/g;
-        while (tokens = re.exec(qs)) {
-            params[decodeURIComponent(tokens[1])] = decodeURIComponent(tokens[2]);
-        }
-        return params;
-    }
+        $(document).ready(function() {
+            // Function to get query parameters from the URL
+            function getQueryParams(qs) {
+                qs = qs.split('+').join(' ');
+                var params = {}, tokens, re = /[?&]?([^=]+)=([^&]*)/g;
+                while (tokens = re.exec(qs)) {
+                    params[decodeURIComponent(tokens[1])] = decodeURIComponent(tokens[2]);
+                }
+                return params;
+            }
 
-    // Get the product ID or name from the URL
-    var query = getQueryParams(document.location.search);
-    var productId = query.product;
+            // Get the product ID or name from the URL
+            var query = getQueryParams(document.location.search);
+            var productId = query.product;
 
-    // Hide all product containers initially
-    $('.product-detail-container').hide();
+            // Hide all product containers initially
+            $('.product-detail-container').hide();
 
-    // Show the selected product container
-    if (productId) {
-        $('#product-' + productId).show();
-    } else {
-        // If no product ID is specified, show all products
-        $('.product-detail-container').show();
-    }
+            // Show the selected product container
+            if (productId) {
+                $('#product-' + productId).show();
+            } else {
+                // If no product ID is specified, show all products
+                $('.product-detail-container').show();
+            }
 
-    console.log('Showing product:', productId);
+            console.log('Showing product:', productId);
+        });
 
-});
+        $('#sort').sortable();
 
+        $(function() {
+            $(".accordion").accordion({
+                collapsible: true,
+                active: false
+            });
+        });
     </script>
 </body>
 </html>
