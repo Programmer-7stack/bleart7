@@ -52,12 +52,7 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         });
     };
-
-    // Add event listener to the search button
-    document.querySelector('button[onclick="searchProducts()"]').addEventListener('click', function(event) {
-        event.preventDefault(); 
-        searchProducts();
-    });
+   
 });
 
 
