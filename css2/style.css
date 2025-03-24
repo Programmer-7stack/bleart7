@@ -284,14 +284,14 @@ main {
 
 /* Accordion Header Styling */
 .ui-accordion .ui-accordion-header {
-    background-color: #888; 
-    color: #333; 
+    background-color: #6c757d; 
+    color: #ced4da; 
     border: none;
 }
 
 .ui-accordion .ui-accordion-header.ui-state-active {
-    background-color: #888;
-    color: #333; 
+    background-color: #6c757d;
+    color: #ced4da; 
 
 }
 .ui-accordion .ui-accordion-content {
@@ -300,8 +300,12 @@ main {
     border-top: none;
     padding: 10px;
     max-height: 200px; 
-    overflow-y: auto; 
+    overflow-y: auto;
+    text-transform: full-width;
+
 }
+
+
 
 
 
@@ -461,8 +465,10 @@ footer .a11 {
                 text-align: center;
             }
 
-            .ui-accordion .ui-accordion-content {
+            .ui-accordion .ui-accordion-content{
                 max-height: 150px; 
+                text-transform: full-width;
+                text-align: left;
             }
 
             #paymentOptionsModal .modal-content {
