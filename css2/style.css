@@ -774,7 +774,6 @@ footer .a11 {
             footer {
                 padding: 20px 40px;
                 gap: 15px;
-                position: sticky;
 
             }
 
@@ -814,8 +813,7 @@ footer .a11 {
             footer {
                 padding: 25px 50px;
                 gap: 20px;
-                position: sticky;
-                bottom: 0;
+                
             }
 
             footer .a11 {
@@ -852,8 +850,7 @@ footer .a11 {
             footer {
                 padding: 30px 60px;
                 gap: 25px;
-                position: sticky;
-                bottom: 0;
+                
             }
 
             footer .a11 {
