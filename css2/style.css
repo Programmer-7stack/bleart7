@@ -293,7 +293,9 @@ main {
     text-decoration: none !important;
     color: #D32F2F !important;
     font-size: 19.2px;
-    padding-right: 650px;
+    padding-right: 580px;
+     white-space: nowrap;
+
 }
 
 
@@ -572,7 +574,7 @@ footer .a11 {
                 width: 79px; 
             }
             .back-link {
-                padding-right: 120px;
+                padding-right: 220px;
                 }
             }
 
