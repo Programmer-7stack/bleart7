@@ -555,7 +555,7 @@
                     height: auto;
                 }
 
-
+               
                 header {
                     padding: 5px;
                     flex-direction: column;
@@ -789,6 +789,9 @@
                     font-size: 15px;
                     padding: 12px 25px;
                 }
+                .product-detail-container#product-televizor {
+        display: block; /* Specifically ensure this product is visible */
+    }
 
                 .product-detail-container {
                     display: flex;
