@@ -263,3 +263,22 @@ document.addEventListener("DOMContentLoaded", function () {
         showSlides(wrapper, slideIndex);
     }
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+    var userIcon = document.getElementById('user');
+    userIcon.addEventListener('click', function() {
+        $('#userModal').modal('show');
+    });
+
+    // Update the modal content when the user clicks the login button
+    document.querySelector('#userModal .btn-danger').addEventListener('click', function() {
+        // Hide the login form
+        $('#userModal .modal-body form').hide();
+
+        // Show the success message
+        $('#userModal .modal-body').html('<p>Jeni kyçur me sukses!</p>');
+
+        // Optionally, you can change the modal footer button to close the modal
+        $('#userModal .modal-footer').html('<button type="button" class="btn btn-danger" data-dismiss="modal">Mbyll</button>');
+    });
+});

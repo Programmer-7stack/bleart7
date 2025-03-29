@@ -11,6 +11,11 @@
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 </head>
 <body>
+
+<div class="top-message">
+    <p><i class="fa-solid fa-bullhorn"></i> Mbështetu tek ne. Dërgesa 100% të sigurta, kudo në Kosovë.</p>
+</div>
+
     <header>
         <a href="index.html" class="logo">
             <svg height="54.91272151156268" width="50" class="logo" style="cursor: pointer; overflow:visible; width: 340px;">
@@ -25,12 +30,14 @@
                 </g>
             </svg>
         </a>
-        <div class="search-bar">
-            <button id="music-btn">
-                <i class="fas fa-play"></i>
-            </button>
-            <audio id="music" src="foto/bb.mp3"></audio>
-            <i class="fa-solid fa-cart-arrow-down" style="color: #f4f8fa; font-size: 30px; position: relative;"></i>
+
+        <div class="search-bar" style="display: flex; justify-content: space-between;">   
+        <button id="music-btn">
+            <i class="fas fa-play"></i>
+        </button>
+         <audio id="music" src="foto/bb.mp3" ></audio>
+        <i class="fa-solid fa-cart-arrow-down" style="color: #f4f8fa;  font-size: 30px ; position: relative;" ></i>
+        <i id="user" class="fa-regular fa-user" style="font-size: 30px;"></i>
         </div>
     </header>
 
@@ -498,7 +505,7 @@
 
     <!-- Modal for adding to cart -->
     <div class="modal fade" id="addToCartModal" tabindex="-1" role="dialog" aria-labelledby="addToCartModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
+        <div class="modal-dialog" role="document" style="display:flex; justify-content: center; align-content: center;">
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title" id="addToCartModalLabel">Sukses</h5>
@@ -518,7 +525,7 @@
 
     <!-- Modal for empty cart -->
     <div class="modal fade" id="emptyCartModal" tabindex="-1" role="dialog" aria-labelledby="emptyCartModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
+        <div class="modal-dialog" role="document" style="display:flex; justify-content: center; align-content: center;">
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title" id="emptyCartModalLabel">Kujdes</h5>
@@ -538,7 +545,7 @@
 
     <!-- Modal for successful payment -->
     <div class="modal fade" id="paymentSuccessModal" tabindex="-1" role="dialog" aria-labelledby="paymentSuccessModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
+        <div class="modal-dialog" role="document" style="display:flex; justify-content: center; align-content: center;">
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title" id="paymentSuccessModalLabel">Sukses</h5>
@@ -555,7 +562,66 @@
             </div>
         </div>
     </div>
-<br>
+
+    <!-- Modal Structure -->
+<div class="modal fade" id="userModal" tabindex="-1" role="dialog" aria-labelledby="userModalLabel" aria-hidden="true"  >
+  <div class="modal-dialog" role="document" style="display:flex; justify-content: center; align-content: center;">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="userModalLabel">Hyni në llogarinë tuaj</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <button class="btn btn-white btn-block"><img id="photos-for-login" src="foto/google.png" >Identifikohu me Google</button>
+        <button class="btn btn-white btn-block"><img id="photos-for-login" src="foto/facebook.png" >Identifikohu me Facebook</button>
+        <button class="btn btn-white btn-block"><img id="photos-for-login" src="foto/apple.png" style="height:50px; width: 50px;" >Identifikohu me Apple</button>
+        <hr>
+        <form>
+          <div class="form-group">
+            <input type="email" class="form-control" id="email" placeholder="Adresa e emailit">
+          </div>
+          <div class="form-group">
+            <input type="password" class="form-control" id="password" placeholder="Fjalëkalimi">
+          </div>
+          <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="rememberMe">
+            <label class="form-check-label" for="rememberMe">Më mbaj të kyçur</label>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" style="width:320px;">Kyçuni</button>
+        <div class="text-center">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal for successful login -->
+<div class="modal fade" id="loginSuccessModal" tabindex="-1" role="dialog" aria-labelledby="loginSuccessModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document" style="display:flex; justify-content: center; align-content: center;">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="loginSuccessModalLabel">Sukses</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                Jeni kyçur me sukses!
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Mbyll</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
     <!-- Footer -->
     <footer class="f1">
         <p>&copy; 2025 Bleart. All rights reserved.</p>
@@ -616,8 +682,6 @@
                 active: false
             });
         });
-
-
     </script>
 </body>
 </html>
