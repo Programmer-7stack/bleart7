@@ -490,7 +490,7 @@
     /*Responsive */
 
             /* Për ekranet më të vogla (telefon) */
-            @media (max-width: 768px) {
+            @media  (max-width: 768px) {
                 .modal-content .h222 {
                     font-size: 19px;
                     text-align: center;
@@ -749,7 +749,7 @@
                 }
 
                 .search-bar input[type="text"] {
-                    width: 580px; 
+                    width: 400px; 
                     font-size: 18px;
                 }
 
