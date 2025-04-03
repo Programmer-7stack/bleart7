@@ -42,6 +42,7 @@
     </header>
 
     <main>
+
 <div class="product-detail-container" id="product-iphone">
     <a href="index.html" class="back-link">&#8592; Kthehu Mbrapa</a>
     <div class="product-detail">
@@ -470,7 +471,6 @@
 
     </main>
 
-    <!-- Modal for payment options -->
     <div id="paymentOptionsModal" class="modal">
         <div class="modal-content">
             <span class="close-button" onclick="closeModal()">&times;</span>
@@ -480,7 +480,6 @@
         </div>
     </div>
 
-    <!-- Modal for card payment form -->
     <div id="cardPaymentModal" class="modal">
         <div class="modal-content">
             <span class="close-button" onclick="closeModal()">&times;</span>
@@ -506,7 +505,6 @@
         </div>
     </div>
 
-    <!-- Modal for cash payment form -->
     <div id="cashPaymentModal" class="modal">
         <div class="modal-content">
             <span class="close-button" onclick="closeModal()">&times;</span>
@@ -528,7 +526,6 @@
         </div>
     </div>
 
-    <!-- Modal for adding to cart -->
     <div class="modal fade" id="addToCartModal" tabindex="-1" role="dialog" aria-labelledby="addToCartModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document" style="display:flex; justify-content: center; align-content: center;">
             <div class="modal-content">
@@ -548,7 +545,6 @@
         </div>
     </div>
 
-    <!-- Modal for empty cart -->
     <div class="modal fade" id="emptyCartModal" tabindex="-1" role="dialog" aria-labelledby="emptyCartModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document" style="display:flex; justify-content: center; align-content: center;">
             <div class="modal-content">
@@ -568,7 +564,6 @@
         </div>
     </div>
 
-    <!-- Modal for successful payment -->
     <div class="modal fade" id="paymentSuccessModal" tabindex="-1" role="dialog" aria-labelledby="paymentSuccessModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document" style="display:flex; justify-content: center; align-content: center;">
             <div class="modal-content">
@@ -588,7 +583,6 @@
         </div>
     </div>
 
-    <!-- Modal Structure -->
 <div class="modal fade" id="userModal" tabindex="-1" role="dialog" aria-labelledby="userModalLabel" aria-hidden="true"  >
   <div class="modal-dialog" role="document" style="display:flex; justify-content: center; align-content: center;">
     <div class="modal-content">
@@ -625,7 +619,6 @@
   </div>
 </div>
 
-<!-- Modal for successful login -->
 <div class="modal fade" id="loginSuccessModal" tabindex="-1" role="dialog" aria-labelledby="loginSuccessModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document" style="display:flex; justify-content: center; align-content: center;">
         <div class="modal-content">
@@ -647,7 +640,6 @@
 
 
 
-    <!-- Footer -->
     <footer class="f1">
         <p>&copy; 2025 Bleart. All rights reserved.</p>
         <a class="a11" href="https://programmer-7stack.github.io/BleartPortfolio" target="_blank">
@@ -671,7 +663,6 @@
 
     <script>
         $(document).ready(function() {
-            // Function to get query parameters from the URL
             function getQueryParams(qs) {
                 qs = qs.split('+').join(' ');
                 var params = {}, tokens, re = /[?&]?([^=]+)=([^&]*)/g;
@@ -681,18 +672,14 @@
                 return params;
             }
 
-            // Get the product ID or name from the URL
             var query = getQueryParams(document.location.search);
             var productId = query.product;
 
-            // Hide all product containers initially
             $('.product-detail-container').hide();
 
-            // Show the selected product container
             if (productId) {
                 $('#product-' + productId).show();
             } else {
-                // If no product ID is specified, show all products
                 $('.product-detail-container').show();
             }
 

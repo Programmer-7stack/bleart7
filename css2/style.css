@@ -110,7 +110,6 @@
 
     }
 
-    /* Product Section Grid */
     .products {
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
@@ -357,7 +356,6 @@
     }
 
 
-    /* Close Button */
     .close-button {
         float: right;
         font-size: 24px;
@@ -991,3 +989,5 @@
                     font-size: 26px;
                 }
             }
+
+
