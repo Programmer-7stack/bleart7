@@ -308,7 +308,6 @@
     }
 
 
-
     .ui-accordion .ui-accordion-header {
         background-color: #6c757d; 
         color: #ced4da; 
@@ -355,9 +354,10 @@
         max-width: 400px; 
     }
 
-
     .close-button {
-        float: right;
+        position: absolute;
+        top: 1px;
+        right: 15px;
         font-size: 24px;
         cursor: pointer;
         color: #333;
