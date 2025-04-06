@@ -10,7 +10,6 @@
     }
 
 
-
     /* Header Styling */
     header {
         position: sticky;
@@ -694,6 +693,36 @@
                   .brand-logos img {
                     max-height: 30px;
                     }
+                }
+
+            @media screen and (max-width: 588px) {
+                  .category-sidebar {
+                    display: none;
+                  }
+
+                  #slideWrapper1 {
+                    padding: 0;
+                    text-align: center;
+                  }
+
+                  .slideWrapper {
+                    margin: 0 auto;
+                    width: 100%;
+                  }
+
+                  .slide img {
+                    width: 100%;
+                    height: auto;
+                  }
+
+                  .products {
+                    grid-template-columns: repeat(2, 1fr);
+                    gap: 10px;
+                  }
+
+                  .product-card {
+                    height: auto; 
+                  }
                 }
 
 
