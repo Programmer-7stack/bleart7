@@ -700,29 +700,6 @@
                     display: none;
                   }
 
-                  #slideWrapper1 {
-                    padding: 0;
-                    text-align: center;
-                  }
-
-                  .slideWrapper {
-                    margin: 0 auto;
-                    width: 100%;
-                  }
-
-                  .slide img {
-                    width: 100%;
-                    height: auto;
-                  }
-
-                  .products {
-                    grid-template-columns: repeat(2, 1fr);
-                    gap: 10px;
-                  }
-
-                  .product-card {
-                    height: auto; 
-                  }
                 }
 
 
