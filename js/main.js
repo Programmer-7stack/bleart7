@@ -169,28 +169,21 @@ document.addEventListener("DOMContentLoaded", function () {
         }, 1000); 
     };
 
-    // Add event listener to the cart icon
     document.addEventListener('DOMContentLoaded', function() {
-        const cartIcon = document.querySelector(".fa-cart-arrow-down");
-        cartIcon.addEventListener('click', showPaymentOptions);
-    });
+    const music = document.getElementById('music');
+    const musicBtn = document.getElementById('music-btn');
 
-    console.log("Welcome to Bleart7 Website");
-
-    const music = document.getElementById("music");
-    const musicBtn = document.getElementById("music-btn");
-    let isPlaying = false;
-
-    musicBtn.addEventListener("click", () => {
-        if (isPlaying) {
-            music.pause();
-            musicBtn.innerHTML = '<i class="fas fa-play"></i>';
+    musicBtn.addEventListener('click', function() {
+        if (music.paused) {
+            music.play();  
+            musicBtn.innerHTML = '<i class="fas fa-circle-pause" style="font-size: 25px;"></i>';
         } else {
-            music.play();
-            musicBtn.innerHTML = '<i class="fas fa-pause"></i>';
+            music.pause(); 
+            musicBtn.innerHTML = '<i class="fa-regular fa-circle-play" style="font-size: 25px;""></i>'; 
         }
-        isPlaying = !isPlaying;
     });
+});
+
 
     // Show payment options modal
     window.showPaymentOptions = function() {
