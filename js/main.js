@@ -7,10 +7,8 @@ document.addEventListener("DOMContentLoaded", function () {
     }, 1000);
 });
 
-// Array to store cart items
     let cartItems = [];
 
-    // Function to add a product to the cart
     window.showMessage = function(productName, price) {
         const existingItem = cartItems.find(item => item.name === productName);
         if (existingItem) {
@@ -22,7 +20,6 @@ document.addEventListener("DOMContentLoaded", function () {
         $('#addToCartModal').modal('show'); 
     };
 
-    // Function to update the cart icon with the number of items
     function updateCartIcon() {
         const cartIcon = document.querySelector(".fa-cart-arrow-down");
         const totalItems = cartItems.reduce((total, item) => total + item.quantity, 0);
@@ -36,7 +33,6 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     document.addEventListener("DOMContentLoaded", function () {
-    // Function to search products
     window.searchProducts = function() {
         const input = document.getElementById('searchInput').value.toLowerCase();
         console.log("Search input:", input);
@@ -52,16 +48,13 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         });
     };
-   
 });
 
 
-    // Function to calculate the total price of items in the cart
     function calculateTotalPrice() {
         return cartItems.reduce((total, item) => total + (item.price * item.quantity), 0);
     }
 
-    // Function to show the payment modal
         function showModal() {
         if (cartItems.length === 0) {
             $('#emptyCartModal').modal('show'); 
@@ -71,7 +64,6 @@ document.addEventListener("DOMContentLoaded", function () {
         modal.style.display = "flex";
     }
 
-    // Function to close the modal
     window.closeModal = function() {
         const modal = document.getElementById("cardModal");
         modal.style.display = "none";
@@ -82,7 +74,6 @@ document.addEventListener("DOMContentLoaded", function () {
     const cardExpiryInput = document.getElementById("cardExpiry");
     const cardCVVInput = document.getElementById("cardCVV");
 
-    // Ensure only numbers can be entered in the card number input
     cardNumberInput.addEventListener("input", function (e) {
         let value = e.target.value.replace(/\D/g, ''); 
         let formattedValue = '';
@@ -92,7 +83,6 @@ document.addEventListener("DOMContentLoaded", function () {
         e.target.value = formattedValue.trim();
     });
 
-    // Format card expiry input
     cardExpiryInput.addEventListener("input", function (e) {
         let value = e.target.value.replace(/[^0-9]/g, ''); 
         if (value.length > 2) {
@@ -101,12 +91,10 @@ document.addEventListener("DOMContentLoaded", function () {
         e.target.value = value;
     });
 
-    // Ensure CVV input only allows numbers
     cardCVVInput.addEventListener("input", function (e) {
         e.target.value = e.target.value.replace(/[^0-9]/g, '');
     });
 
-    // Function to process the payment
     window.processPayment = function(event) {
         event.preventDefault();
 
@@ -145,7 +133,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-    // Function to process the cash payment
     window.processCashPayment = function(event) {
         event.preventDefault();
 
@@ -160,7 +147,6 @@ document.addEventListener("DOMContentLoaded", function () {
             return;
         }
 
-        // Simulate payment processing
         setTimeout(() => {
             $('#paymentSuccessModal').modal('show'); 
             cartItems = [];
@@ -185,7 +171,6 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-    // Show payment options modal
     window.showPaymentOptions = function() {
         if (cartItems.length === 0) {
             $('#emptyCartModal').modal('show'); 
@@ -195,26 +180,22 @@ document.addEventListener("DOMContentLoaded", function () {
         modal.style.display = "flex";
     };
 
-    // Show card payment modal
     document.getElementById("cardPaymentBtn").addEventListener('click', function() {
         document.getElementById("paymentOptionsModal").style.display = "none";
         document.getElementById("cardPaymentModal").style.display = "flex";
     });
 
-    // Show cash payment modal
     document.getElementById("cashPaymentBtn").addEventListener('click', function() {
         document.getElementById("paymentOptionsModal").style.display = "none";
         document.getElementById("cashPaymentModal").style.display = "flex";
     });
 
-    // Close any visible modal
     window.closeModal = function() {
         document.querySelectorAll(".modal").forEach(modal => {
             modal.style.display = "none";
         });
     };
 
-    // Add event listener for the cart icon
     document.addEventListener('DOMContentLoaded', function() {
         const cartIcon = document.querySelector(".fa-cart-arrow-down");
         cartIcon.addEventListener('click', showPaymentOptions);
@@ -234,7 +215,6 @@ document.addEventListener("DOMContentLoaded", function () {
         }, 3000);
     });
 
-    // Function to show slides for a specific wrapper
     function showSlides(wrapper, n) {
         const slides = wrapper.getElementsByClassName("slide");
         if (n >= slides.length) {
@@ -249,7 +229,6 @@ document.addEventListener("DOMContentLoaded", function () {
         slides[slideIndex].style.display = "block";
     }
 
-    // Function to move to the next or previous slide for a specific wrapper
     function plusSlides(wrapper, n) {
         slideIndex += n;
         showSlides(wrapper, slideIndex);
@@ -262,7 +241,6 @@ document.addEventListener('DOMContentLoaded', function() {
         $('#userModal').modal('show');
     });
 
-    // Update the modal content when the user clicks the login button
     document.querySelector('#userModal .btn-danger').addEventListener('click', function() {
         $('#userModal .modal-body form').hide();
         $('#userModal .modal-body').html('<p>Jeni kyçur me sukses!</p>');
