@@ -484,59 +484,62 @@
 </ul>
 
     <div id="paymentOptionsModal" class="modal">
-        <div class="modal-content">
-            <span class="close-button" onclick="closeModal()">&times;</span>
-            <h2 class="h222">Mënyra e pagesës</h2>
-            <button id="cashPaymentBtn" class="payment-option-btn">Paguaj me Cash </button>
-            <button id="cardPaymentBtn" class="payment-option-btn">Paguaj Online</button>
-        </div>
+    <div class="modal-content">
+        <span class="close-button" onclick="closeModal()">&times;</span>
+        <h2 class="h222">Mënyra e pagesës</h2>
+        <button id="cashPaymentBtn" class="payment-option-btn">Paguaj me Cash</button>
+        <button id="cardPaymentBtn" class="payment-option-btn">Paguaj Online</button>
     </div>
+</div>
 
-    <div id="cardPaymentModal" class="modal">
-        <div class="modal-content">
-            <span class="close-button" onclick="closeModal()">&times;</span>
-            <h2 class="h222" style="font-size: 14px;"><img src="foto/bank.jpg" alt="Bank Icon" style="width: 50px;" >Paguaj online (Blerje direkte ose me këste):</h2>
-            <form id="paymentForm">
-                <label for="cardName"><img src="foto/user.png" alt="User Icon" style="width: 20px;" >Emri i mbajtësit të kartës:</label>
-                <input type="text" id="cardName" placeholder="Emri në kartë" required>
-                <label for="cardNumber"><img src="foto/card.png" alt="Mastercard Icon" style="width: 24px;" >Numri i kartës:</label>
-                <input type="text" id="cardNumber" placeholder="0000 0000 0000 0000" maxlength="19" required>
-                <label for="cardExpiry"><img src="foto/calendar.png" alt="Calendar Icon" style="width: 16px;" >Data e skadimit:</label>
-                <input type="text" id="cardExpiry" placeholder="MM/YY" maxlength="5" required>
-                <label for="cardCVV"><img src="foto/padlock.png" alt="Padlock Icon" style="width: 16px;" >CVV:</label>
-                <input type="text" id="cardCVV" placeholder="CVV" maxlength="3" required>
-            </form>
-            <br>
-            <button class="pay-btn" type="submit" onclick="processPayment(event)">Paguaj Tani</button>
-            <div class="container-Cards">
-                <img src="foto/TebCard.png">
-                <img src="foto/raiffeisenCard.png">
-                <img src="foto/bktCard.png">
-                <img src="foto/nlbCard.png">
-            </div>
+<div id="cardPaymentModal" class="modal">
+    <div class="modal-content">
+        <a href="#" class="back-link" onclick="showPaymentOptionsModal()">&#8592; Kthehu Mbrapa</a>
+        <span class="close-button" onclick="closeModal()">&times;</span>
+        <h2 class="h222" style="font-size: 14px;"><img src="foto/bank.jpg" alt="Bank Icon" style="width: 50px;">Paguaj online (Blerje direkte ose me këste):</h2>
+        <form id="paymentForm">
+            <label for="cardName"><img src="foto/user.png" alt="User Icon" style="width: 20px;">Emri i mbajtësit të kartës:</label>
+            <input type="text" id="cardName" placeholder="Emri në kartë" required>
+            <label for="cardNumber"><img src="foto/card.png" alt="Mastercard Icon" style="width: 24px;">Numri i kartës:</label>
+            <input type="text" id="cardNumber" placeholder="0000 0000 0000 0000" maxlength="19" required>
+            <label for="cardExpiry"><img src="foto/calendar.png" alt="Calendar Icon" style="width: 16px;">Data e skadimit:</label>
+            <input type="text" id="cardExpiry" placeholder="MM/YY" maxlength="5" required>
+            <label for="cardCVV"><img src="foto/padlock.png" alt="Padlock Icon" style="width: 16px;">CVV:</label>
+            <input type="text" id="cardCVV" placeholder="CVV" maxlength="3" required>
+        </form>
+        <br>
+        <button class="pay-btn" type="submit" onclick="processPayment(event)">Paguaj Tani</button>
+        <div class="container-Cards">
+            <img src="foto/TebCard.png">
+            <img src="foto/raiffeisenCard.png">
+            <img src="foto/bktCard.png">
+            <img src="foto/nlbCard.png">
         </div>
     </div>
+</div>
 
-    <div id="cashPaymentModal" class="modal">
-        <div class="modal-content">
-            <span class="close-button"  onclick="closeModal()">&times;</span>
-            <h2 class="h222"><img src="foto/cash.jpg" alt="Mastercard Icon" style="width: 50px;" >Paguaj me para në dorë:</h2>
-            <form id="cashPaymentForm">
-                <label for="fullName"><img src="foto/user.png" alt="User Icon" style="width: 20px;" >Emri dhe Mbiemri:</label>
-                <input type="text" id="fullName" placeholder="Emri dhe Mbiemri" required>
-                <label for="address"><img src="foto/home.png" alt="Home Icon" style="width: 33px;" >Adresa:</label>
-                <input type="text" id="address" placeholder="Adresa" required>
-                <label for="city"><i class="fa-solid fa-building-user" style="color: #004dd1;"></i>Qyteti:</label>
-                <input type="text" id="city" placeholder="Qyteti" required>
-                <label for="country"><i class="fa-solid fa-earth-americas" style="color: #04d2fb;"></i>Shteti:</label>
-                <input type="text" id="country" placeholder="Shteti" required>
-                <label for="cashAmount"><img src="foto/euro1.png" alt="Euro Icon" style="width: 33px;" >Shuma e pagesës:</label>
-                <input type="number" id="cashAmount" placeholder="Shuma" required>
-            </form>
-            <br>
-            <button class="pay-btn" type="submit" onclick="processCashPayment(event)">Paguaj Tani</button>
-        </div>
+<div id="cashPaymentModal" class="modal">
+    <div class="modal-content">
+        <a href="#" class="back-link" onclick="showPaymentOptionsModal()">&#8592; Kthehu Mbrapa</a>
+        <span class="close-button" onclick="closeModal()">&times;</span>
+        <h2 class="h222"><img src="foto/cash.jpg" alt="Mastercard Icon" style="width: 50px;">Paguaj me para në dorë:</h2>
+        <form id="cashPaymentForm">
+            <label for="fullName"><img src="foto/user.png" alt="User Icon" style="width: 20px;">Emri dhe Mbiemri:</label>
+            <input type="text" id="fullName" placeholder="Emri dhe Mbiemri" required>
+            <label for="address"><img src="foto/home.png" alt="Home Icon" style="width: 33px;">Adresa:</label>
+            <input type="text" id="address" placeholder="Adresa" required>
+            <label for="city"><i class="fa-solid fa-building-user" style="color: #004dd1;"></i>Qyteti:</label>
+            <input type="text" id="city" placeholder="Qyteti" required>
+            <label for="country"><i class="fa-solid fa-earth-americas" style="color: #04d2fb;"></i>Shteti:</label>
+            <input type="text" id="country" placeholder="Shteti" required>
+            <label for="cashAmount"><img src="foto/euro1.png" alt="Euro Icon" style="width: 33px;">Shuma e pagesës:</label>
+            <input type="number" id="cashAmount" placeholder="Shuma" required>
+        </form>
+        <br>
+        <button class="pay-btn" type="submit" onclick="processCashPayment(event)">Paguaj Tani</button>
     </div>
+</div>
+
 
     <div class="modal fade" id="addToCartModal" tabindex="-1" role="dialog" aria-labelledby="addToCartModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document" style="display:flex; justify-content: center; align-content: center;">

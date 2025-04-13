@@ -48,6 +48,7 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         });
     };
+   
 });
 
 
@@ -68,6 +69,8 @@ document.addEventListener("DOMContentLoaded", function () {
         const modal = document.getElementById("cardModal");
         modal.style.display = "none";
     };
+
+
 
     document.addEventListener("DOMContentLoaded", function () {
     const cardNumberInput = document.getElementById("cardNumber");
@@ -246,4 +249,31 @@ document.addEventListener('DOMContentLoaded', function() {
         $('#userModal .modal-body').html('<p>Jeni kyçur me sukses!</p>');
         $('#userModal .modal-footer').html('<button type="button" class="btn btn-danger" data-dismiss="modal">Mbyll</button>');
     });
+});
+
+function closeModal() {
+    document.querySelectorAll('.modal').forEach(modal => {
+        modal.style.display = 'none';
+    });
+}
+
+function showModal(modalId) {
+    closeModal(); 
+    document.getElementById(modalId).style.display = 'flex';
+}
+
+function showPaymentOptionsModal() {
+    showModal('paymentOptionsModal');
+}
+
+document.getElementById('cashPaymentBtn').addEventListener('click', function() {
+    showModal('cashPaymentModal');
+});
+
+document.getElementById('cardPaymentBtn').addEventListener('click', function() {
+    showModal('cardPaymentModal');
+});
+
+document.querySelectorAll('.modal').forEach(modal => {
+    modal.style.display = 'none';
 });

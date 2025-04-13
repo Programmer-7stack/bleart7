@@ -1,3 +1,4 @@
+    /* Stilet e Përgjithshme */
     body {
         font-family: Arial, sans-serif;
         margin: 0;
@@ -9,6 +10,7 @@
     }
 
 
+    /* Header Styling */
     header {
         position: sticky;
         top: 0;
@@ -117,6 +119,7 @@
         font-size: 33px;
     }
 
+    /* Stilizimi per Search Bar */
     .search-bar {
         display: flex !important;
         align-items: center !important;
@@ -148,6 +151,7 @@
         background-color: black;
     }
 
+    /* Stilizimi per Main Content */
     main {
         padding: 20px;
         background-color: #f5f5f5;
@@ -168,6 +172,7 @@
     }
 
 
+    /* Stilizimi per Product Card */
     .product-card {
         background-color: #fff;
         border-radius: 8px;
@@ -245,6 +250,7 @@
         background-color: black;
     }
 
+     /* Slideshow Container */
     .slideWrapper {
         position: relative;
         width: 100%;
@@ -382,6 +388,7 @@
     }
 
 
+    /* Stilizimi per Modal */
     .modal {
         display: flex;
         justify-content: center;
@@ -417,6 +424,7 @@
         color: #ff4500;
     }
 
+    /* Form Styles */
     form {
         display: flex;
         flex-direction: column;
@@ -552,6 +560,7 @@
     }
 
         
+     /* Footer */
     footer {
         background-color: black;
         color: white;
@@ -572,6 +581,7 @@
 
 
 
+    /*Responsive */
 
             /* Për ekranet më të vogla (telefon) */
             @media  (max-width: 768px) {
@@ -1110,3 +1120,7 @@
                     font-size: 26px;
                 }
             }
+
+
+
+
